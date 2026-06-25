@@ -5,13 +5,9 @@
   </view>
 
   <view class="book-list">
-    <view class="book-card" bindtap="openBook" data-book="hp1" data-chapter="1">
+    <view class="book-card" bindtap="openBook" data-book="hp1">
       <text class="book-title">Harry Potter and the Philosopher's Stone</text>
       <text class="book-meta">J.K. Rowling · 第 1 章已上线</text>
     </view>
-  </view>
-
-  <view class="tip">
-    <text>点击书籍后将进入朗读页面</text>
   </view>
 </view>

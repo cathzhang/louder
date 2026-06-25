@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="header">
+    <text class="book-title">Harry Potter and the Philosopher's Stone</text>
+    <text class="chapter-title">Chapter 1 · The Boy Who Lived</text>
+  </view>
+
+  <view class="controls">
+    <picker mode="selector" range="{{speedOptions}}" value="{{speedIndex}}" bindchange="onSpeedChange">
+      <view class="control-btn">速度: {{speedOptions[speedIndex]}}</view>
+    </picker>
+    <view class="control-btn {{isContinuous ? 'active' : ''}}" bindtap="toggleContinuous">
+      连续播放
+    </view>
+    <view class="control-btn" bindtap="goBack">返回目录</view>
+  </view>
+
+  <scroll-view class="content" scroll-y scroll-into-view="{{scrollIntoView}}" enhanced show-scrollbar>
+    <view class="sentence-block" wx:for="{{sentences}}" wx:key="id" wx:for-index="sIdx" id="sentence-{{sIdx}}">
+      <view class="sentence-text">
+        <text 
+          wx:for="{{item.words}}" 
+          wx:for-item="w" 
+          wx:for-index="wIdx"
+          wx:key="wIdx"
+          class="word {{w.highlight ? 'highlight' : ''}} {{w.splitSelected ? 'split-selected' : ''}}"
+          data-sidx="{{sIdx}}"
+          data-widx="{{wIdx}}"
+          bindtap="onWordTap"
+        >{{w.text}} </text>
+      </view>
+      <view class="sentence-actions">
+        <button class="play-btn" size="mini" data-index="{{sIdx}}" bindtap="playSentence">▶</button>
+        <button class="split-btn" size="mini" data-index="{{sIdx}}" bindtap="openSplitModal">✂</button>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 拆分浮层 -->
+  <view class="modal {{showSplitModal ? '' : 'hidden'}}">
+    <view class="modal-mask" bindtap="closeSplitModal"></view>
+    <view class="modal-content">
+      <view class="modal-header">
+        <text class="modal-title">句子拆分</text>
+        <text class="modal-close" bindtap="closeSplitModal">×</text>
+      </view>
+      <scroll-view class="modal-body" scroll-y enhanced show-scrollbar>
+        <view class="modal-sentence">
+          <text 
+            wx:for="{{splitWords}}" 
+            wx:for-item="w" 
+            wx:for-index="wIdx"
+            wx:key="wIdx"
+            class="word {{w.selected ? 'split-selected' : ''}}"
+            data-index="{{wIdx}}"
+            bindtap="selectSplitWord"
+          >{{w.text}} </text>
+        </view>
+        <view class="modal-actions">
+          <button class="modal-btn" size="mini" bindtap="splitByComma">按逗号拆分</button>
+          <button class="modal-btn" size="mini" bindtap="addSelectionFragment" disabled="{{splitStart === -1 || splitEnd === -1}}">添加选中片段</button>
+        </view>
+        <view class="fragments-list">
+          <view class="fragment-row" wx:for="{{splitFragments}}" wx:key="index">
+            <text class="fragment-text">{{index + 1}}. <text wx:for="{{item.words}}" wx:for-item="fw" wx:for-index="fwIdx" wx:key="fwIdx" class="word {{fw.highlight ? 'highlight' : ''}}">{{fw.text}} </text></text>
+            <button class="fragment-play-btn" size="mini" data-index="{{index}}" bindtap="playFragment">▶</button>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

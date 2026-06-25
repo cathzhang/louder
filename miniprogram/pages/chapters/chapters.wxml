@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="header">
+    <text class="book-title">Harry Potter and the Philosopher's Stone</text>
+    <text class="chapter-title">选择章节</text>
+  </view>
+
+  <view class="chapter-list">
+    <view class="chapter-card" bindtap="openChapter" data-id="1">
+      <text class="chapter-name">Chapter 1</text>
+      <text class="chapter-desc">The Boy Who Lived</text>
+    </view>
+  </view>
+
+  <view class="footer">
+    <text class="back-link" bindtap="goBack">← 返回书目列表</text>
+  </view>
+</view>

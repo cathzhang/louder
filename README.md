@@ -39,8 +39,10 @@ louder/
 │   ├── config.js             # H5 环境配置（本地/线上 CDN）
 │   └── data/                 # 前端使用的对齐数据
 │       └── chapter1.json     # 由 chapter1_aligned.json 同步
-├── miniprogram/              # 微信小程序源码
-│   └── README.md             # 小程序与云托管接入说明
+├── miniprogram/              # 微信小程序源码（原生实现）
+│   ├── data/                 # 小程序包内对齐数据
+│   ├── pages/                # 原生小程序页面
+│   └── README.md
 ├── start_server.py           # 本地 HTTP 服务器（支持 Range 请求）
 ├── publish_to_feishu.py      # 创建并上传飞书文档
 ├── upload_content_only.py    # 更新已有飞书文档内容
@@ -104,25 +106,26 @@ python3 scripts/check_quality.py
 cp resource/chapter1_aligned.json web/data/chapter1.json
 ```
 
-## 微信小程序
+## 微信小程序（原生实现）
 
-项目包含 `miniprogram/` 目录，采用 **web-view 嵌入 H5** 方案。小程序只提供入口页面，核心阅读体验仍走 H5。
+项目包含 `miniprogram/` 目录，采用 **原生小程序页面** 实现，不再使用 web-view 嵌入 H5。
+
+- 书目列表、章节目录、播放页均为原生 WXML/WXSS/JS；
+- 对齐 JSON 数据放在 `miniprogram/data/` 内，随小程序包发布；
+- 音频文件从云存储 CDN 播放。
 
 详见 [`miniprogram/README.md`](miniprogram/README.md)。
 
-## 部署到线上 / 微信云托管
+## H5 本地部署
 
-H5 页面部署到线上后，修改 `web/config.js` 中的 `CDN_BASE` 为你的云托管或 CDN 域名：
+`web/` 目录保留为本地 H5 站点，用于浏览器访问或本地调试：
 
-```javascript
-const CONFIG = {
-    CDN_BASE: 'https://your-cloudbase-domain.com'
-};
+```bash
+python3 start_server.py
+# 打开 http://localhost:8000/web/index.html
 ```
 
-本地开发时保持 `CDN_BASE: ''` 即可自动使用相对路径。
-
-云托管详细接入步骤请参考 [`miniprogram/README.md`](miniprogram/README.md) 中的「微信云托管接入指南」。
+本地开发时，`web/config.js` 中的 `CDN_BASE` 保持为空，自动使用相对路径。
 
 ---
 

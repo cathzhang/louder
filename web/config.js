@@ -2,9 +2,9 @@
 // 本地开发时留空，部署到线上后填写你的 CDN / 云托管域名
 
 const CONFIG = {
-    // 示例：'https://7072-prod-d5g5fun3a019d78b1-1447117358.tcb.qcloud.la'
-    // 本地开发建议保持空字符串 ''
-    CDN_BASE: 'https://7072-prod-d5g5fun3a019d78b1-1447117358.tcb.qcloud.la',
+    // 部署到线上 CDN / 云托管后填写实际域名
+    // 本地开发保持空字符串 ''
+    CDN_BASE: '',
 
     // 是否根据当前 host 自动判断本地/线上
     // true：localhost/127.0.0.1 时使用相对路径，其他使用 CDN_BASE

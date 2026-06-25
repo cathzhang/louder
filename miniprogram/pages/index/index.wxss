@@ -1,3 +1,22 @@
+.header {
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.title {
+  display: block;
+  font-size: 48rpx;
+  color: #222;
+  font-weight: 600;
+}
+
+.subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #888;
+  margin-top: 12rpx;
+}
+
 .book-list {
   display: flex;
   flex-direction: column;
@@ -25,14 +44,4 @@
   font-size: 26rpx;
   color: #888;
   margin-top: 12rpx;
-}
-
-.tip {
-  text-align: center;
-  margin-top: 80rpx;
-}
-
-.tip text {
-  font-size: 24rpx;
-  color: #aaa;
 }

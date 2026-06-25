@@ -1,8 +1,7 @@
 {
   "description": "大声朗读小程序",
   "packOptions": {
-    "ignore": [],
-    "include": []
+    "ignore": []
   },
   "setting": {
     "urlCheck": false,
@@ -40,18 +39,11 @@
     "disableUseStrict": false,
     "minifyWXML": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": false,
-    "compileWorklet": false,
-    "localPlugins": false,
-    "condition": false,
-    "swc": false,
-    "disableSWC": true
+    "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
   "libVersion": "3.0.0",
-  "appid": "wx00fa35bf7b1e2c0f",
+  "appid": "touristappid",
   "projectname": "louder",
-  "condition": {},
-  "simulatorPluginLibVersion": {},
-  "editorSetting": {}
+  "condition": {}
 }

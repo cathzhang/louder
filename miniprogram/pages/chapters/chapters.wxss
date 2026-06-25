@@ -1,0 +1,56 @@
+.header {
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+
+.book-title {
+  display: block;
+  font-size: 30rpx;
+  color: #888;
+}
+
+.chapter-title {
+  display: block;
+  font-size: 40rpx;
+  color: #222;
+  font-weight: 600;
+  margin-top: 10rpx;
+}
+
+.chapter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.chapter-card {
+  background: #fff;
+  border: 1rpx solid #e8e8e8;
+  border-radius: 14rpx;
+  padding: 28rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.04);
+}
+
+.chapter-name {
+  display: block;
+  font-size: 32rpx;
+  color: #222;
+  font-weight: 600;
+}
+
+.chapter-desc {
+  display: block;
+  font-size: 26rpx;
+  color: #888;
+  margin-top: 8rpx;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.back-link {
+  font-size: 28rpx;
+  color: #2196F3;
+}
