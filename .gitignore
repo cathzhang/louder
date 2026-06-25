@@ -34,3 +34,6 @@ resource/*.pdf
 .idea/
 *.swp
 *.swo
+
+# Agent-local config
+AGENTS.md
