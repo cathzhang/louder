@@ -31,10 +31,13 @@ louder/
 │   ├── check_alignment.py    # 对齐质量检查
 │   └── check_quality.py      # 对齐质量检查（另一维度）
 ├── web/                      # 前端页面
-│   ├── index.html
+│   ├── index.html            # 书目列表页
+│   ├── chapters.html         # 章节目录页
+│   ├── chapter.html          # 章节播放页
 │   ├── app.js
 │   ├── style.css
-│   └── data.json             # web 使用的对齐数据（由 chapter1_aligned.json 同步）
+│   └── data/                 # 前端使用的对齐数据
+│       └── chapter1.json     # 由 chapter1_aligned.json 同步
 ├── start_server.py           # 本地 HTTP 服务器（支持 Range 请求）
 ├── publish_to_feishu.py      # 创建并上传飞书文档
 ├── upload_content_only.py    # 更新已有飞书文档内容
@@ -50,7 +53,10 @@ louder/
 python3 start_server.py
 
 # 2. 浏览器打开
-# http://localhost:8000/web/
+# http://localhost:8000/web/index.html
+#
+# 页面导航：
+#   书目列表  →  章节目录  →  章节播放页
 ```
 
 服务器支持 HTTP `Range` 请求，音频可以正常 seek 和逐句播放。
@@ -92,7 +98,7 @@ python3 scripts/check_quality.py
 `web/data.json` 是前端读取的对齐数据，当前与 `resource/chapter1_aligned.json` 一致。更新对齐结果后，手动同步：
 
 ```bash
-cp resource/chapter1_aligned.json web/data.json
+cp resource/chapter1_aligned.json web/data/chapter1.json
 ```
 
 ---
@@ -132,6 +138,9 @@ cp resource/chapter1_aligned.json web/data.json
 - [x] 单词级强制对齐（Needleman-Wunsch）
 - [x] 对齐质量检查
 - [x] 网页逐句/选词播放
+- [x] 书目列表页 / 章节目录页 / 章节播放页导航
+- [x] 播放速度控制（0.5 / 0.75 / 1 / 1.25 / 1.5 / 2x）
+- [x] 连续播放功能
 - [x] 飞书文档上传
-- [ ] 多章节扩展
-- [ ] 播放器增强（进度条、播放速度、连续播放等）
+- [ ] 多章节数据扩展（目前只有 Chapter 1）
+- [ ] 播放器增强（进度条、上一句/下一句、音量控制）

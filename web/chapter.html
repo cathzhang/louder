@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大声朗读 - Harry Potter Chapter 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Harry Potter and the Philosopher's Stone</h1>
+        <h2>Chapter 1 · The Boy Who Lived</h2>
+    </header>
+
+    <div id="player-controls">
+        <div class="control-group">
+            <label for="speed-select">播放速度</label>
+            <select id="speed-select">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+        </div>
+        <button id="continuous-btn" class="toggle-btn" aria-pressed="false">
+            连续播放
+        </button>
+        <a href="chapters.html?book=hp1" class="back-link">← 返回章节目录</a>
+    </div>
+
+    <div id="loading">正在加载数据...</div>
+
+    <main id="content"></main>
+
+    <div id="float-play" class="hidden">
+        <button id="float-btn">▶ 播放选中</button>
+    </div>
+
+    <!-- 句子拆分浮层 -->
+    <div id="split-modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>句子拆分</h3>
+                <button id="split-modal-close" class="modal-close" title="关闭">×</button>
+            </div>
+            <div class="modal-body">
+                <p id="split-modal-sentence" class="modal-sentence"></p>
+                <div class="modal-actions">
+                    <button id="split-by-comma" class="modal-btn">按逗号拆分</button>
+                    <button id="split-add-selection" class="modal-btn" disabled>添加选中片段</button>
+                </div>
+                <div id="split-fragments" class="fragments-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio" preload="none"></audio>
+    <script src="app.js"></script>
+</body>
+</html>
