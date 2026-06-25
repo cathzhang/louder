@@ -31,8 +31,8 @@ Page({
     const bookId = options.book || '';
     const chapterId = options.chapter || '1';
 
-    // 加载本地 JSON 数据
-    const data = require(`../../data/chapter${chapterId}.json`);
+    // 加载本地 JSON 数据（小程序 require 不支持动态路径，目前固定 chapter1）
+    const data = require('../../data/chapter1.json');
     const sentences = data.sentences.map(s => ({
       ...s,
       words: s.words.map(w => ({ ...w, highlight: false }))
