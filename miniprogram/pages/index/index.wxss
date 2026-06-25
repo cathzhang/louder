@@ -1,0 +1,38 @@
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.book-card {
+  background: #fff;
+  border: 1rpx solid #e8e8e8;
+  border-radius: 16rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+}
+
+.book-title {
+  display: block;
+  font-size: 32rpx;
+  color: #222;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.book-meta {
+  display: block;
+  font-size: 26rpx;
+  color: #888;
+  margin-top: 12rpx;
+}
+
+.tip {
+  text-align: center;
+  margin-top: 80rpx;
+}
+
+.tip text {
+  font-size: 24rpx;
+  color: #aaa;
+}

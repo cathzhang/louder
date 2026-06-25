@@ -3,6 +3,10 @@
 
 const params = new URLSearchParams(window.location.search);
 const chapterId = params.get('chapter') || '1';
+const BASE_URL = (window.LOUDER_CONFIG && window.LOUDER_CONFIG.getBaseUrl)
+    ? window.LOUDER_CONFIG.getBaseUrl()
+    : '';
+const isLocal = !BASE_URL;
 
 const state = {
     sentences: [],
@@ -13,8 +17,12 @@ const state = {
     isContinuous: false,
     currentSentenceIndex: -1,
     playbackRate: 1,
-    audioUrl: `../resource/01.The Boy Who Lived.m4a`,
-    dataUrl: `data/chapter${chapterId}.json`,
+    audioUrl: isLocal
+        ? '../resource/01.The Boy Who Lived.m4a'
+        : `${BASE_URL}/audio/01.The Boy Who Lived.m4a`,
+    dataUrl: isLocal
+        ? `data/chapter${chapterId}.json`
+        : `${BASE_URL}/web/data/chapter${chapterId}.json`,
     splitSentenceIndex: -1,
     splitFragments: []
 };

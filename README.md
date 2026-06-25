@@ -30,14 +30,17 @@ louder/
 │   ├── fix_alignment.py      # 对齐后处理
 │   ├── check_alignment.py    # 对齐质量检查
 │   └── check_quality.py      # 对齐质量检查（另一维度）
-├── web/                      # 前端页面
+├── web/                      # H5 前端页面
 │   ├── index.html            # 书目列表页
 │   ├── chapters.html         # 章节目录页
 │   ├── chapter.html          # 章节播放页
 │   ├── app.js
 │   ├── style.css
+│   ├── config.js             # H5 环境配置（本地/线上 CDN）
 │   └── data/                 # 前端使用的对齐数据
 │       └── chapter1.json     # 由 chapter1_aligned.json 同步
+├── miniprogram/              # 微信小程序源码
+│   └── README.md             # 小程序与云托管接入说明
 ├── start_server.py           # 本地 HTTP 服务器（支持 Range 请求）
 ├── publish_to_feishu.py      # 创建并上传飞书文档
 ├── upload_content_only.py    # 更新已有飞书文档内容
@@ -95,11 +98,31 @@ python3 scripts/check_quality.py
 
 ## 同步前端数据
 
-`web/data.json` 是前端读取的对齐数据，当前与 `resource/chapter1_aligned.json` 一致。更新对齐结果后，手动同步：
+`web/data/chapter1.json` 是前端读取的对齐数据，当前与 `resource/chapter1_aligned.json` 一致。更新对齐结果后，手动同步：
 
 ```bash
 cp resource/chapter1_aligned.json web/data/chapter1.json
 ```
+
+## 微信小程序
+
+项目包含 `miniprogram/` 目录，采用 **web-view 嵌入 H5** 方案。小程序只提供入口页面，核心阅读体验仍走 H5。
+
+详见 [`miniprogram/README.md`](miniprogram/README.md)。
+
+## 部署到线上 / 微信云托管
+
+H5 页面部署到线上后，修改 `web/config.js` 中的 `CDN_BASE` 为你的云托管或 CDN 域名：
+
+```javascript
+const CONFIG = {
+    CDN_BASE: 'https://your-cloudbase-domain.com'
+};
+```
+
+本地开发时保持 `CDN_BASE: ''` 即可自动使用相对路径。
+
+云托管详细接入步骤请参考 [`miniprogram/README.md`](miniprogram/README.md) 中的「微信云托管接入指南」。
 
 ---
 
@@ -142,5 +165,8 @@ cp resource/chapter1_aligned.json web/data/chapter1.json
 - [x] 播放速度控制（0.5 / 0.75 / 1 / 1.25 / 1.5 / 2x）
 - [x] 连续播放功能
 - [x] 飞书文档上传
+- [x] 微信小程序基础骨架（web-view 嵌入 H5）
+- [x] H5 环境配置（支持本地开发与线上 CDN）
+- [ ] 微信小程序正式部署与审核
 - [ ] 多章节数据扩展（目前只有 Chapter 1）
 - [ ] 播放器增强（进度条、上一句/下一句、音量控制）
