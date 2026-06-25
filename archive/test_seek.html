@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seek Test</title>
+</head>
+<body>
+    <h1>Audio Seek Test</h1>
+    <audio id="audio" preload="none"></audio>
+    <br><br>
+    <button onclick="loadAndSeek()">1. Load + Seek to 30s</button>
+    <button onclick="justSeek()">2. Just Seek (if already loaded)</button>
+    <button onclick="seekThenPlay()">3. Seek to 30s then Play</button>
+    <br><br>
+    <div id="log"></div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        audio.src = '../resource/01.The Boy Who Lived.m4a';
+
+        function log(msg) {
+            document.getElementById('log').innerHTML += msg + '<br>';
+            console.log(msg);
+        }
+
+        function loadAndSeek() {
+            log('--- loadAndSeek ---');
+            log('readyState before load: ' + audio.readyState);
+            log('currentTime before load: ' + audio.currentTime);
+
+            audio.addEventListener('loadedmetadata', function handler() {
+                audio.removeEventListener('loadedmetadata', handler);
+                log('loadedmetadata fired');
+                log('readyState: ' + audio.readyState);
+                log('duration: ' + audio.duration);
+
+                audio.currentTime = 30;
+                log('set currentTime = 30');
+                log('currentTime after set: ' + audio.currentTime);
+
+                setTimeout(() => {
+                    log('currentTime after 500ms: ' + audio.currentTime);
+                }, 500);
+            });
+
+            audio.load();
+        }
+
+        function justSeek() {
+            log('--- justSeek ---');
+            log('readyState: ' + audio.readyState);
+            log('currentTime before: ' + audio.currentTime);
+            audio.currentTime = 30;
+            log('currentTime after set: ' + audio.currentTime);
+            setTimeout(() => {
+                log('currentTime after 500ms: ' + audio.currentTime);
+            }, 500);
+        }
+
+        function seekThenPlay() {
+            log('--- seekThenPlay ---');
+            log('readyState: ' + audio.readyState);
+
+            function doSeek() {
+                audio.currentTime = 30;
+                log('set currentTime = 30, value=' + audio.currentTime);
+
+                let checks = 0;
+                const timer = setInterval(() => {
+                    checks++;
+                    log('check #' + checks + ': currentTime=' + audio.currentTime + ' readyState=' + audio.readyState);
+                    if (Math.abs(audio.currentTime - 30) < 1 || checks > 10) {
+                        clearInterval(timer);
+                        log('Playing...');
+                        audio.play();
+                    }
+                }, 200);
+            }
+
+            if (audio.readyState < 1) {
+                log('Audio not ready, loading...');
+                audio.addEventListener('loadedmetadata', function handler() {
+                    audio.removeEventListener('loadedmetadata', handler);
+                    log('loadedmetadata, duration=' + audio.duration);
+                    doSeek();
+                });
+                audio.load();
+            } else {
+                doSeek();
+            }
+        }
+    </script>
+</body>
+</html>

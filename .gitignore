@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+
+# Feishu doc source (uploaded separately)
+docs_for_feishu.md
+
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
+
+# Large media files (keep them local, not in git)
+resource/*.mp3
+resource/*.m4a
+resource/*.wav
+resource/*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

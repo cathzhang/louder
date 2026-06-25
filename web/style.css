@@ -1,0 +1,116 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px 16px 60px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+h1 { font-size: 1.2em; color: #888; font-weight: 400; }
+h2 { font-size: 1.7em; color: #222; margin-top: 6px; font-weight: 600; }
+
+#loading {
+    text-align: center;
+    padding: 60px 0;
+    color: #888;
+    font-size: 1.1em;
+}
+
+#content {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.sentence-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 14px;
+    margin: 2px 0;
+    border-radius: 8px;
+    transition: background 0.15s;
+}
+
+.sentence-block:hover {
+    background: #f0f0f0;
+}
+
+.sentence-text {
+    flex: 1;
+    font-size: 1.12em;
+    line-height: 1.95;
+    color: #333;
+}
+
+.word {
+    cursor: text;
+    border-radius: 2px;
+    padding: 0 1px;
+    transition: background 0.1s;
+}
+
+.word:hover {
+    background: #e0e0e0;
+}
+
+.word.highlight {
+    background: #ffe082;
+    color: #000;
+}
+
+.play-btn {
+    background: #fff;
+    color: #4CAF50;
+    border: 1.5px solid #4CAF50;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+    transition: all 0.15s;
+}
+
+.play-btn:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+#float-play {
+    position: fixed;
+    z-index: 100;
+}
+
+#float-play.hidden {
+    display: none;
+}
+
+#float-btn {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: background 0.15s;
+}
+
+#float-btn:hover {
+    background: #1976D2;
+}
