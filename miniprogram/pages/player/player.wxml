@@ -35,16 +35,24 @@
     </view>
   </scroll-view>
 
-  <!-- 拆分浮层 -->
-  <view class="modal {{showSplitModal ? '' : 'hidden'}}">
-    <view class="modal-mask" bindtap="closeSplitModal"></view>
-    <view class="modal-content">
-      <view class="modal-header">
-        <text class="modal-title">句子拆分</text>
-        <text class="modal-close" bindtap="closeSplitModal">×</text>
+  <!-- 拆分浮层：底部弹出 -->
+  <page-container
+    show="{{showSplitModal}}"
+    position="bottom"
+    overlay="true"
+    duration="300"
+    round="true"
+    z-index="200"
+    custom-style="height: 82vh;"
+    bind:afterleave="onSplitModalClose"
+  >
+    <view class="split-sheet">
+      <view class="sheet-header">
+        <text class="sheet-title">句子拆分</text>
+        <text class="sheet-close" bindtap="closeSplitModal">×</text>
       </view>
-      <scroll-view class="modal-body" scroll-y enhanced show-scrollbar>
-        <view class="modal-sentence">
+      <scroll-view class="sheet-body" scroll-y enhanced show-scrollbar>
+        <view class="sheet-sentence">
           <text 
             wx:for="{{splitWords}}" 
             wx:for-item="w" 
@@ -55,9 +63,9 @@
             bindtap="selectSplitWord"
           >{{w.text}} </text>
         </view>
-        <view class="modal-actions">
-          <button class="modal-btn" size="mini" bindtap="splitByComma">按逗号拆分</button>
-          <button class="modal-btn" size="mini" bindtap="addSelectionFragment" disabled="{{splitStart === -1 || splitEnd === -1}}">添加选中片段</button>
+        <view class="sheet-actions">
+          <button class="sheet-btn" size="mini" bindtap="splitByComma">按逗号拆分</button>
+          <button class="sheet-btn" size="mini" bindtap="addSelectionFragment" disabled="{{splitStart === -1 || splitEnd === -1}}">添加选中片段</button>
         </view>
         <view class="fragments-list">
           <view class="fragment-row" wx:for="{{splitFragments}}" wx:key="index">
@@ -67,5 +75,5 @@
         </view>
       </scroll-view>
     </view>
-  </view>
+  </page-container>
 </view>

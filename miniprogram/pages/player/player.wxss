@@ -92,86 +92,74 @@
   border: 1.5rpx solid #FF9800;
 }
 
-/* 拆分浮层 */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal.hidden {
-  display: none;
-}
-
-.modal-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.modal-content {
-  position: relative;
-  background: #fff;
-  border-radius: 16rpx;
-  width: 90%;
-  max-height: 80vh;
+/* 拆分浮层：底部 sheet */
+.split-sheet {
+  height: 100%;
+  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 24rpx 24rpx 0 0;
+  box-sizing: border-box;
 }
 
-.modal-header {
+.sheet-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24rpx 30rpx;
+  padding: 28rpx 32rpx;
   border-bottom: 1rpx solid #e8e8e8;
+  flex-shrink: 0;
 }
 
-.modal-title {
-  font-size: 32rpx;
+.sheet-title {
+  font-size: 34rpx;
   font-weight: 600;
   color: #222;
 }
 
-.modal-close {
+.sheet-close {
   font-size: 48rpx;
   color: #888;
   line-height: 1;
+  padding: 0 10rpx;
 }
 
-.modal-body {
-  padding: 24rpx 30rpx;
-  max-height: 60vh;
+.sheet-body {
+  flex: 1;
+  width: 100%;
+  padding: 24rpx 32rpx 40rpx;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
-.modal-sentence {
+.sheet-sentence {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 34rpx;
   line-height: 2;
   color: #333;
   padding: 20rpx;
   background: #f8f8f8;
-  border-radius: 10rpx;
+  border-radius: 12rpx;
   margin-bottom: 20rpx;
 }
 
-.modal-actions {
+.sheet-sentence .word {
+  display: inline-block;
+  margin-right: 8rpx;
+  white-space: nowrap;
+}
+
+.sheet-actions {
   display: flex;
   gap: 16rpx;
   margin-bottom: 20rpx;
   flex-wrap: wrap;
 }
 
-.modal-btn {
+.sheet-btn {
   margin: 0;
 }
 
@@ -193,9 +181,18 @@
 
 .fragment-text {
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 30rpx;
   line-height: 1.6;
   color: #333;
+  min-width: 0;
+}
+
+.fragment-text .word {
+  display: inline-block;
+  margin-right: 6rpx;
+  white-space: nowrap;
 }
 
 .fragment-play-btn {

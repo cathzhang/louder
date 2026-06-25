@@ -31,8 +31,8 @@ Page({
     const bookId = options.book || '';
     const chapterId = options.chapter || '1';
 
-    // 加载本地 JSON 数据（小程序 require 不支持动态路径，目前固定 chapter1）
-    const data = require('../../data/chapter1.json');
+    // 加载本地章节数据（使用 JS module，小程序 require JSON 在部分环境下不稳定）
+    const data = require('../../data/chapter1-data.js');
     const sentences = data.sentences.map(s => ({
       ...s,
       words: s.words.map(w => ({ ...w, highlight: false }))
@@ -61,6 +61,11 @@ Page({
   },
 
   setupAudioListeners() {
+    audioManager.onPlay(() => {
+      // 播放开始时应用当前速度，确保调速生效
+      this.applyPlaybackRate();
+    });
+
     audioManager.onEnded(() => {
       this.stopTimer();
       this.clearHighlight();
@@ -84,6 +89,13 @@ Page({
       console.error('音频播放错误', err);
       wx.showToast({ title: '音频播放失败', icon: 'none' });
     });
+  },
+
+  applyPlaybackRate() {
+    const rate = this.data.playbackRate;
+    if (rate && audioManager.playbackRate !== rate) {
+      audioManager.playbackRate = rate;
+    }
   },
 
   // ========== 播放控制 ==========
@@ -119,12 +131,11 @@ Page({
     audioManager.singer = '大声朗读';
     audioManager.src = `${app.globalData.audioBaseUrl}/01.The Boy Who Lived.m4a`;
 
-    // 设置播放速度
-    audioManager.playbackRate = this.data.playbackRate;
-
     // seek 并开始播放
     audioManager.seek(start);
     audioManager.play();
+
+    // 播放速度在 onPlay 回调中应用，确保生效
 
     this.startHighlightTimer(start, end, onEnded, fragmentWords);
   },
@@ -254,13 +265,18 @@ Page({
       splitEnd: -1,
       splitFragments: []
     });
+
   },
 
   closeSplitModal() {
+    this.setData({ showSplitModal: false });
+  },
+
+  onSplitModalClose() {
+    // page-container 关闭动画结束后清理状态
     this.stopTimer();
     this.clearHighlight();
     this.setData({
-      showSplitModal: false,
       splitSentenceIndex: -1,
       splitWords: [],
       splitStart: -1,

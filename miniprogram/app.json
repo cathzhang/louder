@@ -4,6 +4,7 @@
     "pages/chapters/chapters",
     "pages/player/player"
   ],
+  "requiredBackgroundModes": ["audio"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fafafa",
