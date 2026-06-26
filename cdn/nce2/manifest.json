@@ -1,0 +1,578 @@
+[
+  {
+    "lesson": 1,
+    "title": "A private conversation",
+    "json_file": "lesson01.json",
+    "audio_file": "01－A Private Conversation.mp3"
+  },
+  {
+    "lesson": 2,
+    "title": "Breakfast or lunch?",
+    "json_file": "lesson02.json",
+    "audio_file": "02－Breakfast or Lunch.mp3"
+  },
+  {
+    "lesson": 3,
+    "title": "Please send me a card",
+    "json_file": "lesson03.json",
+    "audio_file": "03－Please Send Me a Card.mp3"
+  },
+  {
+    "lesson": 4,
+    "title": "An exciting trip",
+    "json_file": "lesson04.json",
+    "audio_file": "04－An Exciting Trip.mp3"
+  },
+  {
+    "lesson": 5,
+    "title": "No wrong numbers",
+    "json_file": "lesson05.json",
+    "audio_file": "05－No Wrong Numbers.mp3"
+  },
+  {
+    "lesson": 6,
+    "title": "Percy Buttons",
+    "json_file": "lesson06.json",
+    "audio_file": "06－Percy Buttons.mp3"
+  },
+  {
+    "lesson": 7,
+    "title": "Too late",
+    "json_file": "lesson07.json",
+    "audio_file": "07－Too Late.mp3"
+  },
+  {
+    "lesson": 8,
+    "title": "The best and the worst",
+    "json_file": "lesson08.json",
+    "audio_file": "08－The Best and the Worst.mp3"
+  },
+  {
+    "lesson": 9,
+    "title": "A cold welcome",
+    "json_file": "lesson09.json",
+    "audio_file": "09－A Cold Welcome.mp3"
+  },
+  {
+    "lesson": 10,
+    "title": "Not for jazz",
+    "json_file": "lesson10.json",
+    "audio_file": "10－Not for Jazz.mp3"
+  },
+  {
+    "lesson": 11,
+    "title": "One good turn deserves another",
+    "json_file": "lesson11.json",
+    "audio_file": "11－One Good Turn Deserves Another.mp3"
+  },
+  {
+    "lesson": 12,
+    "title": "Goodbye and good luck",
+    "json_file": "lesson12.json",
+    "audio_file": "12－Goodbye and Good Luck.mp3"
+  },
+  {
+    "lesson": 13,
+    "title": "The Greenwood Boys",
+    "json_file": "lesson13.json",
+    "audio_file": "13－The Greenwood Boys.mp3"
+  },
+  {
+    "lesson": 14,
+    "title": "Do you speak English?",
+    "json_file": "lesson14.json",
+    "audio_file": "14－Do You Speak English.mp3"
+  },
+  {
+    "lesson": 15,
+    "title": "Good news",
+    "json_file": "lesson15.json",
+    "audio_file": "15－Good News.mp3"
+  },
+  {
+    "lesson": 16,
+    "title": "A polite request",
+    "json_file": "lesson16.json",
+    "audio_file": "16－A Polite Request.mp3"
+  },
+  {
+    "lesson": 17,
+    "title": "Always young",
+    "json_file": "lesson17.json",
+    "audio_file": "17－Always Young.mp3"
+  },
+  {
+    "lesson": 18,
+    "title": "He often does this!",
+    "json_file": "lesson18.json",
+    "audio_file": "18－He Often does This.mp3"
+  },
+  {
+    "lesson": 19,
+    "title": "Sold out",
+    "json_file": "lesson19.json",
+    "audio_file": "19－Sold Out.mp3"
+  },
+  {
+    "lesson": 20,
+    "title": "One man in a boat",
+    "json_file": "lesson20.json",
+    "audio_file": "20－One Man in a Boat.mp3"
+  },
+  {
+    "lesson": 21,
+    "title": "Mad or not?",
+    "json_file": "lesson21.json",
+    "audio_file": "21－Mad or Not.mp3"
+  },
+  {
+    "lesson": 22,
+    "title": "A glass envelope",
+    "json_file": "lesson22.json",
+    "audio_file": "22－A Glass Envelope.mp3"
+  },
+  {
+    "lesson": 23,
+    "title": "A new house",
+    "json_file": "lesson23.json",
+    "audio_file": "23－A New House.mp3"
+  },
+  {
+    "lesson": 24,
+    "title": "If could be worse",
+    "json_file": "lesson24.json",
+    "audio_file": "24－It Could be Worse.mp3"
+  },
+  {
+    "lesson": 25,
+    "title": "Do the English speak English?",
+    "json_file": "lesson25.json",
+    "audio_file": "25－Do the English Speak English.mp3"
+  },
+  {
+    "lesson": 26,
+    "title": "The best art critics",
+    "json_file": "lesson26.json",
+    "audio_file": "26－The Best Art Critics.mp3"
+  },
+  {
+    "lesson": 27,
+    "title": "A wet night",
+    "json_file": "lesson27.json",
+    "audio_file": "27－A Wet Night.mp3"
+  },
+  {
+    "lesson": 28,
+    "title": "No parking",
+    "json_file": "lesson28.json",
+    "audio_file": "28－No Parking.mp3"
+  },
+  {
+    "lesson": 29,
+    "title": "Taxi!",
+    "json_file": "lesson29.json",
+    "audio_file": "29－Taxi.mp3"
+  },
+  {
+    "lesson": 30,
+    "title": "Football or polo?",
+    "json_file": "lesson30.json",
+    "audio_file": "30－Football or Polo.mp3"
+  },
+  {
+    "lesson": 31,
+    "title": "Success story",
+    "json_file": "lesson31.json",
+    "audio_file": "31－Success Story.mp3"
+  },
+  {
+    "lesson": 32,
+    "title": "Shopping made easy",
+    "json_file": "lesson32.json",
+    "audio_file": "32－Shopping Made Easy.mp3"
+  },
+  {
+    "lesson": 33,
+    "title": "Out of the darkness",
+    "json_file": "lesson33.json",
+    "audio_file": "33－Out of the Darkness.mp3"
+  },
+  {
+    "lesson": 34,
+    "title": "Quick work",
+    "json_file": "lesson34.json",
+    "audio_file": "34－Quick Work.mp3"
+  },
+  {
+    "lesson": 35,
+    "title": "Stop thief!",
+    "json_file": "lesson35.json",
+    "audio_file": "35－Stop Thief.mp3"
+  },
+  {
+    "lesson": 36,
+    "title": "Across the Channel",
+    "json_file": "lesson36.json",
+    "audio_file": "36－Across the Channel.mp3"
+  },
+  {
+    "lesson": 37,
+    "title": "The Olympic Games",
+    "json_file": "lesson37.json",
+    "audio_file": "37－The Olympic Games.mp3"
+  },
+  {
+    "lesson": 38,
+    "title": "Everything except the weather",
+    "json_file": "lesson38.json",
+    "audio_file": "38－Everything Except the Weather.mp3"
+  },
+  {
+    "lesson": 39,
+    "title": "Am I all right?",
+    "json_file": "lesson39.json",
+    "audio_file": "39－Am I All Right.mp3"
+  },
+  {
+    "lesson": 40,
+    "title": "Food and talk",
+    "json_file": "lesson40.json",
+    "audio_file": "40－Food and Talk.mp3"
+  },
+  {
+    "lesson": 41,
+    "title": "Do you call that a hat?",
+    "json_file": "lesson41.json",
+    "audio_file": "41－Do You Call That a Hat.mp3"
+  },
+  {
+    "lesson": 42,
+    "title": "Not very musical",
+    "json_file": "lesson42.json",
+    "audio_file": "42－Not Very Musical.mp3"
+  },
+  {
+    "lesson": 43,
+    "title": "Over the South Pole",
+    "json_file": "lesson43.json",
+    "audio_file": "43－Over the South Pole.mp3"
+  },
+  {
+    "lesson": 44,
+    "title": "Through the forest",
+    "json_file": "lesson44.json",
+    "audio_file": "44－Through the Forest.mp3"
+  },
+  {
+    "lesson": 45,
+    "title": "A clear conscience",
+    "json_file": "lesson45.json",
+    "audio_file": "45－A Clear Conscience.mp3"
+  },
+  {
+    "lesson": 46,
+    "title": "Expensive and uncomfortable",
+    "json_file": "lesson46.json",
+    "audio_file": "46－Expensive and Uncomfortable.mp3"
+  },
+  {
+    "lesson": 47,
+    "title": "A thirsty ghost",
+    "json_file": "lesson47.json",
+    "audio_file": "47－A Thirsty Ghost.mp3"
+  },
+  {
+    "lesson": 48,
+    "title": "Did you want to tell me something?",
+    "json_file": "lesson48.json",
+    "audio_file": "48－Did You Want to Tell Me Something.mp3"
+  },
+  {
+    "lesson": 49,
+    "title": "The end of a dream",
+    "json_file": "lesson49.json",
+    "audio_file": "49－The End of a Dream.mp3"
+  },
+  {
+    "lesson": 50,
+    "title": "Taken for a ride",
+    "json_file": "lesson50.json",
+    "audio_file": "50－Taken for a Ride.mp3"
+  },
+  {
+    "lesson": 51,
+    "title": "Reward for virtue",
+    "json_file": "lesson51.json",
+    "audio_file": "51－Reward for Virtue.mp3"
+  },
+  {
+    "lesson": 52,
+    "title": "A pretty carpet",
+    "json_file": "lesson52.json",
+    "audio_file": "52－A Pretty Carpet.mp3"
+  },
+  {
+    "lesson": 53,
+    "title": "Hot snake",
+    "json_file": "lesson53.json",
+    "audio_file": "53－Hot Snake.mp3"
+  },
+  {
+    "lesson": 54,
+    "title": "Sticky fingers",
+    "json_file": "lesson54.json",
+    "audio_file": "54－Sticky Fingers.mp3"
+  },
+  {
+    "lesson": 55,
+    "title": "Not a gold mine",
+    "json_file": "lesson55.json",
+    "audio_file": "55－Not a Gold Mine.mp3"
+  },
+  {
+    "lesson": 56,
+    "title": "Faster than sound!",
+    "json_file": "lesson56.json",
+    "audio_file": "56－Faster Than Sound.mp3"
+  },
+  {
+    "lesson": 57,
+    "title": "Can I help you, madam?",
+    "json_file": "lesson57.json",
+    "audio_file": "57－Can I Help You, Madam.mp3"
+  },
+  {
+    "lesson": 58,
+    "title": "A blessing in disguise?",
+    "json_file": "lesson58.json",
+    "audio_file": "58－A Blessing in Disguise.mp3"
+  },
+  {
+    "lesson": 59,
+    "title": "In or out?",
+    "json_file": "lesson59.json",
+    "audio_file": "59－In or Out.mp3"
+  },
+  {
+    "lesson": 60,
+    "title": "The future",
+    "json_file": "lesson60.json",
+    "audio_file": "60－The Future.mp3"
+  },
+  {
+    "lesson": 61,
+    "title": "Trouble with the Hubble",
+    "json_file": "lesson61.json",
+    "audio_file": "61－Trouble with the Hubble.mp3"
+  },
+  {
+    "lesson": 62,
+    "title": "After the fire",
+    "json_file": "lesson62.json",
+    "audio_file": "62－After the Fire.mp3"
+  },
+  {
+    "lesson": 63,
+    "title": "She was not amused",
+    "json_file": "lesson63.json",
+    "audio_file": "63－She Was Not Amused.mp3"
+  },
+  {
+    "lesson": 64,
+    "title": "The Channel Tunnel",
+    "json_file": "lesson64.json",
+    "audio_file": "64－The Channel Tunnel.mp3"
+  },
+  {
+    "lesson": 65,
+    "title": "Jumbo versus the police",
+    "json_file": "lesson65.json",
+    "audio_file": "65－Jumbo Versus the Police.mp3"
+  },
+  {
+    "lesson": 66,
+    "title": "Sweet as honey!",
+    "json_file": "lesson66.json",
+    "audio_file": "66－Sweet as Honey.mp3"
+  },
+  {
+    "lesson": 67,
+    "title": "Volcanoes",
+    "json_file": "lesson67.json",
+    "audio_file": "67－Volcanoes.mp3"
+  },
+  {
+    "lesson": 68,
+    "title": "Persistent",
+    "json_file": "lesson68.json",
+    "audio_file": "68－Persistent.mp3"
+  },
+  {
+    "lesson": 69,
+    "title": "But not murder!",
+    "json_file": "lesson69.json",
+    "audio_file": "69－But not Murder.mp3"
+  },
+  {
+    "lesson": 70,
+    "title": "Red for danger",
+    "json_file": "lesson70.json",
+    "audio_file": "70－Red for Danger.mp3"
+  },
+  {
+    "lesson": 71,
+    "title": "A famous clock",
+    "json_file": "lesson71.json",
+    "audio_file": "71－A Famous Clock.mp3"
+  },
+  {
+    "lesson": 72,
+    "title": "A car called bluebird",
+    "json_file": "lesson72.json",
+    "audio_file": "72－A Car Called Bluebird.mp3"
+  },
+  {
+    "lesson": 73,
+    "title": "The record-holder",
+    "json_file": "lesson73.json",
+    "audio_file": "73－The Record-Holder.mp3"
+  },
+  {
+    "lesson": 74,
+    "title": "Out of the limelight",
+    "json_file": "lesson74.json",
+    "audio_file": "74－Out of the Limelight.mp3"
+  },
+  {
+    "lesson": 75,
+    "title": "SOS",
+    "json_file": "lesson75.json",
+    "audio_file": "75－SOS.mp3"
+  },
+  {
+    "lesson": 76,
+    "title": "April Fools' Day",
+    "json_file": "lesson76.json",
+    "audio_file": "76－April Fools&#39; Day.mp3"
+  },
+  {
+    "lesson": 77,
+    "title": "A successful operation",
+    "json_file": "lesson77.json",
+    "audio_file": "77－A Successful Operation.mp3"
+  },
+  {
+    "lesson": 78,
+    "title": "The last one?",
+    "json_file": "lesson78.json",
+    "audio_file": "78－The Last One.mp3"
+  },
+  {
+    "lesson": 79,
+    "title": "By air",
+    "json_file": "lesson79.json",
+    "audio_file": "79－By Air.mp3"
+  },
+  {
+    "lesson": 80,
+    "title": "The Crystal Palace",
+    "json_file": "lesson80.json",
+    "audio_file": "80－The Crystal Palace.mp3"
+  },
+  {
+    "lesson": 81,
+    "title": "Escape",
+    "json_file": "lesson81.json",
+    "audio_file": "81－Escape.mp3"
+  },
+  {
+    "lesson": 82,
+    "title": "Monster or fish?",
+    "json_file": "lesson82.json",
+    "audio_file": "82－Monster or Fish.mp3"
+  },
+  {
+    "lesson": 83,
+    "title": "After the elections",
+    "json_file": "lesson83.json",
+    "audio_file": "83－After the Elections.mp3"
+  },
+  {
+    "lesson": 84,
+    "title": "On strike",
+    "json_file": "lesson84.json",
+    "audio_file": "84－On Strike.mp3"
+  },
+  {
+    "lesson": 85,
+    "title": "Never too old to learn",
+    "json_file": "lesson85.json",
+    "audio_file": "85－Never Too Old To Learn.mp3"
+  },
+  {
+    "lesson": 86,
+    "title": "Out of control",
+    "json_file": "lesson86.json",
+    "audio_file": "86－Out of Control.mp3"
+  },
+  {
+    "lesson": 87,
+    "title": "A perfect alibi",
+    "json_file": "lesson87.json",
+    "audio_file": "87－A Perfect Alibi.mp3"
+  },
+  {
+    "lesson": 88,
+    "title": "Trapped in a mine",
+    "json_file": "lesson88.json",
+    "audio_file": "88－Trapped in a Mine.mp3"
+  },
+  {
+    "lesson": 89,
+    "title": "A slip of the tongue",
+    "json_file": "lesson89.json",
+    "audio_file": "89－A Slip of the Tongue.mp3"
+  },
+  {
+    "lesson": 90,
+    "title": "What's for supper?",
+    "json_file": "lesson90.json",
+    "audio_file": "90－What&#39;s for Supper.mp3"
+  },
+  {
+    "lesson": 91,
+    "title": "Three men in a basket",
+    "json_file": "lesson91.json",
+    "audio_file": "91－Three Men in a Basket.mp3"
+  },
+  {
+    "lesson": 92,
+    "title": "Asking for trouble",
+    "json_file": "lesson92.json",
+    "audio_file": "92－Asking for Trouble.mp3"
+  },
+  {
+    "lesson": 93,
+    "title": "A noble gift",
+    "json_file": "lesson93.json",
+    "audio_file": "93－A Noble Gift.mp3"
+  },
+  {
+    "lesson": 94,
+    "title": "Future champions",
+    "json_file": "lesson94.json",
+    "audio_file": "94－Future Champions.mp3"
+  },
+  {
+    "lesson": 95,
+    "title": "A fantasy",
+    "json_file": "lesson95.json",
+    "audio_file": "95－A Fantasy.mp3"
+  },
+  {
+    "lesson": 96,
+    "title": "The dead return",
+    "json_file": "lesson96.json",
+    "audio_file": "96－The Dead Return.mp3"
+  }
+]

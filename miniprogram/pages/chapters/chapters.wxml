@@ -1,13 +1,19 @@
 <view class="container">
-  <view class="header">
-    <text class="book-title">Harry Potter and the Philosopher's Stone</text>
+  <view class="header" wx:if="{{book}}">
+    <text class="book-title">{{book.title}}</text>
     <text class="chapter-title">选择章节</text>
   </view>
 
-  <view class="chapter-list">
-    <view class="chapter-card" bindtap="openChapter" data-id="1">
-      <text class="chapter-name">Chapter 1</text>
-      <text class="chapter-desc">The Boy Who Lived</text>
+  <view class="chapter-list" wx:if="{{book}}">
+    <view
+      class="chapter-card"
+      wx:for="{{book.chapters}}"
+      wx:key="id"
+      bindtap="openChapter"
+      data-id="{{item.id}}"
+    >
+      <text class="chapter-name">{{item.title}}</text>
+      <text class="chapter-desc">{{item.desc}}</text>
     </view>
   </view>
 

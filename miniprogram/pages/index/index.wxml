@@ -5,9 +5,15 @@
   </view>
 
   <view class="book-list">
-    <view class="book-card" bindtap="openBook" data-book="hp1">
-      <text class="book-title">Harry Potter and the Philosopher's Stone</text>
-      <text class="book-meta">J.K. Rowling · 第 1 章已上线</text>
+    <view
+      class="book-card"
+      wx:for="{{books}}"
+      wx:key="id"
+      bindtap="openBook"
+      data-book="{{item.id}}"
+    >
+      <text class="book-title">{{item.title}}</text>
+      <text class="book-meta">{{item.author}} · {{item.meta}}</text>
     </view>
   </view>
 </view>

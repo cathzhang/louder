@@ -1,4 +1,5 @@
 const app = getApp();
+const books = require('../../data/books.js');
 
 const audioManager = wx.getBackgroundAudioManager();
 
@@ -6,17 +7,19 @@ Page({
   data: {
     bookId: '',
     chapterId: '1',
+    book: null,
+    currentChapter: null,
     sentences: [],
     allWords: [],
-
+    loading: true,
+    loadError: '',
+    audioFile: '',
     speedOptions: ['0.5x', '0.75x', '1x', '1.25x', '1.5x', '2x'],
     speedIndex: 2,
     playbackRate: 1,
     isContinuous: false,
-
     currentWordIndex: -1,
     scrollIntoView: '',
-
     showSplitModal: false,
     splitSentenceIndex: -1,
     splitWords: [],
@@ -30,10 +33,59 @@ Page({
   onLoad(options) {
     const bookId = options.book || '';
     const chapterId = options.chapter || '1';
+    const book = books.find(b => b.id === bookId) || null;
+    const currentChapter = book
+      ? book.chapters.find(c => c.id === chapterId) || book.chapters[0]
+      : null;
 
-    // 加载本地章节数据（使用 JS module，小程序 require JSON 在部分环境下不稳定）
-    const data = require('../../data/chapter1-data.js');
-    const sentences = data.sentences.map(s => ({
+    this.setData({ bookId, chapterId, book, currentChapter });
+    this.loadChapterData(bookId, chapterId);
+    this.setupAudioListeners();
+  },
+
+  onUnload() {
+    this.stopTimer();
+    audioManager.stop();
+  },
+
+  loadChapterData(bookId, chapterId) {
+    const book = this.data.book;
+    if (!book) {
+      this.setData({ loading: false, loadError: '未找到书籍' });
+      return;
+    }
+
+    if (book.dataType === 'local') {
+      // 本地数据：使用 JS module
+      const data = require('../../data/chapter1-data.js');
+      this.initSentences(data);
+    } else {
+      // 远程数据：从 CDN 下载 JSON
+      const url = `${app.globalData.dataBaseUrl}/${bookId}/lesson${chapterId.padStart(2, '0')}.json`;
+      wx.showLoading({ title: '加载中' });
+      wx.request({
+        url,
+        method: 'GET',
+        success: (res) => {
+          wx.hideLoading();
+          if (res.statusCode === 200 && res.data) {
+            this.initSentences(res.data);
+          } else {
+            this.setData({ loading: false, loadError: '数据加载失败' });
+          }
+        },
+        fail: (err) => {
+          wx.hideLoading();
+          console.error('下载数据失败', err);
+          this.setData({ loading: false, loadError: '网络错误' });
+        }
+      });
+    }
+  },
+
+  initSentences(data) {
+    const audioFile = data.meta && data.meta.audio_file ? data.meta.audio_file : '';
+    const sentences = (data.sentences || []).map(s => ({
       ...s,
       words: s.words.map(w => ({ ...w, highlight: false }))
     }));
@@ -46,23 +98,15 @@ Page({
     });
 
     this.setData({
-      bookId,
-      chapterId,
+      loading: false,
+      audioFile,
       sentences,
       allWords
     });
-
-    this.setupAudioListeners();
-  },
-
-  onUnload() {
-    this.stopTimer();
-    audioManager.stop();
   },
 
   setupAudioListeners() {
     audioManager.onPlay(() => {
-      // 播放开始时应用当前速度，确保调速生效
       this.applyPlaybackRate();
     });
 
@@ -98,6 +142,16 @@ Page({
     }
   },
 
+  getAudioUrl() {
+    const book = this.data.book;
+    const fileName = this.data.audioFile;
+    if (!book || !fileName) return '';
+
+    const encodedFileName = encodeURIComponent(fileName);
+    const path = book.audioPath ? `${book.audioPath}/${encodedFileName}` : encodedFileName;
+    return `${app.globalData.audioBaseUrl}/${path}`;
+  },
+
   // ========== 播放控制 ==========
 
   playSentence(e) {
@@ -126,16 +180,16 @@ Page({
     this.stopTimer();
     this.clearHighlight();
 
-    audioManager.title = 'Chapter 1';
-    audioManager.epname = 'Harry Potter';
-    audioManager.singer = '大声朗读';
-    audioManager.src = `${app.globalData.audioBaseUrl}/01.The Boy Who Lived.m4a`;
+    const book = this.data.book;
+    const chapter = book && book.chapters.find(c => c.id === this.data.chapterId);
 
-    // seek 并开始播放
+    audioManager.title = chapter ? chapter.title : '朗读';
+    audioManager.epname = book ? book.title : '大声朗读';
+    audioManager.singer = '大声朗读';
+    audioManager.src = this.getAudioUrl();
+
     audioManager.seek(start);
     audioManager.play();
-
-    // 播放速度在 onPlay 回调中应用，确保生效
 
     this.startHighlightTimer(start, end, onEnded, fragmentWords);
   },
@@ -182,12 +236,10 @@ Page({
     this.clearHighlight();
 
     if (fragmentWords) {
-      // 高亮浮层片段中的单词
       const fIndex = fragmentWords.indexOf(word);
       const key = `splitFragments[${this.data.splitFragments.findIndex(f => f.words === fragmentWords)}].words[${fIndex}].highlight`;
       this.setData({ [key]: true, currentWordIndex: currentIndex });
     } else {
-      // 高亮原文中的单词
       const key = `sentences[${word.sentenceIndex}].words[${word.wordIndex}].highlight`;
       this.setData({
         [key]: true,
@@ -242,7 +294,6 @@ Page({
   onWordTap(e) {
     const { sidx, widx } = e.currentTarget.dataset;
     const word = this.data.sentences[sidx].words[widx];
-    // 点击单词播放该单词
     this.playRange(word.start, word.end);
   },
 
@@ -273,7 +324,6 @@ Page({
   },
 
   onSplitModalClose() {
-    // page-container 关闭动画结束后清理状态
     this.stopTimer();
     this.clearHighlight();
     this.setData({
@@ -293,7 +343,6 @@ Page({
     let newEnd = splitEnd;
 
     if (splitStart === -1 || (splitStart !== -1 && splitEnd !== -1)) {
-      // 重新选择起点
       newStart = index;
       newEnd = -1;
     } else if (index < splitStart) {
@@ -302,7 +351,6 @@ Page({
       newEnd = index;
     }
 
-    // 更新选中状态
     const newSplitWords = splitWords.map((w, i) => ({
       ...w,
       selected: (i >= newStart && newEnd !== -1 ? i <= newEnd : i === newStart)
@@ -348,7 +396,6 @@ Page({
     const fragments = [...this.getFragmentWordArrays(), selected];
     this.setFragments(fragments);
 
-    // 重置选择
     this.setData({
       splitStart: -1,
       splitEnd: -1,

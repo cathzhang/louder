@@ -3,7 +3,7 @@ module.exports = {
     "book": "Harry Potter and the Philosopher's Stone",
     "chapter": 1,
     "title": "The Boy Who Lived",
-    "audio_file": "01.The Boy Who Lived.mp3",
+    "audio_file": "01.The Boy Who Lived.m4a",
     "align_method": "needleman-wunsch global word alignment"
   },
   "sentences": [

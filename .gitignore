@@ -28,12 +28,24 @@ resource/*.mp3
 resource/*.m4a
 resource/*.wav
 resource/*.pdf
+resource/**/*.mp3
+resource/**/*.m4a
+resource/**/*.wav
+resource/**/*.pdf
+resource/**/*.lrc
+
+# Generated CDN data (recreated by scripts/process_nce2.py)
+cdn/**/*.json
+!cdn/nce2/manifest.json
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# WeChat DevTools
+miniprogram/project.private.config.json
 
 # Agent-local config
 AGENTS.md

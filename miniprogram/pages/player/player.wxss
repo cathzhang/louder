@@ -31,6 +31,23 @@
   padding-bottom: 40rpx;
 }
 
+.loading-state,
+.error-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80rpx 40rpx;
+}
+
+.state-text {
+  font-size: 30rpx;
+  color: #888;
+}
+
+.error-state .state-text {
+  color: #e53935;
+}
+
 .sentence-block {
   display: flex;
   align-items: flex-start;

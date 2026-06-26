@@ -1,10 +1,15 @@
+const books = require('../../data/books.js');
+
 Page({
   data: {
-    bookId: ''
+    bookId: '',
+    book: null
   },
 
   onLoad(options) {
-    this.setData({ bookId: options.book || '' });
+    const bookId = options.book || '';
+    const book = books.find(b => b.id === bookId) || null;
+    this.setData({ bookId, book });
   },
 
   openChapter(e) {

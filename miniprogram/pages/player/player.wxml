@@ -1,10 +1,10 @@
 <view class="container">
-  <view class="header">
-    <text class="book-title">Harry Potter and the Philosopher's Stone</text>
-    <text class="chapter-title">Chapter 1 · The Boy Who Lived</text>
+  <view class="header" wx:if="{{book}}">
+    <text class="book-title">{{book.title}}</text>
+    <text class="chapter-title">{{currentChapter.title}} · {{currentChapter.desc}}</text>
   </view>
 
-  <view class="controls">
+  <view class="controls" wx:if="{{!loading && !loadError}}">
     <picker mode="selector" range="{{speedOptions}}" value="{{speedIndex}}" bindchange="onSpeedChange">
       <view class="control-btn">速度: {{speedOptions[speedIndex]}}</view>
     </picker>
@@ -14,7 +14,15 @@
     <view class="control-btn" bindtap="goBack">返回目录</view>
   </view>
 
-  <scroll-view class="content" scroll-y scroll-into-view="{{scrollIntoView}}" enhanced show-scrollbar>
+  <view class="loading-state" wx:if="{{loading}}">
+    <text class="state-text">正在加载数据...</text>
+  </view>
+
+  <view class="error-state" wx:if="{{!loading && loadError}}">
+    <text class="state-text">{{loadError}}</text>
+  </view>
+
+  <scroll-view class="content" scroll-y scroll-into-view="{{scrollIntoView}}" enhanced show-scrollbar wx:if="{{!loading && !loadError}}">
     <view class="sentence-block" wx:for="{{sentences}}" wx:key="id" wx:for-index="sIdx" id="sentence-{{sIdx}}">
       <view class="sentence-text">
         <text 
