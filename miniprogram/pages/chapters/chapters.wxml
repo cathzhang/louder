@@ -16,8 +16,4 @@
       <text class="chapter-desc">{{item.desc}}</text>
     </view>
   </view>
-
-  <view class="footer">
-    <text class="back-link" bindtap="goBack">← 返回书目列表</text>
-  </view>
 </view>

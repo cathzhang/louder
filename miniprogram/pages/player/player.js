@@ -30,6 +30,7 @@ Page({
   },
 
   timer: null,
+  pendingSeekStart: null,
 
   onLoad(options) {
     const bookId = options.book || '';
@@ -109,6 +110,11 @@ Page({
   setupAudioListeners() {
     audioManager.onPlay(() => {
       this.applyPlaybackRate();
+      if (this.pendingSeekStart !== null) {
+        const start = this.pendingSeekStart;
+        this.pendingSeekStart = null;
+        audioManager.seek(start);
+      }
     });
 
     audioManager.onEnded(() => {
@@ -189,7 +195,7 @@ Page({
     audioManager.singer = '大声朗读';
     audioManager.src = this.getAudioUrl();
 
-    audioManager.seek(start);
+    this.pendingSeekStart = start;
     audioManager.play();
 
     this.startHighlightTimer(start, end, onEnded, fragmentWords);
@@ -244,8 +250,7 @@ Page({
       const key = `sentences[${word.sentenceIndex}].words[${word.wordIndex}].highlight`;
       this.setData({
         [key]: true,
-        currentWordIndex: currentIndex,
-        scrollIntoView: `sentence-${word.sentenceIndex}`
+        currentWordIndex: currentIndex
       });
     }
   },
@@ -288,10 +293,6 @@ Page({
     this.setData({ isContinuous: !this.data.isContinuous });
   },
 
-  goBack() {
-    wx.navigateBack();
-  },
-
   onShareAppMessage() {
     return share.playerShare(this.data.bookId, this.data.chapterId);
   },
@@ -314,7 +315,8 @@ Page({
     const splitWords = sent.words.map((w, i) => ({
       ...w,
       index: i,
-      selected: false
+      selected: false,
+      mark: ''
     }));
 
     this.setData({
@@ -360,10 +362,15 @@ Page({
       newEnd = index;
     }
 
-    const newSplitWords = splitWords.map((w, i) => ({
-      ...w,
-      selected: (i >= newStart && newEnd !== -1 ? i <= newEnd : i === newStart)
-    }));
+    const newSplitWords = splitWords.map((w, i) => {
+      const selected = newEnd !== -1
+        ? (i >= newStart && i <= newEnd)
+        : (i === newStart);
+      let mark = '';
+      if (i === newStart) mark = '开始';
+      if (newEnd !== -1 && i === newEnd) mark = '结束';
+      return { ...w, selected, mark };
+    });
 
     this.setData({
       splitWords: newSplitWords,

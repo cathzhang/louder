@@ -45,12 +45,3 @@
   margin-top: 8rpx;
 }
 
-.footer {
-  text-align: center;
-  margin-top: 60rpx;
-}
-
-.back-link {
-  font-size: 28rpx;
-  color: #2196F3;
-}

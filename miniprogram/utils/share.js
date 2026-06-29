@@ -38,7 +38,6 @@ function makeSharePath(page, params) {
 // ========== 转发给朋友（onShareAppMessage）使用 path ==========
 
 function indexShare() {
-  console.log('indexShare')
   return {
     title: '大声朗读 - 英语听力口语跟读',
     path: '/pages/index/index'
@@ -62,7 +61,6 @@ function playerShare(bookId, chapterId) {
 // ========== 分享到朋友圈（onShareTimeline）使用 query ==========
 
 function indexTimeline() {
-  console.log('indexTimeline')
   return {
     title: '大声朗读 - 英语听力口语跟读',
     query: ''

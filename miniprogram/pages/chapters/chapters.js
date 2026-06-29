@@ -20,10 +20,6 @@ Page({
     });
   },
 
-  goBack() {
-    wx.navigateBack();
-  },
-
   onShareAppMessage() {
     return share.chaptersShare(this.data.bookId);
   },
