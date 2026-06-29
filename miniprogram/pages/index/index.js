@@ -1,4 +1,5 @@
 const books = require('../../data/books.js');
+const share = require('../../utils/share.js');
 
 Page({
   data: {
@@ -10,5 +11,13 @@ Page({
     wx.navigateTo({
       url: `/pages/chapters/chapters?book=${book}`
     });
+  },
+
+  onShareAppMessage() {
+    return share.indexShare();
+  },
+
+  onShareTimeline() {
+    return share.indexTimeline();
   }
 });

@@ -1,5 +1,6 @@
 const app = getApp();
 const books = require('../../data/books.js');
+const share = require('../../utils/share.js');
 
 const audioManager = wx.getBackgroundAudioManager();
 
@@ -289,6 +290,14 @@ Page({
 
   goBack() {
     wx.navigateBack();
+  },
+
+  onShareAppMessage() {
+    return share.playerShare(this.data.bookId, this.data.chapterId);
+  },
+
+  onShareTimeline() {
+    return share.playerTimeline(this.data.bookId, this.data.chapterId);
   },
 
   onWordTap(e) {
