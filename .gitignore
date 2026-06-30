@@ -38,6 +38,9 @@ resource/**/*.lrc
 cdn/**/*.json
 !cdn/nce2/manifest.json
 
+# Whisper transcription cache (regenerable)
+resource/nce2_whisper/
+
 # IDE
 .vscode/
 .idea/
