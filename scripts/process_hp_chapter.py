@@ -107,9 +107,11 @@ def split_and_save(chapter: int, text: str):
 
 def convert_to_m4a(mp3_path: Path, m4a_path: Path):
     """mp3 -> m4a (AAC)"""
-    if m4a_path.exists():
+    if m4a_path.exists() and m4a_path.stat().st_size > 0:
         print(f"[audio]   {m4a_path} already exists, skip conversion")
         return
+    if m4a_path.exists():
+        print(f"[audio]   {m4a_path} is empty, re-converting")
 
     print(f"[audio]   converting {mp3_path.name} -> {m4a_path.name}")
     subprocess.run(
