@@ -97,8 +97,10 @@ Page({
     }
 
     if (book.dataType === 'local') {
-      // 本地数据：使用 JS module
-      const data = require('../../data/chapter1-data.js');
+      // 本地数据：按 chapterId 加载对应 JS module
+      const data = chapterId === '2'
+        ? require('../../data/chapter2-data.js')
+        : require('../../data/chapter1-data.js');
       this.initSentences(data);
     } else {
       // 远程数据：从 CDN 下载 JSON
