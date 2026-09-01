@@ -38,25 +38,6 @@
         <button id="float-btn">▶ 播放选中</button>
     </div>
 
-    <!-- 句子拆分浮层 -->
-    <div id="split-modal" class="modal hidden">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>句子拆分</h3>
-                <button id="split-modal-close" class="modal-close" title="关闭">×</button>
-            </div>
-            <div class="modal-body">
-                <p id="split-modal-sentence" class="modal-sentence"></p>
-                <div class="modal-actions">
-                    <button id="split-by-comma" class="modal-btn">按逗号拆分</button>
-                    <button id="split-add-selection" class="modal-btn" disabled>添加选中片段</button>
-                </div>
-                <div id="split-fragments" class="fragments-list"></div>
-            </div>
-        </div>
-    </div>
-
     <audio id="audio" preload="none"></audio>
     <script src="config.js"></script>
     <script src="app.js"></script>

@@ -1,5 +1,5 @@
 // 大声朗读 - 章节播放页
-// 支持：逐句播放、选词播放、单词高亮、播放速度、连续播放、句子拆分
+// 支持：逐句播放、选词播放、单词高亮、播放速度、连续播放
 
 const params = new URLSearchParams(window.location.search);
 const chapterId = params.get('chapter') || '1';
@@ -12,7 +12,6 @@ const state = {
     sentences: [],
     allWords: [],
     currentHighlight: null,
-    currentFragmentRow: null,
     activeTimeUpdateHandler: null,
     isContinuous: false,
     currentSentenceIndex: -1,
@@ -22,9 +21,7 @@ const state = {
         : `${BASE_URL}/audio/01.The Boy Who Lived.m4a`,
     dataUrl: isLocal
         ? `data/chapter${chapterId}.json`
-        : `${BASE_URL}/web/data/chapter${chapterId}.json`,
-    splitSentenceIndex: -1,
-    splitFragments: []
+        : `${BASE_URL}/web/data/chapter${chapterId}.json`
 };
 
 const audio = document.getElementById('audio');
@@ -41,7 +38,6 @@ async function init() {
         setupSelection();
         setupGlobalPlayback();
         setupControls();
-        setupSplitModal();
     } catch (err) {
         document.getElementById('loading').textContent = '加载失败: ' + err.message;
         console.error(err);
@@ -89,17 +85,7 @@ function render() {
             playSentence(idx);
         };
 
-        const splitBtn = document.createElement('button');
-        splitBtn.className = 'split-btn';
-        splitBtn.innerHTML = '✂';
-        splitBtn.title = '拆分句子';
-        splitBtn.onclick = (e) => {
-            e.stopPropagation();
-            openSplitModal(idx);
-        };
-
         controlsDiv.appendChild(playBtn);
-        controlsDiv.appendChild(splitBtn);
 
         block.appendChild(textDiv);
         block.appendChild(controlsDiv);
@@ -127,184 +113,6 @@ function setupControls() {
     }
 }
 
-// ========== 句子拆分浮层 ==========
-
-function setupSplitModal() {
-    const modal = document.getElementById('split-modal');
-    const closeBtn = document.getElementById('split-modal-close');
-    const backdrop = modal.querySelector('.modal-backdrop');
-    const splitByCommaBtn = document.getElementById('split-by-comma');
-    const addSelectionBtn = document.getElementById('split-add-selection');
-
-    closeBtn.addEventListener('click', closeSplitModal);
-    backdrop.addEventListener('click', closeSplitModal);
-
-    splitByCommaBtn.addEventListener('click', () => {
-        if (state.splitSentenceIndex >= 0) {
-            splitByCommas(state.splitSentenceIndex);
-        }
-    });
-
-    addSelectionBtn.addEventListener('click', () => {
-        addSelectionFragment();
-    });
-
-    // 监听浮层内的文本选择，决定是否启用"添加选中片段"
-    modal.addEventListener('mouseup', () => {
-        updateAddSelectionButton();
-    });
-    modal.addEventListener('selectionchange', () => {
-        updateAddSelectionButton();
-    });
-}
-
-function updateAddSelectionButton() {
-    const addSelectionBtn = document.getElementById('split-add-selection');
-    const sel = window.getSelection();
-    const isValid = sel && !sel.isCollapsed && getSelectedWordsInModal().length > 0;
-    addSelectionBtn.disabled = !isValid;
-}
-
-function openSplitModal(sentenceIndex) {
-    state.splitSentenceIndex = sentenceIndex;
-    state.splitFragments = [];
-
-    const sent = state.sentences[sentenceIndex];
-    const sentenceEl = document.getElementById('split-modal-sentence');
-    sentenceEl.innerHTML = '';
-
-    // 在浮层中重新渲染可选择的单词
-    sent.words.forEach((w, i) => {
-        const span = document.createElement('span');
-        span.className = 'word';
-        span.dataset.index = i;
-        span.dataset.start = w.start;
-        span.dataset.end = w.end;
-        span.textContent = w.text;
-        span.appendChild(document.createTextNode(' '));
-        sentenceEl.appendChild(span);
-    });
-
-    renderFragments();
-    document.getElementById('split-modal').classList.remove('hidden');
-    document.getElementById('split-add-selection').disabled = true;
-}
-
-function closeSplitModal() {
-    cleanupPlayback();
-    state.splitSentenceIndex = -1;
-    state.splitFragments = [];
-    document.getElementById('split-modal').classList.add('hidden');
-}
-
-function getSelectedWordsInModal() {
-    const sel = window.getSelection();
-    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return [];
-
-    const range = sel.getRangeAt(0);
-    const startWord = range.startContainer.parentElement.closest('#split-modal-sentence .word');
-    const endWord = range.endContainer.parentElement.closest('#split-modal-sentence .word');
-
-    if (!startWord || !endWord) return [];
-
-    const startIdx = parseInt(startWord.dataset.index, 10);
-    const endIdx = parseInt(endWord.dataset.index, 10);
-
-    if (isNaN(startIdx) || isNaN(endIdx)) return [];
-
-    const sent = state.sentences[state.splitSentenceIndex];
-    const words = sent.words;
-    const from = Math.min(startIdx, endIdx);
-    const to = Math.max(startIdx, endIdx);
-
-    return words.slice(from, to + 1);
-}
-
-function splitByCommas(sentenceIndex) {
-    const sent = state.sentences[sentenceIndex];
-    const words = sent.words;
-    const fragments = [];
-    let current = [];
-
-    words.forEach(w => {
-        current.push(w);
-        if (w.text.trim().endsWith(',')) {
-            fragments.push(current);
-            current = [];
-        }
-    });
-
-    if (current.length > 0) {
-        fragments.push(current);
-    }
-
-    state.splitFragments = fragments.map(group => ({
-        words: group,
-        start: group[0].start,
-        end: group[group.length - 1].end
-    }));
-
-    renderFragments();
-}
-
-function addSelectionFragment() {
-    const selectedWords = getSelectedWordsInModal();
-    if (selectedWords.length === 0) return;
-
-    state.splitFragments.push({
-        words: selectedWords,
-        start: selectedWords[0].start,
-        end: selectedWords[selectedWords.length - 1].end
-    });
-
-    renderFragments();
-    window.getSelection().removeAllRanges();
-    document.getElementById('split-add-selection').disabled = true;
-}
-
-function renderFragments() {
-    const container = document.getElementById('split-fragments');
-    container.innerHTML = '';
-
-    if (state.splitFragments.length === 0) {
-        container.innerHTML = '<p class="fragments-empty">点击上方按钮拆分句子，或选中一段文字后点击"添加选中片段"</p>';
-        return;
-    }
-
-    state.splitFragments.forEach((frag, idx) => {
-        const row = document.createElement('div');
-        row.className = 'fragment-row';
-        row.dataset.start = frag.start;
-        row.dataset.end = frag.end;
-
-        const text = document.createElement('span');
-        text.className = 'fragment-text';
-        text.appendChild(document.createTextNode(`${idx + 1}. `));
-
-        frag.words.forEach(w => {
-            const span = document.createElement('span');
-            span.className = 'word';
-            span.dataset.start = w.start;
-            span.dataset.end = w.end;
-            span.textContent = w.text;
-            span.appendChild(document.createTextNode(' '));
-            text.appendChild(span);
-        });
-
-        const playBtn = document.createElement('button');
-        playBtn.className = 'fragment-play-btn';
-        playBtn.innerHTML = '▶';
-        playBtn.title = '播放此片段';
-        playBtn.onclick = () => {
-            playRange(frag.start, frag.end, null, { highlightSource: false, fragmentWords: frag.words, fragmentRow: row });
-        };
-
-        row.appendChild(text);
-        row.appendChild(playBtn);
-        container.appendChild(row);
-    });
-}
-
 // ========== 播放逻辑 ==========
 
 function playSentence(index) {
@@ -318,8 +126,7 @@ function playSentence(index) {
     });
 }
 
-function playRange(start, end, onEnded, options = {}) {
-    const { highlightSource = true, fragmentRow = null, fragmentWords = null } = options;
+function playRange(start, end, onEnded) {
     cleanupPlayback();
 
     // 首次播放时才设置音频源
@@ -331,52 +138,11 @@ function playRange(start, end, onEnded, options = {}) {
         audio.playbackRate = state.playbackRate;
     }
 
-    function highlightCurrent(t) {
-        if (fragmentWords) {
-            highlightFragmentWord(t, fragmentWords, fragmentRow);
-        } else if (fragmentRow) {
-            if (state.currentFragmentRow && state.currentFragmentRow !== fragmentRow) {
-                state.currentFragmentRow.classList.remove('highlight');
-            }
-            fragmentRow.classList.add('highlight');
-            state.currentFragmentRow = fragmentRow;
-        } else if (highlightSource) {
-            highlightWord(t);
-        }
-    }
-
-    function highlightFragmentWord(currentTime, words, row) {
-        if (state.currentHighlight) {
-            state.currentHighlight.classList.remove('highlight');
-            state.currentHighlight = null;
-        }
-
-        const word = words.find(w => currentTime >= w.start && currentTime < w.end);
-        if (!word || !row) return;
-
-        const span = row.querySelector(
-            `.word[data-start="${word.start}"][data-end="${word.end}"]`
-        );
-        if (!span) return;
-
-        span.classList.add('highlight');
-        state.currentHighlight = span;
-
-        const rect = span.getBoundingClientRect();
-        const modalBody = document.querySelector('.modal-body');
-        if (modalBody) {
-            const modalRect = modalBody.getBoundingClientRect();
-            if (rect.top < modalRect.top + 40 || rect.bottom > modalRect.bottom - 40) {
-                span.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-        }
-    }
-
     function startPlayback() {
         applyPlaybackRate();
         state.activeTimeUpdateHandler = () => {
             const t = audio.currentTime;
-            highlightCurrent(t);
+            highlightWord(t);
             if (t >= end) {
                 audio.pause();
                 cleanupPlayback();
@@ -433,10 +199,6 @@ function cleanupPlayback() {
     if (state.currentHighlight) {
         state.currentHighlight.classList.remove('highlight');
         state.currentHighlight = null;
-    }
-    if (state.currentFragmentRow) {
-        state.currentFragmentRow.classList.remove('highlight');
-        state.currentFragmentRow = null;
     }
 }
 

@@ -19,18 +19,18 @@ Page({
     speedIndex: 2,
     playbackRate: 1,
     isContinuous: false,
+    selectMode: false,
+    selectionStart: null,
+    selectionEnd: null,
     currentWordIndex: -1,
     scrollIntoView: '',
-    showSplitModal: false,
-    splitSentenceIndex: -1,
-    splitWords: [],
-    splitStart: -1,
-    splitEnd: -1,
-    splitFragments: []
+    resumeSentenceIndex: -1
   },
 
   timer: null,
   pendingSeekStart: null,
+  lastReadSentenceIndex: -1,
+  lastReadTime: 0,
 
   onLoad(options) {
     const bookId = options.book || '';
@@ -46,8 +46,47 @@ Page({
   },
 
   onUnload() {
+    this.saveLastRead();
     this.stopTimer();
     audioManager.stop();
+  },
+
+  onHide() {
+    this.saveLastRead();
+  },
+
+  getLastReadKey() {
+    return `lastRead_${this.data.bookId}_${this.data.chapterId}`;
+  },
+
+  saveLastRead() {
+    if (this.lastReadSentenceIndex < 0) return;
+    const key = this.getLastReadKey();
+    wx.setStorageSync(key, {
+      sentenceIndex: this.lastReadSentenceIndex,
+      time: this.lastReadTime || 0
+    });
+  },
+
+  loadLastRead() {
+    try {
+      const key = this.getLastReadKey();
+      const saved = wx.getStorageSync(key);
+      if (
+        saved &&
+        typeof saved.sentenceIndex === 'number' &&
+        saved.sentenceIndex >= 0 &&
+        saved.sentenceIndex < this.data.sentences.length
+      ) {
+        this.setData({
+          scrollIntoView: `sentence-${saved.sentenceIndex}`,
+          resumeSentenceIndex: saved.sentenceIndex
+        });
+        wx.showToast({ title: '已回到上次阅读位置', icon: 'none' });
+      }
+    } catch (e) {
+      console.error('读取阅读位置失败', e);
+    }
   },
 
   loadChapterData(bookId, chapterId) {
@@ -89,7 +128,7 @@ Page({
     const audioFile = data.meta && data.meta.audio_file ? data.meta.audio_file : '';
     const sentences = (data.sentences || []).map(s => ({
       ...s,
-      words: s.words.map(w => ({ ...w, highlight: false }))
+      words: s.words.map(w => ({ ...w, highlight: false, selected: false }))
     }));
 
     const allWords = [];
@@ -104,6 +143,8 @@ Page({
       audioFile,
       sentences,
       allWords
+    }, () => {
+      this.loadLastRead();
     });
   },
 
@@ -168,7 +209,10 @@ Page({
 
   playRangeBySentence(index) {
     if (index < 0 || index >= this.data.sentences.length) return;
+    this.clearSelection();
     const sent = this.data.sentences[index];
+    this.lastReadSentenceIndex = index;
+    this.lastReadTime = sent.start;
     this.playRange(sent.start, sent.end, () => {
       if (this.data.isContinuous) {
         this.playRangeBySentence(index + 1);
@@ -176,14 +220,7 @@ Page({
     });
   },
 
-  playFragment(e) {
-    const index = e.currentTarget.dataset.index;
-    const fragment = this.data.splitFragments[index];
-    if (!fragment) return;
-    this.playRange(fragment.start, fragment.end, null, fragment.words);
-  },
-
-  playRange(start, end, onEnded, fragmentWords) {
+  playRange(start, end, onEnded) {
     this.stopTimer();
     this.clearHighlight();
 
@@ -196,12 +233,13 @@ Page({
     audioManager.src = this.getAudioUrl();
 
     this.pendingSeekStart = start;
+    this.lastReadTime = start;
     audioManager.play();
 
-    this.startHighlightTimer(start, end, onEnded, fragmentWords);
+    this.startHighlightTimer(start, end, onEnded);
   },
 
-  startHighlightTimer(start, end, onEnded, fragmentWords) {
+  startHighlightTimer(start, end, onEnded) {
     this.stopTimer();
 
     this.timer = setInterval(() => {
@@ -215,7 +253,7 @@ Page({
         return;
       }
 
-      this.highlightWord(currentTime, fragmentWords);
+      this.highlightWord(currentTime);
     }, 100);
   },
 
@@ -228,51 +266,35 @@ Page({
 
   // ========== 高亮 ==========
 
-  highlightWord(currentTime, fragmentWords) {
-    const words = fragmentWords || this.data.allWords;
-    const word = words.find(w => currentTime >= w.start && currentTime < w.end);
-
+  highlightWord(currentTime) {
+    const word = this.data.allWords.find(w => currentTime >= w.start && currentTime < w.end);
     if (!word) return;
 
-    const currentIndex = fragmentWords
-      ? `frag-${word.start}-${word.end}`
-      : `${word.sentenceIndex}-${word.wordIndex}`;
-
+    const currentIndex = `${word.sentenceIndex}-${word.wordIndex}`;
     if (this.data.currentWordIndex === currentIndex) return;
+
+    this.lastReadSentenceIndex = word.sentenceIndex;
+    this.lastReadTime = currentTime;
 
     this.clearHighlight();
 
-    if (fragmentWords) {
-      const fIndex = fragmentWords.indexOf(word);
-      const key = `splitFragments[${this.data.splitFragments.findIndex(f => f.words === fragmentWords)}].words[${fIndex}].highlight`;
-      this.setData({ [key]: true, currentWordIndex: currentIndex });
-    } else {
-      const key = `sentences[${word.sentenceIndex}].words[${word.wordIndex}].highlight`;
-      this.setData({
-        [key]: true,
-        currentWordIndex: currentIndex
-      });
-    }
+    const key = `sentences[${word.sentenceIndex}].words[${word.wordIndex}].highlight`;
+    this.setData({
+      [key]: true,
+      currentWordIndex: currentIndex
+    });
   },
 
   clearHighlight() {
-    const { sentences, splitFragments, currentWordIndex } = this.data;
+    const { sentences, currentWordIndex } = this.data;
     if (currentWordIndex === -1) return;
 
-    const updates = { currentWordIndex: -1, scrollIntoView: '' };
+    const updates = { currentWordIndex: -1 };
 
     sentences.forEach((sent, sIdx) => {
       sent.words.forEach((w, wIdx) => {
         if (w.highlight) {
           updates[`sentences[${sIdx}].words[${wIdx}].highlight`] = false;
-        }
-      });
-    });
-
-    splitFragments.forEach((frag, fIdx) => {
-      frag.words.forEach((w, wIdx) => {
-        if (w.highlight) {
-          updates[`splitFragments[${fIdx}].words[${wIdx}].highlight`] = false;
         }
       });
     });
@@ -303,138 +325,108 @@ Page({
 
   onWordTap(e) {
     const { sidx, widx } = e.currentTarget.dataset;
+
+    if (this.data.selectMode) {
+      this.handleSelectionTap(sidx, widx);
+      return;
+    }
+
+    this.clearSelection();
     const word = this.data.sentences[sidx].words[widx];
+    this.lastReadSentenceIndex = sidx;
+    this.lastReadTime = word.start;
     this.playRange(word.start, word.end);
   },
 
-  // ========== 句子拆分 ==========
+  // ========== 选段播放 ==========
 
-  openSplitModal(e) {
-    const index = e.currentTarget.dataset.index;
-    const sent = this.data.sentences[index];
-    const splitWords = sent.words.map((w, i) => ({
-      ...w,
-      index: i,
-      selected: false,
-      mark: ''
-    }));
-
-    this.setData({
-      showSplitModal: true,
-      splitSentenceIndex: index,
-      splitWords,
-      splitStart: -1,
-      splitEnd: -1,
-      splitFragments: []
-    });
-
-  },
-
-  closeSplitModal() {
-    this.setData({ showSplitModal: false });
-  },
-
-  onSplitModalClose() {
-    this.stopTimer();
-    this.clearHighlight();
-    this.setData({
-      splitSentenceIndex: -1,
-      splitWords: [],
-      splitStart: -1,
-      splitEnd: -1,
-      splitFragments: []
-    });
-  },
-
-  selectSplitWord(e) {
-    const index = e.currentTarget.dataset.index;
-    const { splitStart, splitEnd, splitWords } = this.data;
-
-    let newStart = splitStart;
-    let newEnd = splitEnd;
-
-    if (splitStart === -1 || (splitStart !== -1 && splitEnd !== -1)) {
-      newStart = index;
-      newEnd = -1;
-    } else if (index < splitStart) {
-      newStart = index;
-    } else {
-      newEnd = index;
+  toggleSelectMode() {
+    const newMode = !this.data.selectMode;
+    if (!newMode) {
+      this.clearSelection();
     }
-
-    const newSplitWords = splitWords.map((w, i) => {
-      const selected = newEnd !== -1
-        ? (i >= newStart && i <= newEnd)
-        : (i === newStart);
-      let mark = '';
-      if (i === newStart) mark = '开始';
-      if (newEnd !== -1 && i === newEnd) mark = '结束';
-      return { ...w, selected, mark };
-    });
-
-    this.setData({
-      splitWords: newSplitWords,
-      splitStart: newStart,
-      splitEnd: newEnd
-    });
+    this.setData({ selectMode: newMode });
   },
 
-  splitByComma() {
-    const { splitSentenceIndex, sentences } = this.data;
-    const words = sentences[splitSentenceIndex].words;
-    const fragments = [];
-    let current = [];
+  clearSelection() {
+    const updates = {
+      selectionStart: null,
+      selectionEnd: null
+    };
+    this.data.sentences.forEach((sent, sIdx) => {
+      sent.words.forEach((w, wIdx) => {
+        if (w.selected) {
+          updates[`sentences[${sIdx}].words[${wIdx}].selected`] = false;
+        }
+      });
+    });
+    this.setData(updates);
+  },
 
-    words.forEach(w => {
-      current.push(w);
-      if (w.text.trim().endsWith(',')) {
-        fragments.push([...current]);
-        current = [];
+  updateSelection(start, end = null) {
+    const updates = {
+      selectionStart: start,
+      selectionEnd: end
+    };
+
+    // 先清除所有选中态
+    this.data.sentences.forEach((sent, sIdx) => {
+      sent.words.forEach((w, wIdx) => {
+        if (w.selected) {
+          updates[`sentences[${sIdx}].words[${wIdx}].selected`] = false;
+        }
+      });
+    });
+
+    // 设置新的起点
+    updates[`sentences[${start.sidx}].words[${start.widx}].selected`] = true;
+
+    // 如果终点已选，设置区间
+    if (end) {
+      const sidx = start.sidx;
+      const from = Math.min(start.widx, end.widx);
+      const to = Math.max(start.widx, end.widx);
+      for (let i = from; i <= to; i++) {
+        updates[`sentences[${sidx}].words[${i}].selected`] = true;
       }
-    });
-
-    if (current.length > 0) {
-      fragments.push([...current]);
     }
 
-    this.setFragments(fragments);
+    this.setData(updates);
   },
 
-  addSelectionFragment() {
-    const { splitStart, splitEnd, splitSentenceIndex, sentences } = this.data;
-    if (splitStart === -1 || splitEnd === -1) return;
+  handleSelectionTap(sidx, widx) {
+    const start = this.data.selectionStart;
 
-    const words = sentences[splitSentenceIndex].words;
-    const from = Math.min(splitStart, splitEnd);
-    const to = Math.max(splitStart, splitEnd);
-    const selected = words.slice(from, to + 1);
+    if (!start || this.data.selectionEnd) {
+      // 没有起点，或已有完整选择：重置并设置新起点
+      this.updateSelection({ sidx, widx });
+      return;
+    }
 
-    const fragments = [...this.getFragmentWordArrays(), selected];
-    this.setFragments(fragments);
+    if (start.sidx !== sidx) {
+      // 只能选同一句
+      wx.showToast({ title: '请选择同一句中的单词', icon: 'none' });
+      this.updateSelection({ sidx, widx });
+      return;
+    }
 
-    this.setData({
-      splitStart: -1,
-      splitEnd: -1,
-      splitWords: this.data.splitWords.map(w => ({ ...w, selected: false }))
-    });
+    this.updateSelection(start, { sidx, widx });
+    this.playSelection();
   },
 
-  getFragmentWordArrays() {
-    return this.data.splitFragments.map(f => f.words);
-  },
+  playSelection() {
+    const start = this.data.selectionStart;
+    const end = this.data.selectionEnd;
+    if (!start || !end) return;
 
-  setFragments(wordArrays) {
-    const fragments = wordArrays.map(group => ({
-      words: group.map((w, i) => ({
-        ...w,
-        fragmentWordIndex: i,
-        highlight: false
-      })),
-      text: group.map(w => w.text).join(' '),
-      start: group[0].start,
-      end: group[group.length - 1].end
-    }));
+    const sentence = this.data.sentences[start.sidx];
+    const from = Math.min(start.widx, end.widx);
+    const to = Math.max(start.widx, end.widx);
+    const startWord = sentence.words[from];
+    const endWord = sentence.words[to];
 
-    this.setData({ splitFragments: fragments });
+    this.lastReadSentenceIndex = start.sidx;
+    this.lastReadTime = startWord.start;
+    this.playRange(startWord.start, endWord.end);
   }
 });

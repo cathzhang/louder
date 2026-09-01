@@ -7,6 +7,7 @@
 import json
 import re
 from pathlib import Path
+from sentence_utils import split_sentences
 
 ROOT = Path(__file__).resolve().parent.parent
 RESOURCE_DIR = ROOT / "resource"
@@ -30,11 +31,12 @@ def tokenize_pdf(text: str) -> list:
     把 PDF 文本分词，保留句子边界信息。
     返回: [(word, sentence_idx), ...]
     """
-    abbreviations = r'(?:Mr|Mrs|Ms|Dr|Prof|St|Jr|Sr|vs|Vol|vol|Ch|ch|pp|etc|i\.e|e\.g|a\.m|p\.m|A\.M|P\.M)'
-    protected = re.sub(rf'({abbreviations})\.', r'\1<DOT>', text)
-    sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z"\'\—])', protected)
-    sentences = [s.replace('<DOT>', '.').strip() for s in sentences if s.strip()]
-    
+    text = re.sub(r'^—\s*CHAPTER\s+ONE\s*—\s*', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^The Boy Who Lived\s*', '', text, flags=re.MULTILINE)
+    text = text.strip()
+
+    sentences = split_sentences(text)
+
     words = []
     for si, sent in enumerate(sentences):
         for w in sent.split():
@@ -222,7 +224,7 @@ def build_json(pdf_sentences: list, word_data: list) -> dict:
             "book": "Harry Potter and the Philosopher's Stone",
             "chapter": 1,
             "title": "The Boy Who Lived",
-            "audio_file": "01.The Boy Who Lived.mp3",
+            "audio_file": "01.The Boy Who Lived.m4a",
             "align_method": "needleman-wunsch global word alignment",
         },
         "sentences": [],

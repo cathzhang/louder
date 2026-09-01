@@ -3,15 +3,15 @@
     "book": "Harry Potter and the Philosopher's Stone",
     "chapter": 1,
     "title": "The Boy Who Lived",
-    "audio_file": "01.The Boy Who Lived.mp3",
+    "audio_file": "01.The Boy Who Lived.m4a",
     "align_method": "needleman-wunsch global word alignment"
   },
   "sentences": [
     {
       "id": "c1_s001",
-      "text": "Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense.",
+      "text": "Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much.",
       "start": 12.46,
-      "end": 30.04,
+      "end": 20.94,
       "words": [
         {
           "text": "Mr",
@@ -122,7 +122,15 @@
           "text": "much.",
           "start": 20.48,
           "end": 20.94
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s002",
+      "text": "They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense.",
+      "start": 21.48,
+      "end": 30.04,
+      "words": [
         {
           "text": "They",
           "start": 21.48,
@@ -241,7 +249,7 @@
       ]
     },
     {
-      "id": "c1_s002",
+      "id": "c1_s003",
       "text": "Mr Dursley was the director of a firm called Grunnings, which made drills.",
       "start": 31.26,
       "end": 36.38,
@@ -314,7 +322,7 @@
       ]
     },
     {
-      "id": "c1_s003",
+      "id": "c1_s004",
       "text": "He was a big, beefy man with hardly any neck, although he did have a very large moustache.",
       "start": 37.24,
       "end": 43.32,
@@ -412,7 +420,7 @@
       ]
     },
     {
-      "id": "c1_s004",
+      "id": "c1_s005",
       "text": "Mrs Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbours.",
       "start": 43.94,
       "end": 55.4,
@@ -600,7 +608,7 @@
       ]
     },
     {
-      "id": "c1_s005",
+      "id": "c1_s006",
       "text": "The Dursleys had a small son called Dudley and in their opinion there was no finer boy anywhere.",
       "start": 55.4,
       "end": 63.96,
@@ -698,7 +706,7 @@
       ]
     },
     {
-      "id": "c1_s006",
+      "id": "c1_s007",
       "text": "The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it.",
       "start": 65.32,
       "end": 76.04,
@@ -816,7 +824,7 @@
       ]
     },
     {
-      "id": "c1_s007",
+      "id": "c1_s008",
       "text": "They didn’t think they could bear it if anyone found out about the Potters.",
       "start": 76.88,
       "end": 82.6,
@@ -894,7 +902,7 @@
       ]
     },
     {
-      "id": "c1_s008",
+      "id": "c1_s009",
       "text": "Mrs Potter was Mrs Dursley’s sister, but they hadn’t met for several years; in fact, Mrs Dursley pretended she didn’t have a sister, because her sister and her good-for-nothing husband were as unDursleyish as it was possible to be.",
       "start": 83.54,
       "end": 100.06,
@@ -1097,7 +1105,7 @@
       ]
     },
     {
-      "id": "c1_s009",
+      "id": "c1_s010",
       "text": "The Dursleys shuddered to think what the neighbours would say if the Potters arrived in the street.",
       "start": 101.1,
       "end": 106.94,
@@ -1190,7 +1198,7 @@
       ]
     },
     {
-      "id": "c1_s010",
+      "id": "c1_s011",
       "text": "The Dursleys knew that the Potters had a small son, too, but they had never even seen him.",
       "start": 107.74,
       "end": 112.94,
@@ -1288,7 +1296,7 @@
       ]
     },
     {
-      "id": "c1_s011",
+      "id": "c1_s012",
       "text": "This boy was another good reason for keeping the Potters away; they didn’t want Dudley mixing with a child like that.",
       "start": 113.76,
       "end": 122.02,
@@ -1401,7 +1409,7 @@
       ]
     },
     {
-      "id": "c1_s012",
+      "id": "c1_s013",
       "text": "When Mr and Mrs Dursley woke up on the dull, grey Tuesday our story starts, there was nothing about the cloudy sky outside to suggest that strange and mysterious things would soon be happening all over the country.",
       "start": 123.78,
       "end": 137.94,
@@ -1599,7 +1607,7 @@
       ]
     },
     {
-      "id": "c1_s013",
+      "id": "c1_s014",
       "text": "Mr Dursley hummed as he picked out his most boring tie for work and Mrs Dursley gossiped away happily as she wrestled a screaming Dudley into his high chair.",
       "start": 139.08,
       "end": 150.26,
@@ -1752,7 +1760,7 @@
       ]
     },
     {
-      "id": "c1_s014",
+      "id": "c1_s015",
       "text": "None of them noticed a large tawny owl flutter past the window.",
       "start": 151.74,
       "end": 157.44,
@@ -1820,10 +1828,10 @@
       ]
     },
     {
-      "id": "c1_s015",
-      "text": "At half past eight, Mr Dursley picked up his briefcase, pecked Mrs Dursley on the cheek and tried to kiss Dudley goodbye but missed, because Dudley was now having a tantrum and throwing his cereal at the walls. ‘Little tyke,’ chortled Mr Dursley as he left the house.",
+      "id": "c1_s016",
+      "text": "At half past eight, Mr Dursley picked up his briefcase, pecked Mrs Dursley on the cheek and tried to kiss Dudley goodbye but missed, because Dudley was now having a tantrum and throwing his cereal at the walls.",
       "start": 158.96,
-      "end": 176.74,
+      "end": 171.56,
       "words": [
         {
           "text": "At",
@@ -2014,7 +2022,15 @@
           "text": "walls.",
           "start": 171.26,
           "end": 171.56
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s017",
+      "text": "‘Little tyke,’ chortled Mr Dursley as he left the house.",
+      "start": 172.76,
+      "end": 176.74,
+      "words": [
         {
           "text": "‘Little",
           "start": 172.76,
@@ -2068,7 +2084,7 @@
       ]
     },
     {
-      "id": "c1_s016",
+      "id": "c1_s018",
       "text": "He got into his car and backed out of number four’s drive.",
       "start": 177.66,
       "end": 180.84,
@@ -2136,7 +2152,7 @@
       ]
     },
     {
-      "id": "c1_s017",
+      "id": "c1_s019",
       "text": "It was on the corner of the street that he noticed the first sign of something peculiar – a cat reading a map.",
       "start": 182.62,
       "end": 190.86,
@@ -2259,7 +2275,7 @@
       ]
     },
     {
-      "id": "c1_s018",
+      "id": "c1_s020",
       "text": "For a second, Mr Dursley didn’t realise what he had seen – then he jerked his head around to look again.",
       "start": 191.66,
       "end": 197.22,
@@ -2372,7 +2388,7 @@
       ]
     },
     {
-      "id": "c1_s019",
+      "id": "c1_s021",
       "text": "There was a tabby cat standing on the corner of Privet Drive, but there wasn’t a map in sight.",
       "start": 198.4,
       "end": 205.1,
@@ -2475,7 +2491,7 @@
       ]
     },
     {
-      "id": "c1_s020",
+      "id": "c1_s022",
       "text": "What could he have been thinking of?",
       "start": 205.1,
       "end": 206.92,
@@ -2518,7 +2534,7 @@
       ]
     },
     {
-      "id": "c1_s021",
+      "id": "c1_s023",
       "text": "It must have been a trick of the light.",
       "start": 207.54,
       "end": 208.82,
@@ -2571,7 +2587,7 @@
       ]
     },
     {
-      "id": "c1_s022",
+      "id": "c1_s024",
       "text": "Mr Dursley blinked and stared at the cat.",
       "start": 209.6,
       "end": 212.38,
@@ -2619,7 +2635,7 @@
       ]
     },
     {
-      "id": "c1_s023",
+      "id": "c1_s025",
       "text": "It stared back.",
       "start": 213.48,
       "end": 214.48,
@@ -2642,7 +2658,7 @@
       ]
     },
     {
-      "id": "c1_s024",
+      "id": "c1_s026",
       "text": "As Mr Dursley drove around the corner and up the road, he watched the cat in his mirror.",
       "start": 215.22,
       "end": 220.42,
@@ -2740,7 +2756,7 @@
       ]
     },
     {
-      "id": "c1_s025",
+      "id": "c1_s027",
       "text": "It was now reading the sign that said Privet Drive – no, looking at the sign; cats couldn’t read maps or signs.",
       "start": 221.08,
       "end": 229.4,
@@ -2858,7 +2874,7 @@
       ]
     },
     {
-      "id": "c1_s026",
+      "id": "c1_s028",
       "text": "Mr Dursley gave himself a little shake and put the cat out of his mind.",
       "start": 230.48,
       "end": 234.88,
@@ -2941,7 +2957,7 @@
       ]
     },
     {
-      "id": "c1_s027",
+      "id": "c1_s029",
       "text": "As he drove towards town he thought of nothing except a large order of drills he was hoping to get that day.",
       "start": 236.12,
       "end": 242.02,
@@ -3059,7 +3075,7 @@
       ]
     },
     {
-      "id": "c1_s028",
+      "id": "c1_s030",
       "text": "But on the edge of town, drills were driven out of his mind by something else.",
       "start": 243.22,
       "end": 248.46,
@@ -3147,7 +3163,7 @@
       ]
     },
     {
-      "id": "c1_s029",
+      "id": "c1_s031",
       "text": "As he sat in the usual morning traffic jam, he couldn’t help noticing that there seemed to be a lot of strangely dressed people about.",
       "start": 249.46,
       "end": 257.72,
@@ -3280,7 +3296,7 @@
       ]
     },
     {
-      "id": "c1_s030",
+      "id": "c1_s032",
       "text": "People in cloaks.",
       "start": 258.56,
       "end": 260.62,
@@ -3303,7 +3319,7 @@
       ]
     },
     {
-      "id": "c1_s031",
+      "id": "c1_s033",
       "text": "Mr Dursley couldn’t bear people who dressed in funny clothes – the get-ups you saw on young people!",
       "start": 261.82,
       "end": 268.06,
@@ -3401,7 +3417,7 @@
       ]
     },
     {
-      "id": "c1_s032",
+      "id": "c1_s034",
       "text": "He supposed this was some stupid new fashion.",
       "start": 268.06,
       "end": 271.8,
@@ -3449,7 +3465,7 @@
       ]
     },
     {
-      "id": "c1_s033",
+      "id": "c1_s035",
       "text": "He drummed his fingers on the steering wheel and his eyes fell on a huddle of these weirdos standing quite close by.",
       "start": 272.56,
       "end": 279.82,
@@ -3567,7 +3583,7 @@
       ]
     },
     {
-      "id": "c1_s034",
+      "id": "c1_s036",
       "text": "They were whispering excitedly together.",
       "start": 280.42,
       "end": 282.44,
@@ -3600,7 +3616,7 @@
       ]
     },
     {
-      "id": "c1_s035",
+      "id": "c1_s037",
       "text": "Mr Dursley was enraged to see that a couple of them weren’t young at all; why, that man had to be older than he was, and wearing an emerald-green cloak!",
       "start": 283.4,
       "end": 293.0,
@@ -3758,7 +3774,7 @@
       ]
     },
     {
-      "id": "c1_s036",
+      "id": "c1_s038",
       "text": "The nerve of him!",
       "start": 293.387,
       "end": 294.68,
@@ -3786,7 +3802,7 @@
       ]
     },
     {
-      "id": "c1_s037",
+      "id": "c1_s039",
       "text": "But then it struck Mr Dursley that this was probably some silly stunt – these people were obviously collecting for something ... yes, that would be it.",
       "start": 295.5,
       "end": 305.26,
@@ -3929,7 +3945,7 @@
       ]
     },
     {
-      "id": "c1_s038",
+      "id": "c1_s040",
       "text": "The traffic moved on, and a few minutes later, Mr Dursley arrived in the Grunnings car park, his mind back on drills.",
       "start": 306.3,
       "end": 314.02,
@@ -4047,7 +4063,7 @@
       ]
     },
     {
-      "id": "c1_s039",
+      "id": "c1_s041",
       "text": "Mr Dursley always sat with his back to the window in his office on the ninth floor.",
       "start": 315.76,
       "end": 320.76,
@@ -4140,7 +4156,7 @@
       ]
     },
     {
-      "id": "c1_s040",
+      "id": "c1_s042",
       "text": "If he hadn’t, he might have found it harder to concentrate on drills that morning.",
       "start": 320.76,
       "end": 325.98,
@@ -4223,7 +4239,7 @@
       ]
     },
     {
-      "id": "c1_s041",
+      "id": "c1_s043",
       "text": "He didn’t see the owls swooping past in broad daylight, though people down in the street did; they pointed and gazed open-mouthed as owl after owl sped overhead.",
       "start": 326.62,
       "end": 339.0,
@@ -4371,7 +4387,7 @@
       ]
     },
     {
-      "id": "c1_s042",
+      "id": "c1_s044",
       "text": "Most of them had never seen an owl even at nighttime.",
       "start": 340.24,
       "end": 344.04,
@@ -4434,7 +4450,7 @@
       ]
     },
     {
-      "id": "c1_s043",
+      "id": "c1_s045",
       "text": "Mr Dursley, however, had a perfectly normal, owl-free morning.",
       "start": 344.04,
       "end": 348.16,
@@ -4487,7 +4503,7 @@
       ]
     },
     {
-      "id": "c1_s044",
+      "id": "c1_s046",
       "text": "He yelled at five different people.",
       "start": 348.16,
       "end": 350.46,
@@ -4525,7 +4541,7 @@
       ]
     },
     {
-      "id": "c1_s045",
+      "id": "c1_s047",
       "text": "He made several important telephone calls and shouted a bit more.",
       "start": 350.84,
       "end": 354.24,
@@ -4588,7 +4604,7 @@
       ]
     },
     {
-      "id": "c1_s046",
+      "id": "c1_s048",
       "text": "He was in a very good mood until lunch-time, when he thought he’d stretch his legs and walk across the road to buy himself a bun from the baker’s opposite.",
       "start": 355.02,
       "end": 364.34,
@@ -4746,7 +4762,7 @@
       ]
     },
     {
-      "id": "c1_s047",
+      "id": "c1_s049",
       "text": "He’d forgotten all about the people in cloaks until he passed a group of them next to the baker’s.",
       "start": 365.23,
       "end": 371.1,
@@ -4849,7 +4865,7 @@
       ]
     },
     {
-      "id": "c1_s048",
+      "id": "c1_s050",
       "text": "He eyed them angrily as he passed.",
       "start": 371.74,
       "end": 373.96,
@@ -4892,7 +4908,7 @@
       ]
     },
     {
-      "id": "c1_s049",
+      "id": "c1_s051",
       "text": "He didn’t know why, but they made him uneasy.",
       "start": 374.48,
       "end": 378.42,
@@ -4945,7 +4961,7 @@
       ]
     },
     {
-      "id": "c1_s050",
+      "id": "c1_s052",
       "text": "This lot were whispering excitedly, too, and he couldn’t see a single collecting tin.",
       "start": 379.26,
       "end": 384.32,
@@ -5023,10 +5039,10 @@
       ]
     },
     {
-      "id": "c1_s051",
-      "text": "It was on his way back past them, clutching a large doughnut in a bag, that he caught a few words of what they were saying. ‘The Potters, that’s right, that’s what I heard –’ ‘– yes, their son, Harry –’ Mr Dursley stopped dead.",
+      "id": "c1_s053",
+      "text": "It was on his way back past them, clutching a large doughnut in a bag, that he caught a few words of what they were saying.",
       "start": 385.28,
-      "end": 402.38,
+      "end": 392.24,
       "words": [
         {
           "text": "It",
@@ -5157,7 +5173,15 @@
           "text": "saying.",
           "start": 391.9,
           "end": 392.24
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s054",
+      "text": "‘The Potters, that’s right, that’s what I heard –’ ‘– yes, their son, Harry –’ Mr Dursley stopped dead.",
+      "start": 393.2,
+      "end": 402.38,
+      "words": [
         {
           "text": "‘The",
           "start": 393.2,
@@ -5256,7 +5280,7 @@
       ]
     },
     {
-      "id": "c1_s052",
+      "id": "c1_s055",
       "text": "Fear flooded him.",
       "start": 403.84,
       "end": 405.16,
@@ -5279,7 +5303,7 @@
       ]
     },
     {
-      "id": "c1_s053",
+      "id": "c1_s056",
       "text": "He looked back at the whisperers as if he wanted to say something to them, but thought better of it.",
       "start": 406.42,
       "end": 411.12,
@@ -5387,7 +5411,7 @@
       ]
     },
     {
-      "id": "c1_s054",
+      "id": "c1_s057",
       "text": "He dashed back across the road, hurried up to his office, snapped at his secretary not to disturb him, seized his telephone and had almost finished dialling his home number when he changed his mind.",
       "start": 412.2,
       "end": 423.44,
@@ -5570,7 +5594,7 @@
       ]
     },
     {
-      "id": "c1_s055",
+      "id": "c1_s058",
       "text": "He put the receiver back down and stroked his moustache, thinking ... no, he was being stupid.",
       "start": 424.5,
       "end": 432.38,
@@ -5663,7 +5687,7 @@
       ]
     },
     {
-      "id": "c1_s056",
+      "id": "c1_s059",
       "text": "Potter wasn’t such an unusual name.",
       "start": 433.38,
       "end": 435.92,
@@ -5701,7 +5725,7 @@
       ]
     },
     {
-      "id": "c1_s057",
+      "id": "c1_s060",
       "text": "He was sure there were lots of people called Potter who had a son called Harry.",
       "start": 436.58,
       "end": 440.1,
@@ -5789,7 +5813,7 @@
       ]
     },
     {
-      "id": "c1_s058",
+      "id": "c1_s061",
       "text": "Come to think of it, he wasn’t even sure his nephew was called Harry.",
       "start": 440.467,
       "end": 444.92,
@@ -5867,7 +5891,7 @@
       ]
     },
     {
-      "id": "c1_s059",
+      "id": "c1_s062",
       "text": "He’d never even seen the boy.",
       "start": 445.72,
       "end": 446.92,
@@ -5905,7 +5929,7 @@
       ]
     },
     {
-      "id": "c1_s060",
+      "id": "c1_s063",
       "text": "It might have been Harvey.",
       "start": 447.29,
       "end": 448.36,
@@ -5938,7 +5962,7 @@
       ]
     },
     {
-      "id": "c1_s061",
+      "id": "c1_s064",
       "text": "Or Harold.",
       "start": 449.16,
       "end": 449.66,
@@ -5956,7 +5980,7 @@
       ]
     },
     {
-      "id": "c1_s062",
+      "id": "c1_s065",
       "text": "There was no point in worrying Mrs Dursley, she always got so upset at any mention of her sister.",
       "start": 450.56,
       "end": 456.5,
@@ -6059,7 +6083,7 @@
       ]
     },
     {
-      "id": "c1_s063",
+      "id": "c1_s066",
       "text": "He didn’t blame her – if he’d had a sister like that ... but all the same, those people in cloaks ...",
       "start": 456.98,
       "end": 466.18,
@@ -6177,10 +6201,10 @@
       ]
     },
     {
-      "id": "c1_s064",
-      "text": "He found it a lot harder to concentrate on drills that afternoon, and when he left the building at five o’clock, he was still so worried that he walked straight into someone just outside the door. ‘Sorry,’ he grunted, as the tiny old man stumbled and almost fell.",
+      "id": "c1_s067",
+      "text": "He found it a lot harder to concentrate on drills that afternoon, and when he left the building at five o’clock, he was still so worried that he walked straight into someone just outside the door.",
       "start": 466.18,
-      "end": 483.72,
+      "end": 477.64,
       "words": [
         {
           "text": "He",
@@ -6361,7 +6385,15 @@
           "text": "door.",
           "start": 477.44,
           "end": 477.64
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s068",
+      "text": "‘Sorry,’ he grunted, as the tiny old man stumbled and almost fell.",
+      "start": 479.08,
+      "end": 483.72,
+      "words": [
         {
           "text": "‘Sorry,’",
           "start": 479.08,
@@ -6425,7 +6457,7 @@
       ]
     },
     {
-      "id": "c1_s065",
+      "id": "c1_s069",
       "text": "It was a few seconds before Mr Dursley realised that the man was wearing a violet cloak.",
       "start": 483.72,
       "end": 489.94,
@@ -6518,7 +6550,7 @@
       ]
     },
     {
-      "id": "c1_s066",
+      "id": "c1_s070",
       "text": "He didn’t seem at all upset at being almost knocked to the ground.",
       "start": 490.84,
       "end": 494.06,
@@ -6591,7 +6623,7 @@
       ]
     },
     {
-      "id": "c1_s067",
+      "id": "c1_s071",
       "text": "On the contrary, his face split into a wide smile and he said in a squeaky voice that made passers-by stare: ‘Don’t be sorry, my dear sir, for nothing could upset me today!",
       "start": 494.72,
       "end": 505.0,
@@ -6764,7 +6796,7 @@
       ]
     },
     {
-      "id": "c1_s068",
+      "id": "c1_s072",
       "text": "Rejoice, for You-Know-Who has gone at last!",
       "start": 505.56,
       "end": 509.46,
@@ -6807,10 +6839,10 @@
       ]
     },
     {
-      "id": "c1_s069",
-      "text": "Even Muggles like yourself should be celebrating, this happy happy day!’ And the old man hugged Mr Dursley around the middle and walked off.",
+      "id": "c1_s073",
+      "text": "Even Muggles like yourself should be celebrating, this happy happy day!’",
       "start": 510.12,
-      "end": 519.34,
+      "end": 514.36,
       "words": [
         {
           "text": "Even",
@@ -6866,7 +6898,15 @@
           "text": "day!’",
           "start": 513.92,
           "end": 514.36
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s074",
+      "text": "And the old man hugged Mr Dursley around the middle and walked off.",
+      "start": 515.26,
+      "end": 519.34,
+      "words": [
         {
           "text": "And",
           "start": 515.26,
@@ -6935,7 +6975,7 @@
       ]
     },
     {
-      "id": "c1_s070",
+      "id": "c1_s075",
       "text": "Mr Dursley stood rooted to the spot.",
       "start": 521.06,
       "end": 523.66,
@@ -6978,7 +7018,7 @@
       ]
     },
     {
-      "id": "c1_s071",
+      "id": "c1_s076",
       "text": "He had been hugged by a complete stranger.",
       "start": 524.68,
       "end": 527.52,
@@ -7026,7 +7066,7 @@
       ]
     },
     {
-      "id": "c1_s072",
+      "id": "c1_s077",
       "text": "He also thought he had been called a Muggle, whatever that was.",
       "start": 528.52,
       "end": 532.4,
@@ -7094,7 +7134,7 @@
       ]
     },
     {
-      "id": "c1_s073",
+      "id": "c1_s078",
       "text": "He was rattled.",
       "start": 533.16,
       "end": 534.04,
@@ -7117,7 +7157,7 @@
       ]
     },
     {
-      "id": "c1_s074",
+      "id": "c1_s079",
       "text": "He hurried to his car and set off home, hoping he was imagining things, which he had never hoped before, because he didn’t approve of imagination.",
       "start": 534.04,
       "end": 543.08,
@@ -7255,7 +7295,7 @@
       ]
     },
     {
-      "id": "c1_s075",
+      "id": "c1_s080",
       "text": "As he pulled into the driveway of number four, the first thing he saw – and it didn’t improve his mood – was the tabby cat he’d spotted that morning.",
       "start": 544.38,
       "end": 553.28,
@@ -7413,7 +7453,7 @@
       ]
     },
     {
-      "id": "c1_s076",
+      "id": "c1_s081",
       "text": "It was now sitting on his garden wall.",
       "start": 553.76,
       "end": 556.06,
@@ -7461,10 +7501,10 @@
       ]
     },
     {
-      "id": "c1_s077",
-      "text": "He was sure it was the same one; it had the same markings around its eyes. ‘Shoo!’ said Mr Dursley loudly.",
+      "id": "c1_s082",
+      "text": "He was sure it was the same one; it had the same markings around its eyes.",
       "start": 556.7,
-      "end": 564.72,
+      "end": 561.54,
       "words": [
         {
           "text": "He",
@@ -7545,7 +7585,15 @@
           "text": "eyes.",
           "start": 561.1,
           "end": 561.54
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s083",
+      "text": "‘Shoo!’ said Mr Dursley loudly.",
+      "start": 562.38,
+      "end": 564.72,
+      "words": [
         {
           "text": "‘Shoo!’",
           "start": 562.38,
@@ -7574,7 +7622,7 @@
       ]
     },
     {
-      "id": "c1_s078",
+      "id": "c1_s084",
       "text": "The cat didn’t move.",
       "start": 565.88,
       "end": 567.48,
@@ -7602,7 +7650,7 @@
       ]
     },
     {
-      "id": "c1_s079",
+      "id": "c1_s085",
       "text": "It just gave him a stern look.",
       "start": 568.12,
       "end": 569.74,
@@ -7645,7 +7693,7 @@
       ]
     },
     {
-      "id": "c1_s080",
+      "id": "c1_s086",
       "text": "Was this normal cat behaviour, Mr Dursley wondered.",
       "start": 570.82,
       "end": 574.28,
@@ -7693,7 +7741,7 @@
       ]
     },
     {
-      "id": "c1_s081",
+      "id": "c1_s087",
       "text": "Trying to pull himself together, he let himself into the house.",
       "start": 575.56,
       "end": 578.94,
@@ -7756,7 +7804,7 @@
       ]
     },
     {
-      "id": "c1_s082",
+      "id": "c1_s088",
       "text": "He was still determined not to mention anything to his wife.",
       "start": 579.68,
       "end": 582.82,
@@ -7819,7 +7867,7 @@
       ]
     },
     {
-      "id": "c1_s083",
+      "id": "c1_s089",
       "text": "Mrs Dursley had had a nice, normal day.",
       "start": 584.28,
       "end": 587.26,
@@ -7867,7 +7915,7 @@
       ]
     },
     {
-      "id": "c1_s084",
+      "id": "c1_s090",
       "text": "She told him over dinner all about Mrs Next Door’s problems with her daughter and how Dudley had learnt a new word (‘Shan’t!’).",
       "start": 587.92,
       "end": 595.64,
@@ -7990,7 +8038,7 @@
       ]
     },
     {
-      "id": "c1_s085",
+      "id": "c1_s091",
       "text": "Mr Dursley tried to act normally.",
       "start": 596.76,
       "end": 599.4,
@@ -8028,7 +8076,7 @@
       ]
     },
     {
-      "id": "c1_s086",
+      "id": "c1_s092",
       "text": "When Dudley had been put to bed, he went into the living-room in time to catch the last report on the evening news: And finally, bird-watchers everywhere have reported that the nation’s owls have been behaving very unusually today.",
       "start": 600.18,
       "end": 614.86,
@@ -8231,7 +8279,7 @@
       ]
     },
     {
-      "id": "c1_s087",
+      "id": "c1_s093",
       "text": "Although owls normally hunt at night and are hardly ever seen in daylight, there have been hundreds of sightings of these birds flying in every direction since sunrise.",
       "start": 615.7,
       "end": 624.36,
@@ -8379,10 +8427,10 @@
       ]
     },
     {
-      "id": "c1_s088",
-      "text": "Experts are unable to explain why the owls have suddenly changed their sleeping pattern.’ The news reader allowed himself a grin. ‘Most mysterious.",
+      "id": "c1_s094",
+      "text": "Experts are unable to explain why the owls have suddenly changed their sleeping pattern.’",
       "start": 625.42,
-      "end": 634.62,
+      "end": 630.0,
       "words": [
         {
           "text": "Experts",
@@ -8453,7 +8501,15 @@
           "text": "pattern.’",
           "start": 629.6,
           "end": 630.0
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s095",
+      "text": "The news reader allowed himself a grin.",
+      "start": 630.72,
+      "end": 632.72,
+      "words": [
         {
           "text": "The",
           "start": 630.72,
@@ -8488,7 +8544,15 @@
           "text": "grin.",
           "start": 632.46,
           "end": 632.72
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s096",
+      "text": "‘Most mysterious.",
+      "start": 633.5,
+      "end": 634.62,
+      "words": [
         {
           "text": "‘Most",
           "start": 633.5,
@@ -8502,7 +8566,7 @@
       ]
     },
     {
-      "id": "c1_s089",
+      "id": "c1_s097",
       "text": "And now, over to Jim McGuffin with the weather.",
       "start": 635.22,
       "end": 637.42,
@@ -8555,10 +8619,10 @@
       ]
     },
     {
-      "id": "c1_s090",
-      "text": "Going to be any more showers of owls tonight, Jim?’ ‘Well, Ted,’ said the weatherman, ‘I don’t know about that, but it’s not only the owls that have been acting oddly today.",
+      "id": "c1_s098",
+      "text": "Going to be any more showers of owls tonight, Jim?’",
       "start": 637.92,
-      "end": 646.72,
+      "end": 640.2,
       "words": [
         {
           "text": "Going",
@@ -8609,7 +8673,15 @@
           "text": "Jim?’",
           "start": 640.02,
           "end": 640.2
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s099",
+      "text": "‘Well, Ted,’ said the weatherman, ‘I don’t know about that, but it’s not only the owls that have been acting oddly today.",
+      "start": 640.82,
+      "end": 646.72,
+      "words": [
         {
           "text": "‘Well,",
           "start": 640.82,
@@ -8723,7 +8795,7 @@
       ]
     },
     {
-      "id": "c1_s091",
+      "id": "c1_s100",
       "text": "Viewers as far apart as Kent, Yorkshire and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they’ve had a downpour of shooting stars!",
       "start": 647.58,
       "end": 656.74,
@@ -8886,7 +8958,7 @@
       ]
     },
     {
-      "id": "c1_s092",
+      "id": "c1_s101",
       "text": "Perhaps people have been celebrating Bonfire Night early – it’s not until next week, folks!",
       "start": 657.56,
       "end": 661.76,
@@ -8969,10 +9041,10 @@
       ]
     },
     {
-      "id": "c1_s093",
-      "text": "But I can promise a wet night tonight.’ Mr Dursley sat frozen in his armchair.",
+      "id": "c1_s102",
+      "text": "But I can promise a wet night tonight.’",
       "start": 662.12,
-      "end": 668.7,
+      "end": 664.28,
       "words": [
         {
           "text": "But",
@@ -9013,7 +9085,15 @@
           "text": "tonight.’",
           "start": 663.82,
           "end": 664.28
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s103",
+      "text": "Mr Dursley sat frozen in his armchair.",
+      "start": 665.56,
+      "end": 668.7,
+      "words": [
         {
           "text": "Mr",
           "start": 665.56,
@@ -9052,7 +9132,7 @@
       ]
     },
     {
-      "id": "c1_s094",
+      "id": "c1_s104",
       "text": "Shooting stars all over Britain?",
       "start": 669.52,
       "end": 672.04,
@@ -9085,7 +9165,7 @@
       ]
     },
     {
-      "id": "c1_s095",
+      "id": "c1_s105",
       "text": "Owls flying by daylight?",
       "start": 673.18,
       "end": 674.86,
@@ -9113,7 +9193,7 @@
       ]
     },
     {
-      "id": "c1_s096",
+      "id": "c1_s106",
       "text": "Mysterious people in cloaks all over the place?",
       "start": 675.92,
       "end": 678.34,
@@ -9161,7 +9241,7 @@
       ]
     },
     {
-      "id": "c1_s097",
+      "id": "c1_s107",
       "text": "And a whisper, a whisper about the Potters ...",
       "start": 679.4,
       "end": 685.02,
@@ -9214,7 +9294,7 @@
       ]
     },
     {
-      "id": "c1_s098",
+      "id": "c1_s108",
       "text": "Mrs Dursley came into the living-room carrying two cups of tea.",
       "start": 685.02,
       "end": 688.8,
@@ -9277,7 +9357,7 @@
       ]
     },
     {
-      "id": "c1_s099",
+      "id": "c1_s109",
       "text": "It was no good.",
       "start": 690.04,
       "end": 691.04,
@@ -9305,7 +9385,7 @@
       ]
     },
     {
-      "id": "c1_s100",
+      "id": "c1_s110",
       "text": "He’d have to say something to her.",
       "start": 691.62,
       "end": 693.64,
@@ -9348,10 +9428,10 @@
       ]
     },
     {
-      "id": "c1_s101",
-      "text": "He cleared his throat nervously. ‘Er – Petunia, dear – you haven’t heard from your sister lately, have you?’ As he had expected, Mrs Dursley looked shocked and angry.",
+      "id": "c1_s111",
+      "text": "He cleared his throat nervously.",
       "start": 694.68,
-      "end": 709.04,
+      "end": 696.76,
       "words": [
         {
           "text": "He",
@@ -9377,7 +9457,15 @@
           "text": "nervously.",
           "start": 695.94,
           "end": 696.76
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s112",
+      "text": "‘Er – Petunia, dear – you haven’t heard from your sister lately, have you?’",
+      "start": 697.695,
+      "end": 704.16,
+      "words": [
         {
           "text": "‘Er",
           "start": 697.695,
@@ -9447,7 +9535,15 @@
           "text": "you?’",
           "start": 704.02,
           "end": 704.16
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s113",
+      "text": "As he had expected, Mrs Dursley looked shocked and angry.",
+      "start": 705.16,
+      "end": 709.04,
+      "words": [
         {
           "text": "As",
           "start": 705.16,
@@ -9501,10 +9597,10 @@
       ]
     },
     {
-      "id": "c1_s102",
-      "text": "After all, they normally pretended she didn’t have a sister. ‘No,’ she said sharply. ‘Why?’ ‘Funny stuff on the news,’ Mr Dursley mumbled. ‘Owls ... shooting stars ... and there were a lot of funny-looking people in town today ...’ ‘So?’ snapped Mrs Dursley. ‘Well, I just thought ... maybe ... it was something to do with ... you know ... her lot.’ Mrs Dursley sipped her tea through pursed lips.",
+      "id": "c1_s114",
+      "text": "After all, they normally pretended she didn’t have a sister.",
       "start": 709.66,
-      "end": 739.28,
+      "end": 713.12,
       "words": [
         {
           "text": "After",
@@ -9555,7 +9651,15 @@
           "text": "sister.",
           "start": 712.76,
           "end": 713.12
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s115",
+      "text": "‘No,’ she said sharply.",
+      "start": 713.9,
+      "end": 715.48,
+      "words": [
         {
           "text": "‘No,’",
           "start": 713.9,
@@ -9575,12 +9679,28 @@
           "text": "sharply.",
           "start": 715.02,
           "end": 715.48
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s116",
+      "text": "‘Why?’",
+      "start": 715.9,
+      "end": 716.04,
+      "words": [
         {
           "text": "‘Why?’",
           "start": 715.9,
           "end": 716.04
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s117",
+      "text": "‘Funny stuff on the news,’ Mr Dursley mumbled.",
+      "start": 717.56,
+      "end": 720.26,
+      "words": [
         {
           "text": "‘Funny",
           "start": 717.56,
@@ -9620,7 +9740,15 @@
           "text": "mumbled.",
           "start": 719.88,
           "end": 720.26
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s118",
+      "text": "‘Owls ... shooting stars ... and there were a lot of funny-looking people in town today ...’",
+      "start": 720.647,
+      "end": 725.91,
+      "words": [
         {
           "text": "‘Owls",
           "start": 720.647,
@@ -9705,7 +9833,15 @@
           "text": "...’",
           "start": 725.565,
           "end": 725.91
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s119",
+      "text": "‘So?’ snapped Mrs Dursley.",
+      "start": 725.91,
+      "end": 728.66,
+      "words": [
         {
           "text": "‘So?’",
           "start": 725.91,
@@ -9725,7 +9861,15 @@
           "text": "Dursley.",
           "start": 728.16,
           "end": 728.66
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s120",
+      "text": "‘Well, I just thought ... maybe ... it was something to do with ... you know ... her lot.’",
+      "start": 728.66,
+      "end": 734.56,
+      "words": [
         {
           "text": "‘Well,",
           "start": 728.66,
@@ -9820,7 +9964,15 @@
           "text": "lot.’",
           "start": 734.34,
           "end": 734.56
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s121",
+      "text": "Mrs Dursley sipped her tea through pursed lips.",
+      "start": 735.88,
+      "end": 739.28,
+      "words": [
         {
           "text": "Mrs",
           "start": 735.88,
@@ -9864,7 +10016,7 @@
       ]
     },
     {
-      "id": "c1_s103",
+      "id": "c1_s122",
       "text": "Mr Dursley wondered whether he dared tell her he’d heard the name ‘Potter’.",
       "start": 740.42,
       "end": 744.8,
@@ -9937,7 +10089,7 @@
       ]
     },
     {
-      "id": "c1_s104",
+      "id": "c1_s123",
       "text": "He decided he didn’t dare.",
       "start": 745.76,
       "end": 747.4,
@@ -9970,10 +10122,10 @@
       ]
     },
     {
-      "id": "c1_s105",
-      "text": "Instead he said, as casually as he could, ‘Their son – he’d be about Dudley’s age now, wouldn’t he?’ ‘I suppose so,’ said Mrs Dursley stiffly. ‘What’s his name again?",
+      "id": "c1_s124",
+      "text": "Instead he said, as casually as he could, ‘Their son – he’d be about Dudley’s age now, wouldn’t he?’",
       "start": 748.44,
-      "end": 762.52,
+      "end": 756.54,
       "words": [
         {
           "text": "Instead",
@@ -10069,7 +10221,15 @@
           "text": "he?’",
           "start": 756.42,
           "end": 756.54
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s125",
+      "text": "‘I suppose so,’ said Mrs Dursley stiffly.",
+      "start": 757.5,
+      "end": 760.98,
+      "words": [
         {
           "text": "‘I",
           "start": 757.5,
@@ -10104,7 +10264,15 @@
           "text": "stiffly.",
           "start": 760.28,
           "end": 760.98
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s126",
+      "text": "‘What’s his name again?",
+      "start": 761.76,
+      "end": 762.52,
+      "words": [
         {
           "text": "‘What’s",
           "start": 761.76,
@@ -10128,10 +10296,10 @@
       ]
     },
     {
-      "id": "c1_s106",
-      "text": "Howard, isn’t it?’ ‘Harry.",
+      "id": "c1_s127",
+      "text": "Howard, isn’t it?’",
       "start": 763.08,
-      "end": 765.14,
+      "end": 764.16,
       "words": [
         {
           "text": "Howard,",
@@ -10147,7 +10315,15 @@
           "text": "it?’",
           "start": 763.84,
           "end": 764.16
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s128",
+      "text": "‘Harry.",
+      "start": 764.9,
+      "end": 765.14,
+      "words": [
         {
           "text": "‘Harry.",
           "start": 764.9,
@@ -10156,10 +10332,10 @@
       ]
     },
     {
-      "id": "c1_s107",
-      "text": "Nasty, common name, if you ask me.’ ‘Oh, yes,’ said Mr Dursley, his heart sinking horribly. ‘Yes, I quite agree.’ He didn’t say another word on the subject as they went upstairs to bed.",
+      "id": "c1_s129",
+      "text": "Nasty, common name, if you ask me.’",
       "start": 765.74,
-      "end": 780.0,
+      "end": 767.62,
       "words": [
         {
           "text": "Nasty,",
@@ -10195,7 +10371,15 @@
           "text": "me.’",
           "start": 767.4,
           "end": 767.62
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s130",
+      "text": "‘Oh, yes,’ said Mr Dursley, his heart sinking horribly.",
+      "start": 768.8,
+      "end": 773.2,
+      "words": [
         {
           "text": "‘Oh,",
           "start": 768.8,
@@ -10240,7 +10424,15 @@
           "text": "horribly.",
           "start": 772.7,
           "end": 773.2
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s131",
+      "text": "‘Yes, I quite agree.’",
+      "start": 773.9,
+      "end": 775.36,
+      "words": [
         {
           "text": "‘Yes,",
           "start": 773.9,
@@ -10260,7 +10452,15 @@
           "text": "agree.’",
           "start": 775.04,
           "end": 775.36
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s132",
+      "text": "He didn’t say another word on the subject as they went upstairs to bed.",
+      "start": 775.36,
+      "end": 780.0,
+      "words": [
         {
           "text": "He",
           "start": 775.36,
@@ -10334,7 +10534,7 @@
       ]
     },
     {
-      "id": "c1_s108",
+      "id": "c1_s133",
       "text": "While Mrs Dursley was in the bathroom, Mr Dursley crept to the bedroom window and peered down into the front garden.",
       "start": 781.04,
       "end": 787.88,
@@ -10447,7 +10647,7 @@
       ]
     },
     {
-      "id": "c1_s109",
+      "id": "c1_s134",
       "text": "The cat was still there.",
       "start": 788.78,
       "end": 790.48,
@@ -10480,7 +10680,7 @@
       ]
     },
     {
-      "id": "c1_s110",
+      "id": "c1_s135",
       "text": "It was staring down Privet Drive as though it was waiting for something.",
       "start": 791.28,
       "end": 795.9,
@@ -10553,7 +10753,7 @@
       ]
     },
     {
-      "id": "c1_s111",
+      "id": "c1_s136",
       "text": "Was he imagining things?",
       "start": 797.5,
       "end": 799.0,
@@ -10581,7 +10781,7 @@
       ]
     },
     {
-      "id": "c1_s112",
+      "id": "c1_s137",
       "text": "Could all this have anything to do with the Potters?",
       "start": 799.94,
       "end": 802.72,
@@ -10639,7 +10839,7 @@
       ]
     },
     {
-      "id": "c1_s113",
+      "id": "c1_s138",
       "text": "If it did ... if it got out that they were related to a pair of – well, he didn’t think he could bear it.",
       "start": 803.23,
       "end": 810.98,
@@ -10772,7 +10972,7 @@
       ]
     },
     {
-      "id": "c1_s114",
+      "id": "c1_s139",
       "text": "The Dursleys got into bed.",
       "start": 812.08,
       "end": 813.54,
@@ -10805,7 +11005,7 @@
       ]
     },
     {
-      "id": "c1_s115",
+      "id": "c1_s140",
       "text": "Mrs Dursley fell asleep quickly but Mr Dursley lay awake, turning it all over in his mind.",
       "start": 814.28,
       "end": 820.08,
@@ -10898,7 +11098,7 @@
       ]
     },
     {
-      "id": "c1_s116",
+      "id": "c1_s141",
       "text": "His last, comforting thought before he fell asleep was that even if the Potters were involved, there was no reason for them to come near him and Mrs Dursley.",
       "start": 821.12,
       "end": 831.08,
@@ -11051,7 +11251,7 @@
       ]
     },
     {
-      "id": "c1_s117",
+      "id": "c1_s142",
       "text": "The Potters knew very well what he and Petunia thought about them and their kind ...",
       "start": 831.08,
       "end": 836.84,
@@ -11139,7 +11339,7 @@
       ]
     },
     {
-      "id": "c1_s118",
+      "id": "c1_s143",
       "text": "He couldn’t see how he and Petunia could get mixed up in anything that might be going on.",
       "start": 836.84,
       "end": 841.24,
@@ -11237,7 +11437,7 @@
       ]
     },
     {
-      "id": "c1_s119",
+      "id": "c1_s144",
       "text": "He yawned and turned over.",
       "start": 842.04,
       "end": 844.1,
@@ -11270,7 +11470,7 @@
       ]
     },
     {
-      "id": "c1_s120",
+      "id": "c1_s145",
       "text": "It couldn’t affect them ...",
       "start": 844.68,
       "end": 847.74,
@@ -11303,7 +11503,7 @@
       ]
     },
     {
-      "id": "c1_s121",
+      "id": "c1_s146",
       "text": "How very wrong he was.",
       "start": 847.74,
       "end": 850.0,
@@ -11336,7 +11536,7 @@
       ]
     },
     {
-      "id": "c1_s122",
+      "id": "c1_s147",
       "text": "Mr Dursley might have been drifting into an uneasy sleep, but the cat on the wall outside was showing no sign of sleepiness.",
       "start": 851.86,
       "end": 860.68,
@@ -11459,7 +11659,7 @@
       ]
     },
     {
-      "id": "c1_s123",
+      "id": "c1_s148",
       "text": "It was sitting as still as a statue, its eyes fixed unblinkingly on the far corner of Privet Drive.",
       "start": 861.34,
       "end": 868.96,
@@ -11562,7 +11762,7 @@
       ]
     },
     {
-      "id": "c1_s124",
+      "id": "c1_s149",
       "text": "It didn’t so much as quiver when a car door slammed in the next street, nor when two owls swooped overhead.",
       "start": 870.22,
       "end": 877.96,
@@ -11675,7 +11875,7 @@
       ]
     },
     {
-      "id": "c1_s125",
+      "id": "c1_s150",
       "text": "In fact, it was nearly midnight before the cat moved at all.",
       "start": 879.14,
       "end": 882.9,
@@ -11743,7 +11943,7 @@
       ]
     },
     {
-      "id": "c1_s126",
+      "id": "c1_s151",
       "text": "A man appeared on the corner the cat had been watching, appeared so suddenly and silently you’d have thought he’d just popped out of the ground.",
       "start": 883.68,
       "end": 892.92,
@@ -11881,7 +12081,7 @@
       ]
     },
     {
-      "id": "c1_s127",
+      "id": "c1_s152",
       "text": "The cat’s tail twitched and its eyes narrowed.",
       "start": 894.02,
       "end": 897.38,
@@ -11929,7 +12129,7 @@
       ]
     },
     {
-      "id": "c1_s128",
+      "id": "c1_s153",
       "text": "Nothing like this man had ever been seen in Privet Drive.",
       "start": 898.9,
       "end": 902.9,
@@ -11992,7 +12192,7 @@
       ]
     },
     {
-      "id": "c1_s129",
+      "id": "c1_s154",
       "text": "He was tall, thin and very old, judging by the silver of his hair and beard, which were both long enough to tuck into his belt.",
       "start": 904.02,
       "end": 912.74,
@@ -12130,7 +12330,7 @@
       ]
     },
     {
-      "id": "c1_s130",
+      "id": "c1_s155",
       "text": "He was wearing long robes, a purple cloak which swept the ground and high-heeled, buckled boots.",
       "start": 913.64,
       "end": 919.98,
@@ -12218,7 +12418,7 @@
       ]
     },
     {
-      "id": "c1_s131",
+      "id": "c1_s156",
       "text": "His blue eyes were light, bright and sparkling behind half-moon spectacles and his nose was very long and crooked, as though it had been broken at least twice.",
       "start": 921.18,
       "end": 930.96,
@@ -12366,7 +12566,7 @@
       ]
     },
     {
-      "id": "c1_s132",
+      "id": "c1_s157",
       "text": "This man’s name was Albus Dumbledore.",
       "start": 931.72,
       "end": 934.28,
@@ -12404,7 +12604,7 @@
       ]
     },
     {
-      "id": "c1_s133",
+      "id": "c1_s158",
       "text": "Albus Dumbledore didn’t seem to realise that he had just arrived in a street where everything from his name to his boots was unwelcome.",
       "start": 935.44,
       "end": 943.1,
@@ -12532,7 +12732,7 @@
       ]
     },
     {
-      "id": "c1_s134",
+      "id": "c1_s159",
       "text": "He was busy rummaging in his cloak, looking for something.",
       "start": 943.8,
       "end": 947.16,
@@ -12590,7 +12790,7 @@
       ]
     },
     {
-      "id": "c1_s135",
+      "id": "c1_s160",
       "text": "But he did seem to realise he was being watched, because he looked up suddenly at the cat, which was still staring at him from the other end of the street.",
       "start": 948.02,
       "end": 955.28,
@@ -12753,7 +12953,7 @@
       ]
     },
     {
-      "id": "c1_s136",
+      "id": "c1_s161",
       "text": "For some reason, the sight of the cat seemed to amuse him.",
       "start": 956.26,
       "end": 959.74,
@@ -12821,10 +13021,10 @@
       ]
     },
     {
-      "id": "c1_s137",
-      "text": "He chuckled and muttered, ‘I should have known.’ He had found what he was looking for in his inside pocket.",
+      "id": "c1_s162",
+      "text": "He chuckled and muttered, ‘I should have known.’",
       "start": 960.54,
-      "end": 968.66,
+      "end": 964.56,
       "words": [
         {
           "text": "He",
@@ -12865,7 +13065,15 @@
           "text": "known.’",
           "start": 964.44,
           "end": 964.56
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s163",
+      "text": "He had found what he was looking for in his inside pocket.",
+      "start": 965.92,
+      "end": 968.66,
+      "words": [
         {
           "text": "He",
           "start": 965.92,
@@ -12929,7 +13137,7 @@
       ]
     },
     {
-      "id": "c1_s138",
+      "id": "c1_s164",
       "text": "It seemed to be a silver cigarette lighter.",
       "start": 969.3,
       "end": 971.8,
@@ -12977,7 +13185,7 @@
       ]
     },
     {
-      "id": "c1_s139",
+      "id": "c1_s165",
       "text": "He flicked it open, held it up in the air and clicked it.",
       "start": 972.44,
       "end": 975.78,
@@ -13050,7 +13258,7 @@
       ]
     },
     {
-      "id": "c1_s140",
+      "id": "c1_s166",
       "text": "The nearest street lamp went out with a little pop.",
       "start": 976.52,
       "end": 979.84,
@@ -13108,7 +13316,7 @@
       ]
     },
     {
-      "id": "c1_s141",
+      "id": "c1_s167",
       "text": "He clicked it again – the next lamp flickered into darkness.",
       "start": 980.72,
       "end": 984.32,
@@ -13171,7 +13379,7 @@
       ]
     },
     {
-      "id": "c1_s142",
+      "id": "c1_s168",
       "text": "Twelve times he clicked the Put-Outer, until the only lights left in the whole street were two tiny pinpricks in the distance, which were the eyes of the cat watching him.",
       "start": 985.3,
       "end": 997.02,
@@ -13334,7 +13542,7 @@
       ]
     },
     {
-      "id": "c1_s143",
+      "id": "c1_s169",
       "text": "If anyone looked out of their window now, even beady-eyed Mrs Dursley, they wouldn’t be able to see anything that was happening down on the pavement.",
       "start": 998.04,
       "end": 1006.76,
@@ -13472,7 +13680,7 @@
       ]
     },
     {
-      "id": "c1_s144",
+      "id": "c1_s170",
       "text": "Dumbledore slipped the Put-Outer back inside his cloak and set off down the street towards number four, where he sat down on the wall next to the cat.",
       "start": 1008.2,
       "end": 1017.64,
@@ -13620,10 +13828,10 @@
       ]
     },
     {
-      "id": "c1_s145",
-      "text": "He didn’t look at it, but after a moment he spoke to it. ‘Fancy seeing you here, Professor McGonagall.’ He turned to smile at the tabby, but it had gone.",
+      "id": "c1_s171",
+      "text": "He didn’t look at it, but after a moment he spoke to it.",
       "start": 1018.32,
-      "end": 1029.74,
+      "end": 1022.36,
       "words": [
         {
           "text": "He",
@@ -13689,7 +13897,15 @@
           "text": "it.",
           "start": 1022.12,
           "end": 1022.36
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s172",
+      "text": "‘Fancy seeing you here, Professor McGonagall.’",
+      "start": 1023.46,
+      "end": 1025.86,
+      "words": [
         {
           "text": "‘Fancy",
           "start": 1023.46,
@@ -13719,7 +13935,15 @@
           "text": "McGonagall.’",
           "start": 1025.28,
           "end": 1025.86
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s173",
+      "text": "He turned to smile at the tabby, but it had gone.",
+      "start": 1026.42,
+      "end": 1029.74,
+      "words": [
         {
           "text": "He",
           "start": 1026.42,
@@ -13778,7 +14002,7 @@
       ]
     },
     {
-      "id": "c1_s146",
+      "id": "c1_s174",
       "text": "Instead he was smiling at a rather severe-looking woman who was wearing square glasses exactly the shape of the markings the cat had had around its eyes.",
       "start": 1030.58,
       "end": 1039.84,
@@ -13921,7 +14145,7 @@
       ]
     },
     {
-      "id": "c1_s147",
+      "id": "c1_s175",
       "text": "She, too, was wearing a cloak, an emerald one.",
       "start": 1040.58,
       "end": 1043.62,
@@ -13974,7 +14198,7 @@
       ]
     },
     {
-      "id": "c1_s148",
+      "id": "c1_s176",
       "text": "Her black hair was drawn into a tight bun.",
       "start": 1044.38,
       "end": 1047.0,
@@ -14027,10 +14251,10 @@
       ]
     },
     {
-      "id": "c1_s149",
-      "text": "She looked distinctly ruffled. ‘How did you know it was me?’ she asked. ‘My dear Professor, I’ve never seen a cat sit so stiffly.’ ‘You’d be stiff if you’d been sitting on a brick wall all day,’ said Professor McGonagall. ‘All day?",
+      "id": "c1_s177",
+      "text": "She looked distinctly ruffled.",
       "start": 1047.58,
-      "end": 1065.14,
+      "end": 1049.44,
       "words": [
         {
           "text": "She",
@@ -14051,7 +14275,15 @@
           "text": "ruffled.",
           "start": 1049.02,
           "end": 1049.44
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s178",
+      "text": "‘How did you know it was me?’ she asked.",
+      "start": 1050.72,
+      "end": 1053.24,
+      "words": [
         {
           "text": "‘How",
           "start": 1050.72,
@@ -14096,7 +14328,15 @@
           "text": "asked.",
           "start": 1052.88,
           "end": 1053.24
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s179",
+      "text": "‘My dear Professor, I’ve never seen a cat sit so stiffly.’",
+      "start": 1053.98,
+      "end": 1058.74,
+      "words": [
         {
           "text": "‘My",
           "start": 1053.98,
@@ -14151,7 +14391,15 @@
           "text": "stiffly.’",
           "start": 1057.92,
           "end": 1058.74
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s180",
+      "text": "‘You’d be stiff if you’d been sitting on a brick wall all day,’ said Professor McGonagall.",
+      "start": 1059.48,
+      "end": 1063.64,
+      "words": [
         {
           "text": "‘You’d",
           "start": 1059.48,
@@ -14231,7 +14479,15 @@
           "text": "McGonagall.",
           "start": 1063.12,
           "end": 1063.64
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s181",
+      "text": "‘All day?",
+      "start": 1064.28,
+      "end": 1065.14,
+      "words": [
         {
           "text": "‘All",
           "start": 1064.28,
@@ -14245,7 +14501,7 @@
       ]
     },
     {
-      "id": "c1_s150",
+      "id": "c1_s182",
       "text": "When you could have been celebrating?",
       "start": 1065.66,
       "end": 1067.14,
@@ -14283,10 +14539,10 @@
       ]
     },
     {
-      "id": "c1_s151",
-      "text": "I must have passed a dozen feasts and parties on my way here.’ Professor McGonagall sniffed angrily. ‘Oh yes, everyone’s celebrating, all right,’ she said impatiently. ‘You’d think they’d be a bit more careful, but no – even the Muggles have noticed something’s going on.",
+      "id": "c1_s183",
+      "text": "I must have passed a dozen feasts and parties on my way here.’",
       "start": 1067.78,
-      "end": 1084.12,
+      "end": 1070.94,
       "words": [
         {
           "text": "I",
@@ -14352,7 +14608,15 @@
           "text": "here.’",
           "start": 1070.62,
           "end": 1070.94
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s184",
+      "text": "Professor McGonagall sniffed angrily.",
+      "start": 1071.9,
+      "end": 1073.98,
+      "words": [
         {
           "text": "Professor",
           "start": 1071.9,
@@ -14372,7 +14636,15 @@
           "text": "angrily.",
           "start": 1073.58,
           "end": 1073.98
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s185",
+      "text": "‘Oh yes, everyone’s celebrating, all right,’ she said impatiently.",
+      "start": 1073.98,
+      "end": 1078.92,
+      "words": [
         {
           "text": "‘Oh",
           "start": 1073.98,
@@ -14417,7 +14689,15 @@
           "text": "impatiently.",
           "start": 1078.24,
           "end": 1078.92
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s186",
+      "text": "‘You’d think they’d be a bit more careful, but no – even the Muggles have noticed something’s going on.",
+      "start": 1078.92,
+      "end": 1084.12,
+      "words": [
         {
           "text": "‘You’d",
           "start": 1078.92,
@@ -14516,10 +14796,10 @@
       ]
     },
     {
-      "id": "c1_s152",
-      "text": "It was on their news.’ She jerked her head back at the Dursleys’ dark living-room window. ‘I heard it.",
+      "id": "c1_s187",
+      "text": "It was on their news.’",
       "start": 1084.74,
-      "end": 1091.76,
+      "end": 1085.94,
       "words": [
         {
           "text": "It",
@@ -14545,7 +14825,15 @@
           "text": "news.’",
           "start": 1085.52,
           "end": 1085.94
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s188",
+      "text": "She jerked her head back at the Dursleys’ dark living-room window.",
+      "start": 1087.08,
+      "end": 1090.66,
+      "words": [
         {
           "text": "She",
           "start": 1087.08,
@@ -14600,7 +14888,15 @@
           "text": "window.",
           "start": 1090.28,
           "end": 1090.66
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s189",
+      "text": "‘I heard it.",
+      "start": 1091.22,
+      "end": 1091.76,
+      "words": [
         {
           "text": "‘I",
           "start": 1091.22,
@@ -14619,7 +14915,7 @@
       ]
     },
     {
-      "id": "c1_s153",
+      "id": "c1_s190",
       "text": "Flocks of owls ... shooting stars ...",
       "start": 1092.092,
       "end": 1094.78,
@@ -14662,7 +14958,7 @@
       ]
     },
     {
-      "id": "c1_s154",
+      "id": "c1_s191",
       "text": "Well, they’re not completely stupid.",
       "start": 1094.78,
       "end": 1096.66,
@@ -14695,7 +14991,7 @@
       ]
     },
     {
-      "id": "c1_s155",
+      "id": "c1_s192",
       "text": "They were bound to notice something.",
       "start": 1097.2,
       "end": 1098.9,
@@ -14733,7 +15029,7 @@
       ]
     },
     {
-      "id": "c1_s156",
+      "id": "c1_s193",
       "text": "Shooting stars down in Kent – I’ll bet that was Dedalus Diggle.",
       "start": 1099.5,
       "end": 1104.18,
@@ -14801,10 +15097,10 @@
       ]
     },
     {
-      "id": "c1_s157",
-      "text": "He never had much sense.’ ‘You can’t blame them,’ said Dumbledore gently. ‘We’ve had precious little to celebrate for eleven years.’ ‘I know that,’ said Professor McGonagall irritably. ‘But that’s no reason to lose our heads.",
+      "id": "c1_s194",
+      "text": "He never had much sense.’",
       "start": 1104.33,
-      "end": 1119.98,
+      "end": 1105.34,
       "words": [
         {
           "text": "He",
@@ -14830,7 +15126,15 @@
           "text": "sense.’",
           "start": 1104.98,
           "end": 1105.34
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s195",
+      "text": "‘You can’t blame them,’ said Dumbledore gently.",
+      "start": 1106.48,
+      "end": 1109.86,
+      "words": [
         {
           "text": "‘You",
           "start": 1106.48,
@@ -14865,7 +15169,15 @@
           "text": "gently.",
           "start": 1109.22,
           "end": 1109.86
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s196",
+      "text": "‘We’ve had precious little to celebrate for eleven years.’",
+      "start": 1110.64,
+      "end": 1113.34,
+      "words": [
         {
           "text": "‘We’ve",
           "start": 1110.64,
@@ -14910,7 +15222,15 @@
           "text": "years.’",
           "start": 1112.8,
           "end": 1113.34
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s197",
+      "text": "‘I know that,’ said Professor McGonagall irritably.",
+      "start": 1114.32,
+      "end": 1117.54,
+      "words": [
         {
           "text": "‘I",
           "start": 1114.32,
@@ -14945,7 +15265,15 @@
           "text": "irritably.",
           "start": 1116.9,
           "end": 1117.54
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s198",
+      "text": "‘But that’s no reason to lose our heads.",
+      "start": 1117.88,
+      "end": 1119.98,
+      "words": [
         {
           "text": "‘But",
           "start": 1117.88,
@@ -14989,10 +15317,10 @@
       ]
     },
     {
-      "id": "c1_s158",
-      "text": "People are being downright careless, out on the streets in broad daylight, not even dressed in Muggle clothes, swapping rumours.’ She threw a sharp, sideways glance at Dumbledore here, as though hoping he was going to tell her something, but he didn’t, so she went on: ‘A fine thing it would be if, on the very day YouKnow-Who seems to have disappeared at last, the Muggles found out about us all.",
+      "id": "c1_s199",
+      "text": "People are being downright careless, out on the streets in broad daylight, not even dressed in Muggle clothes, swapping rumours.’",
       "start": 1120.6,
-      "end": 1146.64,
+      "end": 1128.49,
       "words": [
         {
           "text": "People",
@@ -15093,7 +15421,15 @@
           "text": "rumours.’",
           "start": 1127.885,
           "end": 1128.49
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s200",
+      "text": "She threw a sharp, sideways glance at Dumbledore here, as though hoping he was going to tell her something, but he didn’t, so she went on: ‘A fine thing it would be if, on the very day YouKnow-Who seems to have disappeared at last, the Muggles found out about us all.",
+      "start": 1128.49,
+      "end": 1146.64,
+      "words": [
         {
           "text": "She",
           "start": 1128.49,
@@ -15352,10 +15688,10 @@
       ]
     },
     {
-      "id": "c1_s159",
-      "text": "I suppose he really has gone, Dumbledore?’ ‘It certainly seems so,’ said Dumbledore. ‘We have much to be thankful for.",
+      "id": "c1_s201",
+      "text": "I suppose he really has gone, Dumbledore?’",
       "start": 1147.95,
-      "end": 1158.02,
+      "end": 1151.94,
       "words": [
         {
           "text": "I",
@@ -15391,7 +15727,15 @@
           "text": "Dumbledore?’",
           "start": 1151.56,
           "end": 1151.94
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s202",
+      "text": "‘It certainly seems so,’ said Dumbledore.",
+      "start": 1153.4,
+      "end": 1155.9,
+      "words": [
         {
           "text": "‘It",
           "start": 1153.4,
@@ -15421,7 +15765,15 @@
           "text": "Dumbledore.",
           "start": 1155.4,
           "end": 1155.9
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s203",
+      "text": "‘We have much to be thankful for.",
+      "start": 1156.34,
+      "end": 1158.02,
+      "words": [
         {
           "text": "‘We",
           "start": 1156.34,
@@ -15460,10 +15812,10 @@
       ]
     },
     {
-      "id": "c1_s160",
-      "text": "Would you care for a sherbet lemon?’ ‘A what?’ ‘A sherbet lemon.",
+      "id": "c1_s204",
+      "text": "Would you care for a sherbet lemon?’",
       "start": 1158.62,
-      "end": 1163.66,
+      "end": 1160.36,
       "words": [
         {
           "text": "Would",
@@ -15499,7 +15851,15 @@
           "text": "lemon?’",
           "start": 1160.06,
           "end": 1160.36
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s205",
+      "text": "‘A what?’",
+      "start": 1160.97,
+      "end": 1161.76,
+      "words": [
         {
           "text": "‘A",
           "start": 1160.97,
@@ -15509,7 +15869,15 @@
           "text": "what?’",
           "start": 1161.58,
           "end": 1161.76
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s206",
+      "text": "‘A sherbet lemon.",
+      "start": 1162.44,
+      "end": 1163.66,
+      "words": [
         {
           "text": "‘A",
           "start": 1162.44,
@@ -15528,10 +15896,10 @@
       ]
     },
     {
-      "id": "c1_s161",
-      "text": "They’re a kind of Muggle sweet I’m rather fond of.’ ‘No, thank you,’ said Professor McGonagall coldly, as though she didn’t think this was the moment for sherbet lemons. ‘As I say, even if You-Know-Who has gone –’ ‘My dear Professor, surely a sensible person like yourself can call him by his name?",
+      "id": "c1_s207",
+      "text": "They’re a kind of Muggle sweet I’m rather fond of.’",
       "start": 1163.953,
-      "end": 1185.32,
+      "end": 1166.6,
       "words": [
         {
           "text": "They’re",
@@ -15582,7 +15950,15 @@
           "text": "of.’",
           "start": 1166.3,
           "end": 1166.6
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s208",
+      "text": "‘No, thank you,’ said Professor McGonagall coldly, as though she didn’t think this was the moment for sherbet lemons.",
+      "start": 1167.6,
+      "end": 1173.54,
+      "words": [
         {
           "text": "‘No,",
           "start": 1167.6,
@@ -15677,7 +16053,15 @@
           "text": "lemons.",
           "start": 1173.1,
           "end": 1173.54
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s209",
+      "text": "‘As I say, even if You-Know-Who has gone –’ ‘My dear Professor, surely a sensible person like yourself can call him by his name?",
+      "start": 1174.58,
+      "end": 1185.32,
+      "words": [
         {
           "text": "‘As",
           "start": 1174.58,
@@ -15801,10 +16185,10 @@
       ]
     },
     {
-      "id": "c1_s162",
-      "text": "All this “You-Know-Who” nonsense – for eleven years I have been trying to persuade people to call him by his proper name: Voldemort.’ Professor McGonagall flinched, but Dumbledore, who was unsticking two sherbet lemons, seemed not to notice. ‘It all gets so confusing if we keep saying “YouKnow-Who”.’ I have never seen any reason to be frightened of saying Voldemort’s name.’ ‘I know you haven’t,’ said Professor McGonagall, sounding halfexasperated, half-admiring. ‘But you’re different.",
+      "id": "c1_s210",
+      "text": "All this “You-Know-Who” nonsense – for eleven years I have been trying to persuade people to call him by his proper name: Voldemort.’",
       "start": 1186.06,
-      "end": 1218.62,
+      "end": 1194.0,
       "words": [
         {
           "text": "All",
@@ -15920,7 +16304,15 @@
           "text": "Voldemort.’",
           "start": 1193.48,
           "end": 1194.0
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s211",
+      "text": "Professor McGonagall flinched, but Dumbledore, who was unsticking two sherbet lemons, seemed not to notice.",
+      "start": 1194.78,
+      "end": 1201.08,
+      "words": [
         {
           "text": "Professor",
           "start": 1194.78,
@@ -15995,7 +16387,15 @@
           "text": "notice.",
           "start": 1200.78,
           "end": 1201.08
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s212",
+      "text": "‘It all gets so confusing if we keep saying “YouKnow-Who”.’",
+      "start": 1201.63,
+      "end": 1205.27,
+      "words": [
         {
           "text": "‘It",
           "start": 1201.63,
@@ -16045,7 +16445,15 @@
           "text": "“YouKnow-Who”.’",
           "start": 1204.715,
           "end": 1205.27
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s213",
+      "text": "I have never seen any reason to be frightened of saying Voldemort’s name.’",
+      "start": 1205.64,
+      "end": 1209.54,
+      "words": [
         {
           "text": "I",
           "start": 1205.64,
@@ -16110,7 +16518,15 @@
           "text": "name.’",
           "start": 1209.18,
           "end": 1209.54
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s214",
+      "text": "‘I know you haven’t,’ said Professor McGonagall, sounding halfexasperated, half-admiring.",
+      "start": 1210.46,
+      "end": 1217.42,
+      "words": [
         {
           "text": "‘I",
           "start": 1210.46,
@@ -16160,7 +16576,15 @@
           "text": "half-admiring.",
           "start": 1216.883,
           "end": 1217.42
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s215",
+      "text": "‘But you’re different.",
+      "start": 1217.42,
+      "end": 1218.62,
+      "words": [
         {
           "text": "‘But",
           "start": 1217.42,
@@ -16179,10 +16603,10 @@
       ]
     },
     {
-      "id": "c1_s163",
-      "text": "Everyone knows you’re the only one You-Know – oh, all right, Voldemort – was frightened of.’ ‘You flatter me,’ said Dumbledore calmly. ‘Voldemort had powers I will never have.’ ‘Only because you’re too – well – noble to use them.’ ‘It’s lucky it’s dark.",
+      "id": "c1_s216",
+      "text": "Everyone knows you’re the only one You-Know – oh, all right, Voldemort – was frightened of.’",
       "start": 1219.18,
-      "end": 1239.66,
+      "end": 1224.96,
       "words": [
         {
           "text": "Everyone",
@@ -16263,7 +16687,15 @@
           "text": "of.’",
           "start": 1224.6,
           "end": 1224.96
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s217",
+      "text": "‘You flatter me,’ said Dumbledore calmly.",
+      "start": 1225.76,
+      "end": 1228.84,
+      "words": [
         {
           "text": "‘You",
           "start": 1225.76,
@@ -16293,7 +16725,15 @@
           "text": "calmly.",
           "start": 1228.54,
           "end": 1228.84
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s218",
+      "text": "‘Voldemort had powers I will never have.’",
+      "start": 1229.74,
+      "end": 1232.02,
+      "words": [
         {
           "text": "‘Voldemort",
           "start": 1229.74,
@@ -16328,7 +16768,15 @@
           "text": "have.’",
           "start": 1231.64,
           "end": 1232.02
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s219",
+      "text": "‘Only because you’re too – well – noble to use them.’",
+      "start": 1232.8,
+      "end": 1236.68,
+      "words": [
         {
           "text": "‘Only",
           "start": 1232.8,
@@ -16383,7 +16831,15 @@
           "text": "them.’",
           "start": 1236.4,
           "end": 1236.68
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s220",
+      "text": "‘It’s lucky it’s dark.",
+      "start": 1238.3,
+      "end": 1239.66,
+      "words": [
         {
           "text": "‘It’s",
           "start": 1238.3,
@@ -16407,10 +16863,10 @@
       ]
     },
     {
-      "id": "c1_s164",
-      "text": "I haven’t blushed so much since Madam Pomfrey told me she liked my new earmuffs.’ Professor McGonagall shot a sharp look at Dumbledore and said, ‘The owls are nothing to the rumours that are flying around.",
+      "id": "c1_s221",
+      "text": "I haven’t blushed so much since Madam Pomfrey told me she liked my new earmuffs.’",
       "start": 1240.22,
-      "end": 1252.68,
+      "end": 1243.96,
       "words": [
         {
           "text": "I",
@@ -16486,7 +16942,15 @@
           "text": "earmuffs.’",
           "start": 1243.5,
           "end": 1243.96
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s222",
+      "text": "Professor McGonagall shot a sharp look at Dumbledore and said, ‘The owls are nothing to the rumours that are flying around.",
+      "start": 1245.24,
+      "end": 1252.68,
+      "words": [
         {
           "text": "Professor",
           "start": 1245.24,
@@ -16595,7 +17059,7 @@
       ]
     },
     {
-      "id": "c1_s165",
+      "id": "c1_s223",
       "text": "You know what everyone’s saying?",
       "start": 1253.38,
       "end": 1254.56,
@@ -16628,7 +17092,7 @@
       ]
     },
     {
-      "id": "c1_s166",
+      "id": "c1_s224",
       "text": "About why he’s disappeared?",
       "start": 1254.56,
       "end": 1255.96,
@@ -16656,10 +17120,10 @@
       ]
     },
     {
-      "id": "c1_s167",
-      "text": "About what finally stopped him?’ It seemed that Professor McGonagall had reached the point she was most anxious to discuss, the real reason she had been waiting on a cold hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a piercing stare as she did now.",
+      "id": "c1_s225",
+      "text": "About what finally stopped him?’",
       "start": 1256.9,
-      "end": 1276.34,
+      "end": 1258.78,
       "words": [
         {
           "text": "About",
@@ -16685,7 +17149,15 @@
           "text": "him?’",
           "start": 1258.38,
           "end": 1258.78
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s226",
+      "text": "It seemed that Professor McGonagall had reached the point she was most anxious to discuss, the real reason she had been waiting on a cold hard wall all day, for neither as a cat nor as a woman had she fixed Dumbledore with such a piercing stare as she did now.",
+      "start": 1259.88,
+      "end": 1276.34,
+      "words": [
         {
           "text": "It",
           "start": 1259.88,
@@ -16944,7 +17416,7 @@
       ]
     },
     {
-      "id": "c1_s168",
+      "id": "c1_s227",
       "text": "It was plain that whatever ‘everyone’ was saying, she was not going to believe it until Dumbledore told her it was true.",
       "start": 1277.26,
       "end": 1284.46,
@@ -17062,10 +17534,10 @@
       ]
     },
     {
-      "id": "c1_s169",
-      "text": "Dumbledore, however, was choosing another sherbet lemon and did not answer. ‘What they’re saying,’ she pressed on, ‘is that last night Voldemort turned up in Godric’s Hollow.",
+      "id": "c1_s228",
+      "text": "Dumbledore, however, was choosing another sherbet lemon and did not answer.",
       "start": 1285.26,
-      "end": 1298.84,
+      "end": 1289.28,
       "words": [
         {
           "text": "Dumbledore,",
@@ -17121,7 +17593,15 @@
           "text": "answer.",
           "start": 1288.8,
           "end": 1289.28
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s229",
+      "text": "‘What they’re saying,’ she pressed on, ‘is that last night Voldemort turned up in Godric’s Hollow.",
+      "start": 1290.32,
+      "end": 1298.84,
+      "words": [
         {
           "text": "‘What",
           "start": 1290.32,
@@ -17205,7 +17685,7 @@
       ]
     },
     {
-      "id": "c1_s170",
+      "id": "c1_s230",
       "text": "He went to find the Potters.",
       "start": 1299.54,
       "end": 1301.26,
@@ -17243,10 +17723,10 @@
       ]
     },
     {
-      "id": "c1_s171",
-      "text": "The rumour is that Lily and James Potter are – are – that they’re – dead.’ Dumbledore bowed his head.",
+      "id": "c1_s231",
+      "text": "The rumour is that Lily and James Potter are – are – that they’re – dead.’",
       "start": 1301.94,
-      "end": 1310.74,
+      "end": 1307.46,
       "words": [
         {
           "text": "The",
@@ -17327,7 +17807,15 @@
           "text": "dead.’",
           "start": 1304.14,
           "end": 1307.46
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s232",
+      "text": "Dumbledore bowed his head.",
+      "start": 1308.9,
+      "end": 1310.74,
+      "words": [
         {
           "text": "Dumbledore",
           "start": 1308.9,
@@ -17351,10 +17839,10 @@
       ]
     },
     {
-      "id": "c1_s172",
-      "text": "Professor McGonagall gasped. ‘Lily and James ...",
+      "id": "c1_s233",
+      "text": "Professor McGonagall gasped.",
       "start": 1311.78,
-      "end": 1316.68,
+      "end": 1313.84,
       "words": [
         {
           "text": "Professor",
@@ -17370,7 +17858,15 @@
           "text": "gasped.",
           "start": 1312.7,
           "end": 1313.84
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s234",
+      "text": "‘Lily and James ...",
+      "start": 1314.373,
+      "end": 1316.68,
+      "words": [
         {
           "text": "‘Lily",
           "start": 1314.373,
@@ -17394,7 +17890,7 @@
       ]
     },
     {
-      "id": "c1_s173",
+      "id": "c1_s235",
       "text": "I can’t believe it ...",
       "start": 1316.68,
       "end": 1318.72,
@@ -17427,7 +17923,7 @@
       ]
     },
     {
-      "id": "c1_s174",
+      "id": "c1_s236",
       "text": "I didn’t want to believe it ...",
       "start": 1318.72,
       "end": 1320.79,
@@ -17470,10 +17966,10 @@
       ]
     },
     {
-      "id": "c1_s175",
-      "text": "Oh, Albus ...’ Dumbledore reached out and patted her on the shoulder. ‘I know ...",
+      "id": "c1_s237",
+      "text": "Oh, Albus ...’",
       "start": 1320.79,
-      "end": 1327.78,
+      "end": 1322.8,
       "words": [
         {
           "text": "Oh,",
@@ -17489,7 +17985,15 @@
           "text": "...’",
           "start": 1322.26,
           "end": 1322.8
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s238",
+      "text": "Dumbledore reached out and patted her on the shoulder.",
+      "start": 1322.8,
+      "end": 1325.54,
+      "words": [
         {
           "text": "Dumbledore",
           "start": 1322.8,
@@ -17534,7 +18038,15 @@
           "text": "shoulder.",
           "start": 1325.24,
           "end": 1325.54
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s239",
+      "text": "‘I know ...",
+      "start": 1326.7,
+      "end": 1327.78,
+      "words": [
         {
           "text": "‘I",
           "start": 1326.7,
@@ -17553,7 +18065,7 @@
       ]
     },
     {
-      "id": "c1_s176",
+      "id": "c1_s240",
       "text": "I know ...’ he said heavily.",
       "start": 1327.78,
       "end": 1329.8,
@@ -17591,10 +18103,10 @@
       ]
     },
     {
-      "id": "c1_s177",
-      "text": "Professor McGonagall’s voice trembled as she went on. ‘That’s not all.",
+      "id": "c1_s241",
+      "text": "Professor McGonagall’s voice trembled as she went on.",
       "start": 1330.98,
-      "end": 1335.74,
+      "end": 1333.86,
       "words": [
         {
           "text": "Professor",
@@ -17635,7 +18147,15 @@
           "text": "on.",
           "start": 1333.58,
           "end": 1333.86
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s242",
+      "text": "‘That’s not all.",
+      "start": 1334.98,
+      "end": 1335.74,
+      "words": [
         {
           "text": "‘That’s",
           "start": 1334.98,
@@ -17654,7 +18174,7 @@
       ]
     },
     {
-      "id": "c1_s178",
+      "id": "c1_s243",
       "text": "They’re saying he tried to kill the Potters’ son, Harry.",
       "start": 1336.66,
       "end": 1340.34,
@@ -17712,7 +18232,7 @@
       ]
     },
     {
-      "id": "c1_s179",
+      "id": "c1_s244",
       "text": "But – he couldn’t.",
       "start": 1341.14,
       "end": 1342.6,
@@ -17740,7 +18260,7 @@
       ]
     },
     {
-      "id": "c1_s180",
+      "id": "c1_s245",
       "text": "He couldn’t kill that little boy.",
       "start": 1343.04,
       "end": 1345.38,
@@ -17778,10 +18298,10 @@
       ]
     },
     {
-      "id": "c1_s181",
-      "text": "No one knows why, or how, but they’re saying that when he couldn’t kill Harry Potter, Voldemort’s power somehow broke – and that’s why he’s gone.’ Dumbledore nodded glumly. ‘It’s – it’s true?’ faltered Professor McGonagall. ‘After all he’s done ... all the people he’s killed ... he couldn’t kill a little boy?",
+      "id": "c1_s246",
+      "text": "No one knows why, or how, but they’re saying that when he couldn’t kill Harry Potter, Voldemort’s power somehow broke – and that’s why he’s gone.’",
       "start": 1346.06,
-      "end": 1371.64,
+      "end": 1356.56,
       "words": [
         {
           "text": "No",
@@ -17912,7 +18432,15 @@
           "text": "gone.’",
           "start": 1356.32,
           "end": 1356.56
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s247",
+      "text": "Dumbledore nodded glumly.",
+      "start": 1357.94,
+      "end": 1359.78,
+      "words": [
         {
           "text": "Dumbledore",
           "start": 1357.94,
@@ -17927,7 +18455,15 @@
           "text": "glumly.",
           "start": 1359.26,
           "end": 1359.78
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s248",
+      "text": "‘It’s – it’s true?’ faltered Professor McGonagall.",
+      "start": 1360.067,
+      "end": 1364.8,
+      "words": [
         {
           "text": "‘It’s",
           "start": 1360.067,
@@ -17962,7 +18498,15 @@
           "text": "McGonagall.",
           "start": 1364.22,
           "end": 1364.8
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s249",
+      "text": "‘After all he’s done ... all the people he’s killed ... he couldn’t kill a little boy?",
+      "start": 1365.44,
+      "end": 1371.64,
+      "words": [
         {
           "text": "‘After",
           "start": 1365.44,
@@ -18051,10 +18595,10 @@
       ]
     },
     {
-      "id": "c1_s182",
-      "text": "It’s just astounding ... of all the things to stop him ... but how in the name of heaven did Harry survive?’ ‘We can only guess,’ said Dumbledore. ‘We may never know.’ Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles.",
+      "id": "c1_s250",
+      "text": "It’s just astounding ... of all the things to stop him ... but how in the name of heaven did Harry survive?’",
       "start": 1372.32,
-      "end": 1390.72,
+      "end": 1378.52,
       "words": [
         {
           "text": "It’s",
@@ -18165,7 +18709,15 @@
           "text": "survive?’",
           "start": 1378.02,
           "end": 1378.52
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s251",
+      "text": "‘We can only guess,’ said Dumbledore.",
+      "start": 1378.52,
+      "end": 1382.3,
+      "words": [
         {
           "text": "‘We",
           "start": 1378.52,
@@ -18195,7 +18747,15 @@
           "text": "Dumbledore.",
           "start": 1381.8,
           "end": 1382.3
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s252",
+      "text": "‘We may never know.’",
+      "start": 1382.88,
+      "end": 1383.82,
+      "words": [
         {
           "text": "‘We",
           "start": 1382.88,
@@ -18215,7 +18775,15 @@
           "text": "know.’",
           "start": 1383.5,
           "end": 1383.82
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s253",
+      "text": "Professor McGonagall pulled out a lace handkerchief and dabbed at her eyes beneath her spectacles.",
+      "start": 1385.52,
+      "end": 1390.72,
+      "words": [
         {
           "text": "Professor",
           "start": 1385.52,
@@ -18294,7 +18862,7 @@
       ]
     },
     {
-      "id": "c1_s183",
+      "id": "c1_s254",
       "text": "Dumbledore gave a great sniff as he took a golden watch from his pocket and examined it.",
       "start": 1391.8,
       "end": 1396.34,
@@ -18387,10 +18955,10 @@
       ]
     },
     {
-      "id": "c1_s184",
-      "text": "It was a very odd watch. It had twelve hands but no numbers; instead, little planets were moving around the edge.",
+      "id": "c1_s255",
+      "text": "It was a very odd watch.",
       "start": 1396.96,
-      "end": 1405.94,
+      "end": 1398.56,
       "words": [
         {
           "text": "It",
@@ -18421,7 +18989,15 @@
           "text": "watch.",
           "start": 1398.04,
           "end": 1398.56
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s256",
+      "text": "It had twelve hands but no numbers; instead, little planets were moving around the edge.",
+      "start": 1398.94,
+      "end": 1405.94,
+      "words": [
         {
           "text": "It",
           "start": 1398.94,
@@ -18500,7 +19076,7 @@
       ]
     },
     {
-      "id": "c1_s185",
+      "id": "c1_s257",
       "text": "It must have made sense to Dumbledore, though, because he put it back in his pocket and said, ‘Hagrid’s late.",
       "start": 1405.94,
       "end": 1411.88,
@@ -18608,10 +19184,10 @@
       ]
     },
     {
-      "id": "c1_s186",
-      "text": "I suppose it was he who told you I’d be here, by the way?’ ‘Yes,’ said Professor McGonagall. ‘And I don’t suppose you’re going to tell me why you’re here, of all places?’ ‘I’ve come to bring Harry to his aunt and uncle.",
+      "id": "c1_s258",
+      "text": "I suppose it was he who told you I’d be here, by the way?’",
       "start": 1412.48,
-      "end": 1425.86,
+      "end": 1415.06,
       "words": [
         {
           "text": "I",
@@ -18682,7 +19258,15 @@
           "text": "way?’",
           "start": 1414.92,
           "end": 1415.06
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s259",
+      "text": "‘Yes,’ said Professor McGonagall.",
+      "start": 1416.16,
+      "end": 1418.1,
+      "words": [
         {
           "text": "‘Yes,’",
           "start": 1416.16,
@@ -18702,7 +19286,15 @@
           "text": "McGonagall.",
           "start": 1417.6,
           "end": 1418.1
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s260",
+      "text": "‘And I don’t suppose you’re going to tell me why you’re here, of all places?’",
+      "start": 1418.5,
+      "end": 1421.86,
+      "words": [
         {
           "text": "‘And",
           "start": 1418.5,
@@ -18777,7 +19369,15 @@
           "text": "places?’",
           "start": 1421.44,
           "end": 1421.86
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s261",
+      "text": "‘I’ve come to bring Harry to his aunt and uncle.",
+      "start": 1423.08,
+      "end": 1425.86,
+      "words": [
         {
           "text": "‘I’ve",
           "start": 1423.08,
@@ -18831,10 +19431,10 @@
       ]
     },
     {
-      "id": "c1_s187",
-      "text": "They’re the only family he has left now.’ ‘You don’t mean – you can’t mean the people who live here?’ cried Professor McGonagall, jumping to her feet and pointing at number four. ‘Dumbledore – you can’t.",
+      "id": "c1_s262",
+      "text": "They’re the only family he has left now.’",
       "start": 1426.52,
-      "end": 1439.14,
+      "end": 1428.42,
       "words": [
         {
           "text": "They’re",
@@ -18875,7 +19475,15 @@
           "text": "now.’",
           "start": 1428.1,
           "end": 1428.42
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s263",
+      "text": "‘You don’t mean – you can’t mean the people who live here?’ cried Professor McGonagall, jumping to her feet and pointing at number four.",
+      "start": 1429.4,
+      "end": 1436.5,
+      "words": [
         {
           "text": "‘You",
           "start": 1429.4,
@@ -18995,7 +19603,15 @@
           "text": "four.",
           "start": 1436.5,
           "end": 1436.5
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s264",
+      "text": "‘Dumbledore – you can’t.",
+      "start": 1436.5,
+      "end": 1439.14,
+      "words": [
         {
           "text": "‘Dumbledore",
           "start": 1436.5,
@@ -19019,7 +19635,7 @@
       ]
     },
     {
-      "id": "c1_s188",
+      "id": "c1_s265",
       "text": "I’ve been watching them all day.",
       "start": 1439.5,
       "end": 1440.84,
@@ -19057,7 +19673,7 @@
       ]
     },
     {
-      "id": "c1_s189",
+      "id": "c1_s266",
       "text": "You couldn’t find two people who are less like us.",
       "start": 1441.3,
       "end": 1444.26,
@@ -19115,7 +19731,7 @@
       ]
     },
     {
-      "id": "c1_s190",
+      "id": "c1_s267",
       "text": "And they’ve got this son – I saw him kicking his mother all the way up the street, screaming for sweets.",
       "start": 1444.98,
       "end": 1450.64,
@@ -19228,10 +19844,10 @@
       ]
     },
     {
-      "id": "c1_s191",
-      "text": "Harry Potter come and live here!’ ‘It’s the best place for him,’ said Dumbledore firmly. ‘His aunt and uncle will be able to explain everything to him when he’s older.",
+      "id": "c1_s268",
+      "text": "Harry Potter come and live here!’",
       "start": 1451.56,
-      "end": 1462.32,
+      "end": 1453.8,
       "words": [
         {
           "text": "Harry",
@@ -19262,7 +19878,15 @@
           "text": "here!’",
           "start": 1453.36,
           "end": 1453.8
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s269",
+      "text": "‘It’s the best place for him,’ said Dumbledore firmly.",
+      "start": 1454.64,
+      "end": 1458.34,
+      "words": [
         {
           "text": "‘It’s",
           "start": 1454.64,
@@ -19307,7 +19931,15 @@
           "text": "firmly.",
           "start": 1457.9,
           "end": 1458.34
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s270",
+      "text": "‘His aunt and uncle will be able to explain everything to him when he’s older.",
+      "start": 1458.34,
+      "end": 1462.32,
+      "words": [
         {
           "text": "‘His",
           "start": 1458.34,
@@ -19386,10 +20018,10 @@
       ]
     },
     {
-      "id": "c1_s192",
-      "text": "I’ve written them a letter.’ ‘A letter?’ repeated Professor McGonagall faintly, sitting back down on the wall. ‘Really, Dumbledore, you think you can explain all this in a letter?",
+      "id": "c1_s271",
+      "text": "I’ve written them a letter.’",
       "start": 1463.16,
-      "end": 1475.86,
+      "end": 1464.14,
       "words": [
         {
           "text": "I’ve",
@@ -19415,7 +20047,15 @@
           "text": "letter.’",
           "start": 1463.86,
           "end": 1464.14
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s272",
+      "text": "‘A letter?’ repeated Professor McGonagall faintly, sitting back down on the wall.",
+      "start": 1465.42,
+      "end": 1470.02,
+      "words": [
         {
           "text": "‘A",
           "start": 1465.42,
@@ -19475,7 +20115,15 @@
           "text": "wall.",
           "start": 1469.78,
           "end": 1470.02
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s273",
+      "text": "‘Really, Dumbledore, you think you can explain all this in a letter?",
+      "start": 1471.0,
+      "end": 1475.86,
+      "words": [
         {
           "text": "‘Really,",
           "start": 1471.0,
@@ -19539,7 +20187,7 @@
       ]
     },
     {
-      "id": "c1_s193",
+      "id": "c1_s274",
       "text": "These people will never understand him!",
       "start": 1476.9,
       "end": 1479.24,
@@ -19577,10 +20225,10 @@
       ]
     },
     {
-      "id": "c1_s194",
-      "text": "He’ll be famous – a legend – I wouldn’t be surprised if today was known as Harry Potter Day in future – there will be books written about Harry – every child in our world will know his name!’ ‘Exactly,’ said Dumbledore, looking very seriously over the top of his half-moon glasses. ‘It would be enough to turn any boy’s head.",
+      "id": "c1_s275",
+      "text": "He’ll be famous – a legend – I wouldn’t be surprised if today was known as Harry Potter Day in future – there will be books written about Harry – every child in our world will know his name!’",
       "start": 1479.88,
-      "end": 1502.8,
+      "end": 1493.32,
       "words": [
         {
           "text": "He’ll",
@@ -19776,7 +20424,15 @@
           "text": "name!’",
           "start": 1492.78,
           "end": 1493.32
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s276",
+      "text": "‘Exactly,’ said Dumbledore, looking very seriously over the top of his half-moon glasses.",
+      "start": 1494.3,
+      "end": 1499.56,
+      "words": [
         {
           "text": "‘Exactly,’",
           "start": 1494.3,
@@ -19841,7 +20497,15 @@
           "text": "glasses.",
           "start": 1499.08,
           "end": 1499.56
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s277",
+      "text": "‘It would be enough to turn any boy’s head.",
+      "start": 1500.58,
+      "end": 1502.8,
+      "words": [
         {
           "text": "‘It",
           "start": 1500.58,
@@ -19890,7 +20554,7 @@
       ]
     },
     {
-      "id": "c1_s195",
+      "id": "c1_s278",
       "text": "Famous before he can walk and talk!",
       "start": 1503.56,
       "end": 1505.6,
@@ -19933,7 +20597,7 @@
       ]
     },
     {
-      "id": "c1_s196",
+      "id": "c1_s279",
       "text": "Famous for something he won’t even remember!",
       "start": 1506.2,
       "end": 1508.1,
@@ -19976,10 +20640,10 @@
       ]
     },
     {
-      "id": "c1_s197",
-      "text": "Can’t you see how much better off he’ll be, growing up away from all that until he’s ready to take it?’ Professor McGonagall opened her mouth, changed her mind, swallowed and then said, ‘Yes – yes, you’re right, of course.",
+      "id": "c1_s280",
+      "text": "Can’t you see how much better off he’ll be, growing up away from all that until he’s ready to take it?’",
       "start": 1508.9,
-      "end": 1524.64,
+      "end": 1514.56,
       "words": [
         {
           "text": "Can’t",
@@ -20085,7 +20749,15 @@
           "text": "it?’",
           "start": 1514.3,
           "end": 1514.56
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s281",
+      "text": "Professor McGonagall opened her mouth, changed her mind, swallowed and then said, ‘Yes – yes, you’re right, of course.",
+      "start": 1515.32,
+      "end": 1524.64,
+      "words": [
         {
           "text": "Professor",
           "start": 1515.32,
@@ -20184,10 +20856,10 @@
       ]
     },
     {
-      "id": "c1_s198",
-      "text": "But how is the boy getting here, Dumbledore?’ She eyed his cloak suddenly as though she thought he might be hiding Harry underneath it. ‘Hagrid’s bringing him.’ ‘You think it – wise – to trust Hagrid with something as important as this?’ ‘I would trust Hagrid with my life,’ said Dumbledore. ‘I’m not saying his heart isn’t in the right place,’ said Professor McGonagall grudgingly, ‘but you can’t pretend he’s not careless.",
+      "id": "c1_s282",
+      "text": "But how is the boy getting here, Dumbledore?’",
       "start": 1525.76,
-      "end": 1552.2,
+      "end": 1527.8,
       "words": [
         {
           "text": "But",
@@ -20228,7 +20900,15 @@
           "text": "Dumbledore?’",
           "start": 1527.4,
           "end": 1527.8
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s283",
+      "text": "She eyed his cloak suddenly as though she thought he might be hiding Harry underneath it.",
+      "start": 1528.62,
+      "end": 1532.92,
+      "words": [
         {
           "text": "She",
           "start": 1528.62,
@@ -20308,7 +20988,15 @@
           "text": "it.",
           "start": 1532.58,
           "end": 1532.92
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s284",
+      "text": "‘Hagrid’s bringing him.’",
+      "start": 1534.06,
+      "end": 1535.16,
+      "words": [
         {
           "text": "‘Hagrid’s",
           "start": 1534.06,
@@ -20323,7 +21011,15 @@
           "text": "him.’",
           "start": 1534.9,
           "end": 1535.16
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s285",
+      "text": "‘You think it – wise – to trust Hagrid with something as important as this?’",
+      "start": 1536.08,
+      "end": 1540.58,
+      "words": [
         {
           "text": "‘You",
           "start": 1536.08,
@@ -20398,7 +21094,15 @@
           "text": "this?’",
           "start": 1540.36,
           "end": 1540.58
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s286",
+      "text": "‘I would trust Hagrid with my life,’ said Dumbledore.",
+      "start": 1540.58,
+      "end": 1544.7,
+      "words": [
         {
           "text": "‘I",
           "start": 1540.58,
@@ -20443,7 +21147,15 @@
           "text": "Dumbledore.",
           "start": 1544.18,
           "end": 1544.7
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s287",
+      "text": "‘I’m not saying his heart isn’t in the right place,’ said Professor McGonagall grudgingly, ‘but you can’t pretend he’s not careless.",
+      "start": 1545.42,
+      "end": 1552.2,
+      "words": [
         {
           "text": "‘I’m",
           "start": 1545.42,
@@ -20552,10 +21264,10 @@
       ]
     },
     {
-      "id": "c1_s199",
-      "text": "He does tend to – what was that?’ A low rumbling sound had broken the silence around them.",
+      "id": "c1_s288",
+      "text": "He does tend to – what was that?’",
       "start": 1552.9,
-      "end": 1558.92,
+      "end": 1554.46,
       "words": [
         {
           "text": "He",
@@ -20596,7 +21308,15 @@
           "text": "that?’",
           "start": 1554.22,
           "end": 1554.46
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s289",
+      "text": "A low rumbling sound had broken the silence around them.",
+      "start": 1555.92,
+      "end": 1558.92,
+      "words": [
         {
           "text": "A",
           "start": 1555.92,
@@ -20650,7 +21370,7 @@
       ]
     },
     {
-      "id": "c1_s200",
+      "id": "c1_s290",
       "text": "It grew steadily louder as they looked up and down the street for some sign of a headlight; it swelled to a roar as they both looked up at the sky – and a huge motorbike fell out of the air and landed on the road in front of them.",
       "start": 1559.38,
       "end": 1573.6,
@@ -20908,7 +21628,7 @@
       ]
     },
     {
-      "id": "c1_s201",
+      "id": "c1_s291",
       "text": "If the motorbike was huge, it was nothing to the man sitting astride it.",
       "start": 1574.58,
       "end": 1579.88,
@@ -20986,7 +21706,7 @@
       ]
     },
     {
-      "id": "c1_s202",
+      "id": "c1_s292",
       "text": "He was almost twice as tall as a normal man and at least five times as wide.",
       "start": 1580.48,
       "end": 1585.68,
@@ -21079,7 +21799,7 @@
       ]
     },
     {
-      "id": "c1_s203",
+      "id": "c1_s293",
       "text": "He looked simply too big to be allowed, and so wild – long tangles of bushy black hair and beard hid most of his face, he had hands the size of dustbin lids and his feet in their leather boots were like baby dolphins.",
       "start": 1586.6,
       "end": 1602.44,
@@ -21307,10 +22027,10 @@
       ]
     },
     {
-      "id": "c1_s204",
-      "text": "In his vast, muscular arms he was holding a bundle of blankets. ‘Hagrid,’ said Dumbledore, sounding relieved. ‘At last.",
+      "id": "c1_s294",
+      "text": "In his vast, muscular arms he was holding a bundle of blankets.",
       "start": 1603.3,
-      "end": 1614.0,
+      "end": 1607.84,
       "words": [
         {
           "text": "In",
@@ -21371,7 +22091,15 @@
           "text": "blankets.",
           "start": 1607.44,
           "end": 1607.84
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s295",
+      "text": "‘Hagrid,’ said Dumbledore, sounding relieved.",
+      "start": 1610.06,
+      "end": 1612.62,
+      "words": [
         {
           "text": "‘Hagrid,’",
           "start": 1610.06,
@@ -21396,7 +22124,15 @@
           "text": "relieved.",
           "start": 1612.18,
           "end": 1612.62
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s296",
+      "text": "‘At last.",
+      "start": 1613.16,
+      "end": 1614.0,
+      "words": [
         {
           "text": "‘At",
           "start": 1613.16,
@@ -21410,10 +22146,10 @@
       ]
     },
     {
-      "id": "c1_s205",
-      "text": "And where did you get that motorbike?’ ‘Borrowed it, Professor Dumbledore, sir,’ said the giant, climbing carefully off the motorbike as he spoke. ‘Young Sirius Black lent it me.",
+      "id": "c1_s297",
+      "text": "And where did you get that motorbike?’",
       "start": 1614.72,
-      "end": 1625.84,
+      "end": 1616.84,
       "words": [
         {
           "text": "And",
@@ -21449,7 +22185,15 @@
           "text": "motorbike?’",
           "start": 1616.32,
           "end": 1616.84
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s298",
+      "text": "‘Borrowed it, Professor Dumbledore, sir,’ said the giant, climbing carefully off the motorbike as he spoke.",
+      "start": 1618.08,
+      "end": 1623.52,
+      "words": [
         {
           "text": "‘Borrowed",
           "start": 1618.08,
@@ -21529,7 +22273,15 @@
           "text": "spoke.",
           "start": 1623.24,
           "end": 1623.52
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s299",
+      "text": "‘Young Sirius Black lent it me.",
+      "start": 1624.36,
+      "end": 1625.84,
+      "words": [
         {
           "text": "‘Young",
           "start": 1624.36,
@@ -21563,10 +22315,10 @@
       ]
     },
     {
-      "id": "c1_s206",
-      "text": "I’ve got him, sir.’ ‘No problems, were there?’ ‘No, sir – house was almost destroyed but I got him out all right before the Muggles started swarmin’ around.",
+      "id": "c1_s300",
+      "text": "I’ve got him, sir.’",
       "start": 1626.9,
-      "end": 1636.46,
+      "end": 1627.92,
       "words": [
         {
           "text": "I’ve",
@@ -21587,7 +22339,15 @@
           "text": "sir.’",
           "start": 1627.8,
           "end": 1627.92
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s301",
+      "text": "‘No problems, were there?’",
+      "start": 1628.84,
+      "end": 1629.84,
+      "words": [
         {
           "text": "‘No",
           "start": 1628.84,
@@ -21607,7 +22367,15 @@
           "text": "there?’",
           "start": 1629.68,
           "end": 1629.84
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s302",
+      "text": "‘No, sir – house was almost destroyed but I got him out all right before the Muggles started swarmin’ around.",
+      "start": 1630.64,
+      "end": 1636.46,
+      "words": [
         {
           "text": "‘No,",
           "start": 1630.64,
@@ -21711,10 +22479,10 @@
       ]
     },
     {
-      "id": "c1_s207",
-      "text": "He fell asleep as we was flyin’ over Bristol.’ Dumbledore and Professor McGonagall bent forward over the bundle of blankets.",
+      "id": "c1_s303",
+      "text": "He fell asleep as we was flyin’ over Bristol.’",
       "start": 1636.46,
-      "end": 1643.8,
+      "end": 1638.54,
       "words": [
         {
           "text": "He",
@@ -21760,7 +22528,15 @@
           "text": "Bristol.’",
           "start": 1638.16,
           "end": 1638.54
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s304",
+      "text": "Dumbledore and Professor McGonagall bent forward over the bundle of blankets.",
+      "start": 1639.86,
+      "end": 1643.8,
+      "words": [
         {
           "text": "Dumbledore",
           "start": 1639.86,
@@ -21819,7 +22595,7 @@
       ]
     },
     {
-      "id": "c1_s208",
+      "id": "c1_s305",
       "text": "Inside, just visible, was a baby boy, fast asleep.",
       "start": 1644.66,
       "end": 1649.76,
@@ -21872,10 +22648,10 @@
       ]
     },
     {
-      "id": "c1_s209",
-      "text": "Under a tuft of jet-black hair over his forehead they could see a curiously shaped cut, like a bolt of lightning. ‘Is that where –?’ whispered Professor McGonagall. ‘Yes,’ said Dumbledore. ‘He’ll have that scar for ever.’ ‘Couldn’t you do something about it, Dumbledore?’ ‘Even if I could, I wouldn’t.",
+      "id": "c1_s306",
+      "text": "Under a tuft of jet-black hair over his forehead they could see a curiously shaped cut, like a bolt of lightning.",
       "start": 1651.06,
-      "end": 1674.0,
+      "end": 1658.24,
       "words": [
         {
           "text": "Under",
@@ -21981,7 +22757,15 @@
           "text": "lightning.",
           "start": 1657.82,
           "end": 1658.24
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s307",
+      "text": "‘Is that where –?’ whispered Professor McGonagall.",
+      "start": 1659.18,
+      "end": 1662.6,
+      "words": [
         {
           "text": "‘Is",
           "start": 1659.18,
@@ -22016,7 +22800,15 @@
           "text": "McGonagall.",
           "start": 1662.0,
           "end": 1662.6
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s308",
+      "text": "‘Yes,’ said Dumbledore.",
+      "start": 1663.42,
+      "end": 1665.22,
+      "words": [
         {
           "text": "‘Yes,’",
           "start": 1663.42,
@@ -22031,7 +22823,15 @@
           "text": "Dumbledore.",
           "start": 1664.72,
           "end": 1665.22
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s309",
+      "text": "‘He’ll have that scar for ever.’",
+      "start": 1666.02,
+      "end": 1669.18,
+      "words": [
         {
           "text": "‘He’ll",
           "start": 1666.02,
@@ -22061,7 +22861,15 @@
           "text": "ever.’",
           "start": 1668.837,
           "end": 1669.18
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s310",
+      "text": "‘Couldn’t you do something about it, Dumbledore?’",
+      "start": 1669.18,
+      "end": 1671.42,
+      "words": [
         {
           "text": "‘Couldn’t",
           "start": 1669.18,
@@ -22096,7 +22904,15 @@
           "text": "Dumbledore?’",
           "start": 1670.94,
           "end": 1671.42
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s311",
+      "text": "‘Even if I could, I wouldn’t.",
+      "start": 1672.08,
+      "end": 1674.0,
+      "words": [
         {
           "text": "‘Even",
           "start": 1672.08,
@@ -22130,7 +22946,7 @@
       ]
     },
     {
-      "id": "c1_s210",
+      "id": "c1_s312",
       "text": "Scars can come in useful.",
       "start": 1674.56,
       "end": 1676.08,
@@ -22163,7 +22979,7 @@
       ]
     },
     {
-      "id": "c1_s211",
+      "id": "c1_s313",
       "text": "I have one myself above my left knee which is a perfect map of the London Underground.",
       "start": 1676.82,
       "end": 1680.54,
@@ -22256,10 +23072,10 @@
       ]
     },
     {
-      "id": "c1_s212",
-      "text": "Well – give him here, Hagrid – we’d better get this over with.’ Dumbledore took Harry in his arms and turned towards the Dursleys’ house. ‘Could I – could I say goodbye to him, sir?’ asked Hagrid.",
+      "id": "c1_s314",
+      "text": "Well – give him here, Hagrid – we’d better get this over with.’",
       "start": 1681.02,
-      "end": 1696.02,
+      "end": 1684.52,
       "words": [
         {
           "text": "Well",
@@ -22325,7 +23141,15 @@
           "text": "with.’",
           "start": 1684.3,
           "end": 1684.52
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s315",
+      "text": "Dumbledore took Harry in his arms and turned towards the Dursleys’ house.",
+      "start": 1685.72,
+      "end": 1689.7,
+      "words": [
         {
           "text": "Dumbledore",
           "start": 1685.72,
@@ -22385,7 +23209,15 @@
           "text": "house.",
           "start": 1689.54,
           "end": 1689.7
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s316",
+      "text": "‘Could I – could I say goodbye to him, sir?’ asked Hagrid.",
+      "start": 1690.025,
+      "end": 1696.02,
+      "words": [
         {
           "text": "‘Could",
           "start": 1690.025,
@@ -22449,7 +23281,7 @@
       ]
     },
     {
-      "id": "c1_s213",
+      "id": "c1_s317",
       "text": "He bent his great, shaggy head over Harry and gave him what must have been a very scratchy, whiskery kiss.",
       "start": 1696.02,
       "end": 1703.6,
@@ -22557,10 +23389,10 @@
       ]
     },
     {
-      "id": "c1_s214",
-      "text": "Then, suddenly, Hagrid let out a howl like a wounded dog. ‘Shhh!’ hissed Professor McGonagall. ‘You’ll wake the Muggles!’ ‘S-s-sorry,’ sobbed Hagrid, taking out a large spotted handkerchief and burying his face in it. ‘But I c-c-can’t stand it – Lily an’ James dead – an’ poor little Harry off ter live with Muggles –’ ‘Yes, yes, it’s all very sad, but get a grip on yourself, Hagrid, or we’ll be found,’ Professor McGonagall whispered, patting Hagrid gingerly on the arm as Dumbledore stepped over the low garden wall and walked to the front door.",
+      "id": "c1_s318",
+      "text": "Then, suddenly, Hagrid let out a howl like a wounded dog.",
       "start": 1704.9,
-      "end": 1741.88,
+      "end": 1709.18,
       "words": [
         {
           "text": "Then,",
@@ -22616,7 +23448,15 @@
           "text": "dog.",
           "start": 1708.74,
           "end": 1709.18
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s319",
+      "text": "‘Shhh!’ hissed Professor McGonagall.",
+      "start": 1710.08,
+      "end": 1712.18,
+      "words": [
         {
           "text": "‘Shhh!’",
           "start": 1710.08,
@@ -22636,7 +23476,15 @@
           "text": "McGonagall.",
           "start": 1711.56,
           "end": 1712.18
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s320",
+      "text": "‘You’ll wake the Muggles!’",
+      "start": 1712.64,
+      "end": 1715.26,
+      "words": [
         {
           "text": "‘You’ll",
           "start": 1712.64,
@@ -22656,7 +23504,15 @@
           "text": "Muggles!’",
           "start": 1714.26,
           "end": 1715.26
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s321",
+      "text": "‘S-s-sorry,’ sobbed Hagrid, taking out a large spotted handkerchief and burying his face in it.",
+      "start": 1715.76,
+      "end": 1721.28,
+      "words": [
         {
           "text": "‘S-s-sorry,’",
           "start": 1715.76,
@@ -22731,7 +23587,15 @@
           "text": "it.",
           "start": 1721.14,
           "end": 1721.28
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s322",
+      "text": "‘But I c-c-can’t stand it – Lily an’ James dead – an’ poor little Harry off ter live with Muggles –’ ‘Yes, yes, it’s all very sad, but get a grip on yourself, Hagrid, or we’ll be found,’ Professor McGonagall whispered, patting Hagrid gingerly on the arm as Dumbledore stepped over the low garden wall and walked to the front door.",
+      "start": 1721.72,
+      "end": 1741.88,
+      "words": [
         {
           "text": "‘But",
           "start": 1721.72,
@@ -23040,7 +23904,7 @@
       ]
     },
     {
-      "id": "c1_s215",
+      "id": "c1_s323",
       "text": "He laid Harry gently on the doorstep, took a letter out of his cloak, tucked it inside Harry’s blankets and then came back to the other two.",
       "start": 1742.78,
       "end": 1751.88,
@@ -23183,10 +24047,10 @@
       ]
     },
     {
-      "id": "c1_s216",
-      "text": "For a full minute the three of them stood and looked at the little bundle; Hagrid’s shoulders shook, Professor McGonagall blinked furiously and the twinkling light that usually shone from Dumbledore’s eyes seemed to have gone out. ‘Well,’ said Dumbledore finally, ‘that’s that.",
+      "id": "c1_s324",
+      "text": "For a full minute the three of them stood and looked at the little bundle; Hagrid’s shoulders shook, Professor McGonagall blinked furiously and the twinkling light that usually shone from Dumbledore’s eyes seemed to have gone out.",
       "start": 1752.58,
-      "end": 1774.26,
+      "end": 1768.2,
       "words": [
         {
           "text": "For",
@@ -23372,7 +24236,15 @@
           "text": "out.",
           "start": 1767.86,
           "end": 1768.2
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s325",
+      "text": "‘Well,’ said Dumbledore finally, ‘that’s that.",
+      "start": 1769.74,
+      "end": 1774.26,
+      "words": [
         {
           "text": "‘Well,’",
           "start": 1769.74,
@@ -23406,7 +24278,7 @@
       ]
     },
     {
-      "id": "c1_s217",
+      "id": "c1_s326",
       "text": "We’ve no business staying here.",
       "start": 1775.2,
       "end": 1776.4,
@@ -23439,10 +24311,10 @@
       ]
     },
     {
-      "id": "c1_s218",
-      "text": "We may as well go and join the celebrations.’ ‘Yeah,’ said Hagrid in a very muffled voice. ‘I’d best get this bike away.",
+      "id": "c1_s327",
+      "text": "We may as well go and join the celebrations.’",
       "start": 1777.44,
-      "end": 1788.677,
+      "end": 1779.72,
       "words": [
         {
           "text": "We",
@@ -23488,7 +24360,15 @@
           "text": "celebrations.’",
           "start": 1778.78,
           "end": 1779.72
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s328",
+      "text": "‘Yeah,’ said Hagrid in a very muffled voice.",
+      "start": 1781.0,
+      "end": 1784.28,
+      "words": [
         {
           "text": "‘Yeah,’",
           "start": 1781.0,
@@ -23528,7 +24408,15 @@
           "text": "voice.",
           "start": 1783.82,
           "end": 1784.28
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s329",
+      "text": "‘I’d best get this bike away.",
+      "start": 1784.85,
+      "end": 1788.677,
+      "words": [
         {
           "text": "‘I’d",
           "start": 1784.85,
@@ -23562,10 +24450,10 @@
       ]
     },
     {
-      "id": "c1_s219",
-      "text": "G’night, Professor McGonagall – Professor Dumbledore, sir.’ Wiping his streaming eyes on his jacket sleeve, Hagrid swung himself on to the motorbike and kicked the engine into life; with a roar it rose into the air and off into the night. ‘I shall see you soon, I expect, Professor McGonagall,’ said Dumbledore, nodding to her.",
+      "id": "c1_s330",
+      "text": "G’night, Professor McGonagall – Professor Dumbledore, sir.’",
       "start": 1788.759,
-      "end": 1811.5,
+      "end": 1791.44,
       "words": [
         {
           "text": "G’night,",
@@ -23601,7 +24489,15 @@
           "text": "sir.’",
           "start": 1791.32,
           "end": 1791.44
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s331",
+      "text": "Wiping his streaming eyes on his jacket sleeve, Hagrid swung himself on to the motorbike and kicked the engine into life; with a roar it rose into the air and off into the night.",
+      "start": 1792.84,
+      "end": 1804.72,
+      "words": [
         {
           "text": "Wiping",
           "start": 1792.84,
@@ -23771,7 +24667,15 @@
           "text": "night.",
           "start": 1804.46,
           "end": 1804.72
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s332",
+      "text": "‘I shall see you soon, I expect, Professor McGonagall,’ said Dumbledore, nodding to her.",
+      "start": 1806.76,
+      "end": 1811.5,
+      "words": [
         {
           "text": "‘I",
           "start": 1806.76,
@@ -23845,7 +24749,7 @@
       ]
     },
     {
-      "id": "c1_s220",
+      "id": "c1_s333",
       "text": "Professor McGonagall blew her nose in reply.",
       "start": 1812.14,
       "end": 1814.78,
@@ -23888,7 +24792,7 @@
       ]
     },
     {
-      "id": "c1_s221",
+      "id": "c1_s334",
       "text": "Dumbledore turned and walked back down the street.",
       "start": 1816.28,
       "end": 1819.02,
@@ -23936,7 +24840,7 @@
       ]
     },
     {
-      "id": "c1_s222",
+      "id": "c1_s335",
       "text": "On the corner he stopped and took out the silver Put-Outer.",
       "start": 1819.98,
       "end": 1824.16,
@@ -23999,7 +24903,7 @@
       ]
     },
     {
-      "id": "c1_s223",
+      "id": "c1_s336",
       "text": "He clicked it once and twelve balls of light sped back to their street lamps so that Privet Drive glowed suddenly orange and he could make out a tabby cat slinking around the corner at the other end of the street.",
       "start": 1824.16,
       "end": 1837.48,
@@ -24212,10 +25116,10 @@
       ]
     },
     {
-      "id": "c1_s224",
-      "text": "He could just see the bundle of blankets on the step of number four. ‘Good luck, Harry,’ he murmured.",
+      "id": "c1_s337",
+      "text": "He could just see the bundle of blankets on the step of number four.",
       "start": 1838.34,
-      "end": 1846.24,
+      "end": 1842.5,
       "words": [
         {
           "text": "He",
@@ -24286,7 +25190,15 @@
           "text": "four.",
           "start": 1842.06,
           "end": 1842.5
-        },
+        }
+      ]
+    },
+    {
+      "id": "c1_s338",
+      "text": "‘Good luck, Harry,’ he murmured.",
+      "start": 1843.8,
+      "end": 1846.24,
+      "words": [
         {
           "text": "‘Good",
           "start": 1843.8,
@@ -24315,7 +25227,7 @@
       ]
     },
     {
-      "id": "c1_s225",
+      "id": "c1_s339",
       "text": "He turned on his heel and with a swish of his cloak he was gone.",
       "start": 1846.82,
       "end": 1850.92,
@@ -24398,7 +25310,7 @@
       ]
     },
     {
-      "id": "c1_s226",
+      "id": "c1_s340",
       "text": "A breeze ruffled the neat hedges of Privet Drive, which lay silent and tidy under the inky sky, the very last place you would expect astonishing things to happen.",
       "start": 1852.44,
       "end": 1863.44,
@@ -24551,7 +25463,7 @@
       ]
     },
     {
-      "id": "c1_s227",
+      "id": "c1_s341",
       "text": "Harry Potter rolled over inside his blankets without waking up.",
       "start": 1864.66,
       "end": 1868.74,
@@ -24609,7 +25521,7 @@
       ]
     },
     {
-      "id": "c1_s228",
+      "id": "c1_s342",
       "text": "One small hand closed on the letter beside him and he slept on, not knowing he was special, not knowing he was famous, not knowing he would be woken in a few hours’ time by Mrs Dursley’s scream as she opened the front door to put out the milk bottles, nor that he would spend the next few weeks being prodded and pinched by his cousin Dudley ...",
       "start": 1869.68,
       "end": 1893.8,
@@ -24957,7 +25869,7 @@
       ]
     },
     {
-      "id": "c1_s229",
+      "id": "c1_s343",
       "text": "He couldn’t know that at this very moment, people meeting in secret all over the country were holding up their glasses and saying in hushed voices: ‘To Harry Potter – the boy who lived!’",
       "start": 1893.8,
       "end": 1907.8,
