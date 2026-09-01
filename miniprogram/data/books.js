@@ -3,11 +3,12 @@ module.exports = [
     id: 'hp1',
     title: 'Harry Potter and the Philosopher\'s Stone',
     author: 'J.K. Rowling',
-    meta: '第 1 章已上线',
+    meta: '第 1-2 章已上线',
     dataType: 'local',
     audioPath: '',
     chapters: [
-      { id: '1', title: 'Chapter 1', desc: 'The Boy Who Lived' }
+      { id: '1', title: 'Chapter 1', desc: 'The Boy Who Lived' },
+      { id: '2', title: 'Chapter 2', desc: 'The Vanishing Glass' }
     ]
   },
   {

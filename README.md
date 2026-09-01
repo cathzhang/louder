@@ -3,7 +3,7 @@
 将英文有声书（PDF 文本 + 音频）进行逐句、逐词对齐，在网页/小程序上实现“点句播放、选词播放”。
 
 已上线内容：
-- 《Harry Potter and the Philosopher's Stone》Chapter 1 · The Boy Who Lived
+- 《Harry Potter and the Philosopher's Stone》Chapter 1 · The Boy Who Lived、Chapter 2 · The Vanishing Glass
 - 《新概念英语第二册》全部 96 课
 
 ---
